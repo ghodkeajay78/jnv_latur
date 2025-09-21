@@ -18,21 +18,21 @@ export default function Home() {
       title: t('nav.admissions'),
       description: 'Apply for admission to join our prestigious institution. Check eligibility and process.',
       href: '/admissions',
-      color: 'bg-primary',
+      color: 'bg-blue-600',
     },
     {
       icon: Book,
       title: t('nav.academics'),
       description: 'Explore our comprehensive curriculum and academic programs designed for excellence.',
       href: '/academics',
-      color: 'bg-accent',
+      color: 'bg-emerald-600',
     },
     {
       icon: Trophy,
       title: t('nav.achievements'),
       description: 'Discover our students\' outstanding achievements in academics, sports, and cultural activities.',
       href: '/achievements',
-      color: 'bg-secondary',
+      color: 'bg-purple-600',
     },
   ];
 
@@ -60,12 +60,12 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link href="/admissions">
-                    <Button size="lg" variant="secondary" data-testid="hero-apply-button">
+                    <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-50 shadow-lg" data-testid="hero-apply-button">
                       {t('common.apply')}
                     </Button>
                   </Link>
                   <Link href="/gallery">
-                    <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" data-testid="hero-tour-button">
+                    <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 shadow-lg" data-testid="hero-tour-button">
                       Virtual Tour
                     </Button>
                   </Link>
@@ -196,21 +196,21 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-primary text-primary-foreground">
+                <Card className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
                   <CardContent className="p-6">
-                    <h3 className="font-semibold mb-3">Upcoming Events</h3>
-                    <div className="space-y-3 text-sm">
-                      <div>
+                    <h3 className="font-semibold mb-4 text-lg">Upcoming Events</h3>
+                    <div className="space-y-4 text-sm">
+                      <div className="border-l-2 border-white/30 pl-3">
                         <div className="font-medium">Republic Day Celebration</div>
-                        <div className="opacity-80">January 26, 2024</div>
+                        <div className="opacity-90">January 26, 2024</div>
                       </div>
-                      <div>
+                      <div className="border-l-2 border-white/30 pl-3">
                         <div className="font-medium">Parent-Teacher Meeting</div>
-                        <div className="opacity-80">February 3, 2024</div>
+                        <div className="opacity-90">February 3, 2024</div>
                       </div>
-                      <div>
+                      <div className="border-l-2 border-white/30 pl-3">
                         <div className="font-medium">Annual Sports Meet</div>
-                        <div className="opacity-80">February 15-17, 2024</div>
+                        <div className="opacity-90">February 15-17, 2024</div>
                       </div>
                     </div>
                   </CardContent>
@@ -241,11 +241,11 @@ export default function Home() {
                     <p className="text-sm text-muted-foreground">{t('school.vision')}</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   {stats.map((stat, index) => (
-                    <div key={index} className="text-center">
-                      <div className="text-2xl font-bold text-primary" data-testid={`stat-value-${index}`}>{stat.value}</div>
-                      <div className="text-sm text-muted-foreground">{stat.label}</div>
+                    <div key={index} className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg">
+                      <div className="text-3xl font-bold text-blue-600 mb-2" data-testid={`stat-value-${index}`}>{stat.value}</div>
+                      <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
                     </div>
                   ))}
                 </div>

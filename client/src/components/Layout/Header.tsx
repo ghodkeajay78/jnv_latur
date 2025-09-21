@@ -43,23 +43,6 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
-      {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2">
-        <div className="container mx-auto px-4 flex justify-between items-center text-sm">
-          <div className="flex items-center space-x-4">
-            <span data-testid="header-phone">
-              <Phone className="inline w-3 h-3 mr-1" />
-              {schoolInfo.phone}
-            </span>
-            <span data-testid="header-email">
-              <Mail className="inline w-3 h-3 mr-1" />
-              {schoolInfo.email}
-            </span>
-          </div>
-          <LanguageToggle />
-        </div>
-      </div>
-
       {/* Main Navigation */}
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
@@ -107,6 +90,9 @@ export default function Header() {
                 )}
               </div>
             ))}
+            <div className="ml-4">
+              <LanguageToggle />
+            </div>
           </div>
 
           {/* Mobile Menu */}
@@ -147,6 +133,9 @@ export default function Header() {
                     )}
                   </div>
                 ))}
+                <div className="pt-4 border-t">
+                  <LanguageToggle />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
