@@ -1,0 +1,214 @@
+{
+  "common": {
+    "apply": "Apply Now",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "download": "Download",
+    "upload": "Upload",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "gallery": "Gallery",
+    "news": "News",
+    "events": "Events",
+    "contact": "Contact",
+    "admissions": "Admissions",
+    "academics": "Academics",
+    "faculty": "Faculty",
+    "achievements": "Achievements",
+    "activities": "Activities",
+    "campus": "Campus",
+    "hostel": "Hostel",
+    "alumni": "Alumni",
+    "management": "Management",
+    "policies": "Policies",
+    "resources": "Resources"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "academics": "Academics",
+    "admissions": "Admissions",
+    "faculty": "Faculty",
+    "achievements": "Achievements",
+    "activities": "Activities",
+    "campus": "Campus",
+    "gallery": "Gallery",
+    "news": "News",
+    "contact": "Contact",
+    "hostel": "Hostel",
+    "alumni": "Alumni",
+    "management": "Management",
+    "policies": "Policies",
+    "resources": "Resources"
+  },
+  "school": {
+    "name": "Jankalyan Nivasi Vidyalay",
+    "location": "Latur, Maharashtra",
+    "tagline": "Excellence in Education Since 1986",
+    "established": "1986",
+    "affiliation": "CBSE",
+    "classes": "VI to XII",
+    "students": "580",
+    "faculty": "45",
+    "phone": "+91-2382-123456",
+    "email": "principal@jnvlatur.edu.in",
+    "address": "Village Wagholi, Taluka Chakur, District Latur, Maharashtra - 413517",
+    "description": "Nurturing young minds to become tomorrow's leaders at Jankalyan Nivasi Vidyalay, Latur, Maharashtra",
+    "mission": "To provide quality education and holistic development to students",
+    "vision": "To be a leading educational institution that shapes future leaders",
+    "values": "Excellence, Integrity, Innovation, Compassion"
+  },
+  "hero": {
+    "title": "Excellence in Education Since 1986",
+    "description": "Nurturing young minds to become tomorrow's leaders at {schoolName}, {location}",
+    "applyButton": "Apply Now",
+    "tourButton": "Virtual Tour"
+  },
+  "quickLinks": {
+    "admissions": {
+      "title": "Admissions",
+      "description": "Apply for admission to our school"
+    },
+    "academics": {
+      "title": "Academics",
+      "description": "Explore our academic programs"
+    },
+    "faculty": {
+      "title": "Faculty",
+      "description": "Meet our experienced teachers"
+    }
+  },
+  "campusLife": {
+    "title": "Campus Life at {schoolName}",
+    "description": "Experience the vibrant campus life and facilities"
+  },
+  "news": {
+    "title": "Latest News & Updates",
+    "readMore": "Read More",
+    "items": {
+      "admissionOpen": {
+        "title": "Admissions Open for Academic Year 2024-25",
+        "date": "January 15, 2024",
+        "description": "Applications are now open for classes VI to XII. Limited seats available."
+      },
+      "sportsDay": {
+        "title": "Annual Sports Day 2024",
+        "date": "January 10, 2024",
+        "description": "Join us for our annual sports day celebration with exciting competitions."
+      },
+      "examResults": {
+        "title": "Board Exam Results 2023",
+        "date": "January 5, 2024",
+        "description": "Congratulations to all students for outstanding performance in board exams."
+      }
+    }
+  },
+  "noticeBoard": {
+    "title": "Notice Board",
+    "items": {
+      "holiday": {
+        "title": "Holiday Notice",
+        "date": "January 20, 2024",
+        "description": "School will remain closed on Republic Day"
+      },
+      "exam": {
+        "title": "Exam Schedule",
+        "date": "January 18, 2024",
+        "description": "Mid-term examination schedule has been announced"
+      },
+      "meeting": {
+        "title": "Parent-Teacher Meeting",
+        "date": "January 15, 2024",
+        "description": "PTM scheduled for next week"
+      }
+    }
+  },
+  "about": {
+    "title": "About {schoolName}",
+    "description": "Established in {established}, {schoolName} stands as a beacon of excellence in education. We are committed to providing quality education and holistic development to our students.",
+    "learnMore": "Learn More About Us",
+    "milestones": {
+      "establishment": {
+        "year": "1986",
+        "event": "School Establishment",
+        "description": "Jankalyan Nivasi Vidyalay, Latur was established as a residential school."
+      },
+      "cbse": {
+        "year": "1990",
+        "event": "CBSE Affiliation",
+        "description": "School got affiliated with Central Board of Secondary Education."
+      },
+      "expansion": {
+        "year": "2000",
+        "event": "Infrastructure Expansion",
+        "description": "New buildings and modern facilities were added to the campus."
+      },
+      "recognition": {
+        "year": "2010",
+        "event": "State Recognition",
+        "description": "School received recognition for academic excellence from state government."
+      }
+    }
+  },
+  "stats": {
+    "students": "Students",
+    "faculty": "Faculty",
+    "years": "Years of Excellence",
+    "achievements": "Achievements"
+  },
+  "footer": {
+    "description": "Jankalyan Nivasi Vidyalay, Latur - Nurturing young minds for a better tomorrow.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Information",
+    "followUs": "Follow Us",
+    "copyright": "© 2024 Jankalyan Nivasi Vidyalay, Latur. All rights reserved.",
+    "developedBy": "Developed with ❤️ for education"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Your Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Office Hours",
+      "hoursValue": "Monday - Friday: 9:00 AM - 5:00 PM"
+    }
+  }
+}

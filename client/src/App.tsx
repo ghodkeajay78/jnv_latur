@@ -1,8 +1,7 @@
 import { Switch, Route } from "wouter";
-import { useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { TranslationContext, Language, translations } from "./lib/i18n";
+import { TranslationProvider } from "./lib/i18n";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -46,19 +45,13 @@ function Router() {
 }
 
 function App() {
-  const [language, setLanguage] = useState<Language>('en');
-  
-  const t = (key: string): string => {
-    return translations[language][key as keyof typeof translations[Language]] || key;
-  };
-
   return (
-    <TooltipProvider>
-      <TranslationContext.Provider value={{ language, setLanguage, t }}>
+    <TranslationProvider>
+      <TooltipProvider>
         <Toaster />
         <Router />
-      </TranslationContext.Provider>
-    </TooltipProvider>
+      </TooltipProvider>
+    </TranslationProvider>
   );
 }
 
