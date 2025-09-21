@@ -37,7 +37,8 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // TODO: Implement actual form submission to backend
+      // For static hosting, we'll simulate form submission
+      // In production, you could integrate with services like Formspree, Netlify Forms, or EmailJS
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       
       toast({

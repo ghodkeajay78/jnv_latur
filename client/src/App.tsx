@@ -1,7 +1,5 @@
 import { Switch, Route } from "wouter";
 import { useState } from "react";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { TranslationContext, Language, translations } from "./lib/i18n";
@@ -55,14 +53,12 @@ function App() {
   };
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <TranslationContext.Provider value={{ language, setLanguage, t }}>
-          <Toaster />
-          <Router />
-        </TranslationContext.Provider>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <TranslationContext.Provider value={{ language, setLanguage, t }}>
+        <Toaster />
+        <Router />
+      </TranslationContext.Provider>
+    </TooltipProvider>
   );
 }
 
