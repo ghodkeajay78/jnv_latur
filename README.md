@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JNV Latur - School Website
 
 A modern, responsive website for Jawahar Navodaya Vidyalaya, Latur built with React, TypeScript, and Tailwind CSS.
@@ -45,3 +46,7 @@ Jawahar Navodaya Vidyalaya, Latur is a prestigious residential school establishe
 - **Phone**: +91-2382-123456
 - **Email**: principal@jnvlatur.edu.in
 - **Address**: Village Wagholi, Taluka Chakur, District Latur, Maharashtra - 413517
+=======
+# jnv_latur
+School website for JNV latur
+>>>>>>> a6d1acf120e9fb7abaa0d7f375cc0e4eb9fbbeec
