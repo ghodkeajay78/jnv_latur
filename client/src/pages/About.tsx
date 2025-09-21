@@ -36,7 +36,7 @@ export default function About() {
     {
       year: '1986',
       event: 'School Establishment',
-      description: 'JNV Latur was established as part of the Navodaya Vidyalaya system.',
+      description: 'Jankalyan Nivasi Vidyalay, Latur was established as a residential school.',
     },
     {
       year: '1990',

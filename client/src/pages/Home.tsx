@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { GraduationCap, Book, Trophy, Calendar, MapPin, Phone, Mail, Users, Award, Target } from 'lucide-react';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
@@ -43,12 +44,35 @@ export default function Home() {
     { label: 'Success Rate', value: '95%', icon: Target },
   ];
 
+  const heroImages = [
+    {
+      src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
+      alt: 'School campus with modern buildings and students'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
+      alt: 'Panoramic view of school campus with main building'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
+      alt: 'Modern classroom with smart boards'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
+      alt: 'Science laboratory with students'
+    },
+    {
+      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
+      alt: 'School library with students studying'
+    }
+  ];
+
   return (
     <>
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="hero-gradient text-white relative overflow-hidden">
+        <section className="bg-gray-100 text-orange-600 relative overflow-hidden">
           <div className="container mx-auto px-4 py-20 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="slide-in-up">
@@ -60,30 +84,42 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link href="/admissions">
-                    <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-50 shadow-lg" data-testid="hero-apply-button">
+                    <Button size="lg" className="bg-orange-600 text-white hover:bg-orange-700 shadow-lg" data-testid="hero-apply-button">
                       {t('common.apply')}
                     </Button>
                   </Link>
                   <Link href="/gallery">
-                    <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 shadow-lg" data-testid="hero-tour-button">
+                    <Button size="lg" variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white shadow-lg" data-testid="hero-tour-button">
                       Virtual Tour
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="School campus with modern buildings and students"
-                  className="rounded-xl shadow-2xl w-full h-auto"
-                  data-testid="hero-image"
-                />
+                <Carousel className="w-full max-w-lg mx-auto">
+                  <CarouselContent>
+                    {heroImages.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <div className="p-1">
+                          <img
+                            src={image.src}
+                            alt={image.alt}
+                            className="rounded-xl shadow-2xl w-full h-auto"
+                            data-testid={`hero-image-${index}`}
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious className="left-4" />
+                  <CarouselNext className="right-4" />
+                </Carousel>
               </div>
             </div>
           </div>
           {/* Decorative Elements */}
-          <div className="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full"></div>
-          <div className="absolute bottom-20 left-20 w-24 h-24 bg-white/10 rounded-full"></div>
+          <div className="absolute top-20 right-20 w-32 h-32 bg-orange-200/30 rounded-full"></div>
+          <div className="absolute bottom-20 left-20 w-24 h-24 bg-orange-200/30 rounded-full"></div>
         </section>
 
         {/* Quick Links */}
@@ -115,7 +151,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="campus-life-title">
-                Campus Life at JNV Latur
+                Campus Life at {t('school.name')}
               </h2>
               <p className="text-lg text-muted-foreground">
                 Experience the vibrant campus life, state-of-the-art facilities, and rich cultural heritage
@@ -225,7 +261,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="about-title">About JNV Latur</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="about-title">About {t('school.name')}</h2>
                 <p className="text-lg text-muted-foreground mb-6">
                   Established in {schoolInfo.established}, {t('school.name')} stands as a beacon of excellence in education. 
                   Our institution is committed to providing quality education to talented rural children, fostering their 

@@ -53,7 +53,7 @@ export const translations = {
     'common.address': 'Address',
     
     // School Info
-    'school.name': 'Jawahar Navodaya Vidyalaya',
+    'school.name': 'Jankalyan Nivasi Vidyalay',
     'school.location': 'Latur, Maharashtra',
     'school.tagline': 'Excellence in Education Since 1986',
     'school.mission': 'To provide quality modern education including a strong component of culture, inculcation of values, awareness of the environment, adventure activities and physical education.',
@@ -89,7 +89,7 @@ export const translations = {
     'common.address': 'पत्ता',
     
     // School Info (Marathi)
-    'school.name': 'जवाहर नवोदय विद्यालय',
+    'school.name': 'जनकल्याण निवासी विद्यालय',
     'school.location': 'लातूर, महाराष्ट्र',
     'school.tagline': '१९८६ पासून शिक्षणातील उत्कृष्टता',
     'school.mission': 'संस्कृतीचा मजबूत घटक, मूल्यांचे स्थापन, पर्यावरणाविषयी जागरूकता, साहसी उपक्रम आणि शारीरिक शिक्षण यासह दर्जेदार आधुनिक शिक्षण प्रदान करणे.',

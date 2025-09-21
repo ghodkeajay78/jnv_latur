@@ -1,7 +1,7 @@
 // Static data for S3 hosting - no server dependencies
 export const staticData = {
   schoolInfo: {
-    name: 'Jawahar Navodaya Vidyalaya',
+    name: 'Jankalyan Nivasi Vidyalay',
     location: 'Latur, Maharashtra',
     established: 1986,
     affiliation: 'CBSE',
