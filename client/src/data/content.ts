@@ -1,0 +1,146 @@
+import { SchoolInfo, NewsItem, Achievement, FacultyMember, GalleryItem, ContactInfo } from '@/types';
+
+export const schoolInfo: SchoolInfo = {
+  name: 'Jawahar Navodaya Vidyalaya',
+  location: 'Latur, Maharashtra',
+  established: 1986,
+  affiliation: 'CBSE',
+  classes: 'VI to XII',
+  students: 580,
+  faculty: 45,
+  phone: '+91-2382-123456',
+  email: 'principal@jnvlatur.edu.in',
+  address: 'Village Wagholi, Taluka Chakur, District Latur, Maharashtra - 413517',
+};
+
+export const newsItems: NewsItem[] = [
+  {
+    id: '1',
+    title: 'Admission Process for Academic Year 2024-25',
+    description: 'Online registration for Class VI admissions begins from January 15, 2024. All eligible candidates can apply through the official portal.',
+    date: '2024-01-10',
+    type: 'announcement',
+    category: 'Admissions',
+  },
+  {
+    id: '2',
+    title: 'Annual Science Exhibition 2024',
+    description: 'Students showcase innovative science projects at the annual exhibition. Prize distribution ceremony on January 25, 2024.',
+    date: '2024-01-08',
+    type: 'event',
+    category: 'Academic',
+  },
+  {
+    id: '3',
+    title: 'Class XII Board Results 2023-24',
+    description: 'Excellent performance with 98.5% pass rate. School topper achieves 97.8% marks in Science stream.',
+    date: '2024-01-05',
+    type: 'result',
+    category: 'Results',
+  },
+];
+
+export const achievements: Achievement[] = [
+  {
+    id: '1',
+    title: 'National Athletics Championship Bronze Medal',
+    description: 'Student secured bronze medal in 400m sprint at national level athletics championship.',
+    level: 'national',
+    category: 'sports',
+    year: 2023,
+    award: 'Bronze Medal',
+  },
+  {
+    id: '2',
+    title: 'State Cricket Champions 2023',
+    description: 'School cricket team won the state level championship defeating teams from across Maharashtra.',
+    level: 'state',
+    category: 'sports',
+    year: 2023,
+    award: 'Champions Trophy',
+  },
+  {
+    id: '3',
+    title: 'Science Exhibition First Prize',
+    description: 'Students won first prize at regional science exhibition for innovative water purification project.',
+    level: 'state',
+    category: 'science',
+    year: 2023,
+    award: 'First Prize',
+  },
+];
+
+export const facultyMembers: FacultyMember[] = [
+  {
+    id: '1',
+    name: 'Dr. Rajesh Sharma',
+    designation: 'Principal',
+    subject: 'Education Administration',
+    qualification: 'Ph.D. in Education',
+    experience: 25,
+  },
+  {
+    id: '2',
+    name: 'Mrs. Sunita Patil',
+    designation: 'Vice Principal',
+    subject: 'Educational Psychology',
+    qualification: 'M.Ed.',
+    experience: 20,
+  },
+  {
+    id: '3',
+    name: 'Mr. Anil Kumar',
+    designation: 'Academic Coordinator',
+    subject: 'Mathematics',
+    qualification: 'M.Sc. Mathematics',
+    experience: 18,
+  },
+];
+
+export const galleryItems: GalleryItem[] = [
+  {
+    id: '1',
+    title: 'Smart Classrooms',
+    description: 'Modern classroom equipped with smart boards and digital learning tools.',
+    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    category: 'campus',
+  },
+  {
+    id: '2',
+    title: 'Science Laboratory',
+    description: 'Well-equipped science laboratory for practical experiments and research.',
+    image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    category: 'campus',
+  },
+  {
+    id: '3',
+    title: 'Central Library',
+    description: 'Spacious library with extensive collection of books and digital resources.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+    category: 'campus',
+  },
+];
+
+export const contactInfo: ContactInfo = {
+  office: '+91-2382-123456',
+  principal: '+91-2382-123457',
+  admissions: '+91-2382-123458',
+  email: {
+    general: 'info@jnvlatur.edu.in',
+    principal: 'principal@jnvlatur.edu.in',
+    admissions: 'admissions@jnvlatur.edu.in',
+  },
+  address: {
+    street: 'Jawahar Navodaya Vidyalaya',
+    village: 'Village Wagholi',
+    taluka: 'Taluka Chakur',
+    district: 'District Latur',
+    state: 'Maharashtra',
+    pincode: '413517',
+  },
+  hours: {
+    weekdays: '9:00 AM - 5:00 PM',
+    saturday: '9:00 AM - 1:00 PM',
+    sunday: 'Closed',
+  },
+};
