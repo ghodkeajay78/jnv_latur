@@ -1,0 +1,102 @@
+Create a modern React-based responsive school website for Jawahar Navodaya Vidyalaya, Latur (JNV Latur) with the following specifications:
+🎨 Design & Theme
+• Use saffron (#FF9933 or similar) as the primary color across the theme.
+• Clean, professional, and modern design suitable for an educational institute.
+• Responsive layout for desktop, tablet, and mobile.
+• Language toggle (top-right corner): English (default) ↔ Marathi.
+• Use React i18next (or any translation library) for bilingual content.
+⸻
+🏫 Website Sections & Content Structure
+1. Home Page
+• Banner with school name, logo, and tagline.
+• Quick links to Admissions, Academics, News & Events.
+• Photo slider showcasing campus, students, and activities.
+• Notice board for latest circulars.
+2. About the School
+• History & Establishment
+• Mission & Philosophy
+• Recognition / Affiliations (CBSE, awards, etc.)
+3. Management & Leadership
+• Founder’s Message
+• Principal’s Message
+• Management Committee with names and brief profiles
+4. Campus & Infrastructure
+• Overview of school campus
+• Hostel details (rooms, routine, security)
+• Mess / Dining facilities
+• Sports grounds, achievements
+• Library & Labs (science, computer, e-learning)
+5. Academics
+• Curriculum (Marathi / Semi-English / English medium)
+• Classes offered (up to which grade)
+• Subjects list
+• Teaching methods (smart class, project-based)
+• Exams & Assessment
+6. Faculty
+• Teachers list (name, subject, qualification, experience)
+• Training & workshops
+• Student guidance / counseling info
+7. Admissions
+• Process & Eligibility
+• Documents required
+• Key Dates (start, deadline, test date)
+• Fee structure (tuition, hostel, others)
+• Scholarships (if any)
+8. Achievements & Results
+• Academic results (board toppers, percentages)
+• Sports achievements (district, state, national level)
+• Cultural & competition highlights
+• Awards & recognitions
+9. News & Events
+• Latest updates, circulars
+• Annual functions, celebrations with photos
+• Guest lectures, workshops, seminars
+• Excursions & study tours
+10. Hostel Life
+• Daily routine (morning to night)
+• Evening activities
+• Wardens, counselors, safety
+• Celebrations & traditions
+11. Alumni
+• Success stories
+• Alumni association details
+• Notable alumni profiles
+12. Gallery & Media
+• Photo gallery (campus, events, hostel)
+• Video gallery
+• Virtual campus tour (360° optional)
+13. Co-curricular & Extra-curricular
+• Clubs & Societies (Science, Arts, Music, Literature)
+• Cultural activities (dance, drama, music, painting)
+• NCC / Scouts / Social Service activities
+14. Resources
+• Academic calendar
+• Downloads (forms, fee structure, brochure)
+• Parent & student login (if applicable)
+15. Contact & Location
+• Address, phone, email
+• Google map integration
+• Office hours
+16. Policies & Rules
+• Discipline, attendance, uniform
+• Safety & anti-bullying policy
+• Examination & promotion policy
+17. Downloads & Links
+• Prospectus / Brochure
+• Syllabus PDFs
+• Transport routes (if applicable)
+• Holiday list
+⸻
+🛠️ Technical Requirements
+• Built in React (with React Router for navigation).
+• i18next (or similar) for language support (English ↔ Marathi).
+• Use Material UI / Tailwind CSS for UI components.
+• Responsive navbar with dropdowns for all main sections.
+• Gallery should support lightbox view.
+• News/Events section should allow dynamic updates (dummy JSON API or CMS-ready).
+• Deploy-ready (Vercel/Netlify).
+⸻
+⚡ Output should be:
+• Full React project structure with components for each section.
+• English content filled in, with placeholders for Marathi translation.
+• Saffron-themed styling applied consistently.
