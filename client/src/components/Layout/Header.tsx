@@ -44,28 +44,28 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
       {/* Main Navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           {/* Logo and School Name */}
           <Link href="/" className="flex items-center space-x-4" data-testid="school-logo">
-            <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-              <GraduationCap className="text-white text-xl" />
+            <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center">
+              <GraduationCap className="text-white text-2xl" />
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">{t('school.name')}</h1>
-              <p className="text-sm text-muted-foreground">{t('school.location')}</p>
+              <h1 className="text-2xl font-bold text-foreground">{t('school.name')}</h1>
+              <p className="text-base text-muted-foreground">{t('school.location')}</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-8">
             {navigationItems.map((item, index) => (
               <div key={index} className="relative group">
                 {item.items ? (
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary font-medium transition-colors">
+                    <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary font-medium transition-colors text-lg">
                       {item.label}
-                      <ChevronDown className="ml-1 h-3 w-3" />
+                      <ChevronDown className="ml-1 h-4 w-4" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="w-48">
                       {item.items.map((subItem, subIndex) => (
@@ -80,7 +80,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href!}
-                    className={`text-foreground hover:text-primary font-medium transition-colors ${
+                    className={`text-foreground hover:text-primary font-medium transition-colors text-lg ${
                       location === item.href ? 'text-primary' : ''
                     }`}
                     data-testid={`nav-${item.label.toLowerCase()}`}
@@ -108,13 +108,13 @@ export default function Header() {
                   <div key={index}>
                     {item.items ? (
                       <>
-                        <div className="font-medium text-foreground py-2">{item.label}</div>
+                        <div className="font-medium text-foreground py-2 text-lg">{item.label}</div>
                         <div className="ml-4 space-y-2">
                           {item.items.map((subItem, subIndex) => (
                             <Link
                               key={subIndex}
                               href={subItem.href}
-                              className="block py-2 text-muted-foreground hover:text-primary"
+                              className="block py-2 text-muted-foreground hover:text-primary text-base"
                               onClick={() => setIsOpen(false)}
                             >
                               {subItem.label}
@@ -125,7 +125,7 @@ export default function Header() {
                     ) : (
                       <Link
                         href={item.href!}
-                        className="block py-2 text-foreground hover:text-primary font-medium"
+                        className="block py-2 text-foreground hover:text-primary font-medium text-lg"
                         onClick={() => setIsOpen(false)}
                       >
                         {item.label}

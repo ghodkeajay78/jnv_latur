@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -37,7 +38,7 @@
   --sidebar-accent-foreground: hsl(222, 84%, 5%);
   --sidebar-border: hsl(214, 32%, 91%);
   --sidebar-ring: hsl(221, 83%, 53%);
-  --font-sans: Inter, system-ui, sans-serif;
+  --font-sans: 'Noto Sans Devanagari', Inter, system-ui, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 0.5rem;
@@ -127,4 +128,20 @@
   .mobile-menu.active {
     display: block;
   }
+}
+
+/* Marathi/Devanagari text styling */
+[lang="mr"], .marathi-text {
+  font-family: 'Noto Sans Devanagari', Inter, system-ui, sans-serif;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+}
+
+/* Ensure proper spacing for large Marathi text */
+h1[lang="mr"], .marathi-text h1 {
+  line-height: 1.4;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
 }

@@ -12,7 +12,7 @@ import { schoolInfo, newsItems, galleryItems } from '@/data/content';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Auto-rotate carousel
@@ -122,17 +122,25 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="slide-in-up space-y-8">
                 <div className="space-y-6">
-                <h1 className="text-5xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="hero-title">
+                <h1 
+                  className={`text-5xl lg:text-7xl font-bold leading-relaxed py-2 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent ${language === 'mr' ? 'marathi-text' : ''}`}
+                  lang={language}
+                  data-testid="hero-title"
+                >
                   {t('hero.title')}
                 </h1>
-                <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed" data-testid="hero-description">
+                <p 
+                  className={`text-xl lg:text-2xl text-gray-700 leading-relaxed ${language === 'mr' ? 'marathi-text' : ''}`}
+                  lang={language}
+                  data-testid="hero-description"
+                >
                   {t('hero.description', { schoolName: t('school.name'), location: t('school.location') })}
                 </p>
                 </div>
                 <div className="flex flex-wrap gap-6">
-                  <Link href="/admissions">
-                    <Button size="lg" className="bg-orange-600 text-white hover:bg-orange-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg font-semibold" data-testid="hero-apply-button">
-                      {t('common.apply')}
+                  <Link href="/about">
+                    <Button size="lg" className="bg-orange-600 text-white hover:bg-orange-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg font-semibold" data-testid="hero-read-more-button">
+                      {t('common.readMore')}
                     </Button>
                   </Link>
                   <Link href="/gallery">
@@ -450,7 +458,7 @@ export default function Home() {
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="about-title">{t('about.title', { schoolName: t('school.name') })}</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  {t('about.description', { established: schoolInfo.established, schoolName: t('school.name') })} 
+                  {t('about.description', { established: schoolInfo.established.toString(), schoolName: t('school.name') })} 
                   intellectual, physical, and emotional development.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
