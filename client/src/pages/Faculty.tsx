@@ -121,8 +121,8 @@ export default function Faculty() {
 
   const trainingPrograms = [
     {
-      program: 'CBSE Teacher Training',
-      description: 'Regular training programs by CBSE for curriculum updates and teaching methodologies',
+      program: 'SSC Board Teacher Training',
+      description: 'Regular training programs by SSC Board for curriculum updates and teaching methodologies',
       frequency: 'Bi-annual',
     },
     {
@@ -196,7 +196,7 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="faculty-hero-title">
               Our Distinguished Faculty
             </h1>
@@ -241,7 +241,7 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               {facultyStats.map((stat, index) => (
                 <Card key={index}>
@@ -295,7 +295,7 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="departments-title">
                 Faculty by Departments
@@ -385,7 +385,7 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="training-title">
@@ -413,7 +413,7 @@ export default function Faculty() {
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/Teachers.jpg"
                   alt="Faculty training and professional development session"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="training-image"
@@ -458,7 +458,7 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="achievements-title">
                 Faculty Achievements
@@ -526,11 +526,11 @@ export default function Faculty() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/ParentsMeet2.jpg"
                   alt="Teacher counseling and guiding students"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="counseling-image"
@@ -586,7 +586,7 @@ export default function Faculty() {
 
         {/* Teaching Philosophy */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8" data-testid="philosophy-title">
               Our Teaching Philosophy
             </h2>

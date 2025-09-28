@@ -22,24 +22,17 @@ export default function Academics() {
     {
       level: 'Classes IX-X',
       title: 'Secondary Level',
-      description: 'Comprehensive CBSE curriculum with board examination preparation and career guidance.',
+      description: 'Comprehensive SSC Board curriculum with board examination preparation and career guidance.',
       subjects: ['Mathematics', 'Science', 'Social Science', 'English', 'Hindi', 'Marathi', 'Information Technology'],
       color: 'border-l-green-500',
-    },
-    {
-      level: 'Classes XI-XII',
-      title: 'Senior Secondary',
-      description: 'Specialized streams with advanced subject combinations for higher education preparation.',
-      subjects: ['Science Stream', 'Commerce Stream', 'Humanities Stream'],
-      color: 'border-l-purple-500',
     },
   ];
 
   const keyFeatures = [
     {
       icon: CheckCircle,
-      title: 'Trilingual Education',
-      description: 'English, Hindi, and Marathi language instruction for comprehensive communication skills.',
+      title: 'Marathi & Semi-English Medium',
+      description: 'Education offered in Marathi and semi-English medium to cater to diverse learning needs.',
     },
     {
       icon: BookOpen,
@@ -197,7 +190,7 @@ export default function Academics() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="curriculum-title">
                 Curriculum Overview
@@ -273,7 +266,7 @@ export default function Academics() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="features-title">
                 Key Academic Features
@@ -337,7 +330,7 @@ export default function Academics() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="subjects-title">
                 Subject Areas
@@ -401,13 +394,13 @@ export default function Academics() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="streams-title">
                 Senior Secondary Streams
               </h2>
               <p className="text-lg text-muted-foreground">
-                Specialized academic tracks for Classes XI-XII
+                Specialized academic tracks for Classes VIII-X
               </p>
             </div>
 
@@ -487,7 +480,7 @@ export default function Academics() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="assessment-title">
@@ -515,7 +508,7 @@ export default function Academics() {
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/Study2.jpg"
                   alt="Students taking examination in classroom"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="assessment-image"
@@ -527,7 +520,7 @@ export default function Academics() {
 
         {/* Quick Stats */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-subjects">25+</div>

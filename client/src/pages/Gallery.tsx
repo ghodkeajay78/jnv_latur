@@ -19,63 +19,63 @@ export default function Gallery() {
       id: '4',
       title: 'Sports Complex',
       description: 'Modern sports facilities including football ground, basketball court, and athletics track.',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/Classroom1.jpg',
       category: 'campus' as const,
     },
     {
       id: '5',
       title: 'Cultural Performance',
       description: 'Students performing traditional dance during annual cultural festival.',
-      image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/Culture2.jpg',
       category: 'cultural' as const,
     },
     {
       id: '6',
       title: 'Hostel Facilities',
       description: 'Clean and comfortable dormitory rooms with study areas.',
-      image: 'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/Classroom3.jpg',
       category: 'campus' as const,
     },
     {
       id: '7',
       title: 'Science Exhibition',
       description: 'Students showcasing innovative science projects and experiments.',
-      image: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'activities' as const,
     },
     {
       id: '8',
       title: 'Annual Sports Meet',
       description: 'Inter-house athletics competition with students participating in various events.',
-      image: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'sports' as const,
     },
     {
       id: '9',
       title: 'Independence Day Celebration',
       description: 'Flag hoisting ceremony and patriotic cultural programs.',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'events' as const,
     },
     {
       id: '10',
       title: 'Computer Laboratory',
       description: 'Modern computer lab with latest hardware and software for student learning.',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'campus' as const,
     },
     {
       id: '11',
       title: 'Music Concert',
       description: 'Students performing in the annual music concert showcasing various instruments.',
-      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      image: '/images/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'cultural' as const,
     },
     {
       id: '12',
       title: 'Graduation Ceremony',
-      description: 'Class XII students celebrating their graduation with teachers and parents.',
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      description: 'Class X students celebrating their graduation with teachers and parents.',
+      image: '/images/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       category: 'events' as const,
     },
   ];
@@ -85,28 +85,28 @@ export default function Gallery() {
       id: '1',
       title: 'School Virtual Tour',
       description: 'Complete virtual tour of JNV Latur campus and facilities',
-      thumbnail: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      thumbnail: '/images/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       duration: '8:45',
     },
     {
       id: '2',
       title: 'Annual Day Highlights',
       description: 'Best moments from the annual day celebration 2023',
-      thumbnail: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      thumbnail: '/images/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       duration: '12:30',
     },
     {
       id: '3',
       title: 'Science Fair 2023',
       description: 'Student innovations and experiments at the science exhibition',
-      thumbnail: 'https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      thumbnail: '/images/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       duration: '6:15',
     },
     {
       id: '4',
       title: 'Sports Day Championship',
       description: 'Exciting moments from the inter-house sports competition',
-      thumbnail: 'https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
+      thumbnail: '/images/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400',
       duration: '15:20',
     },
   ];
@@ -210,7 +210,7 @@ export default function Gallery() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="photos" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
@@ -324,7 +324,7 @@ export default function Gallery() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="virtual-tour-title">
                 360° Virtual Campus Tour
@@ -394,7 +394,7 @@ export default function Gallery() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="featured-collections-title">
                 Featured Collections
@@ -408,7 +408,7 @@ export default function Gallery() {
               <Card className="group cursor-pointer hover:shadow-lg transition-shadow">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+                    src="/images/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
                     alt="Graduation moments collection"
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
                     data-testid="collection-graduation"
@@ -428,7 +428,7 @@ export default function Gallery() {
               <Card className="group cursor-pointer hover:shadow-lg transition-shadow">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+                    src="/images/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
                     alt="Sports championships collection"
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
                     data-testid="collection-sports"
@@ -448,7 +448,7 @@ export default function Gallery() {
               <Card className="group cursor-pointer hover:shadow-lg transition-shadow">
                 <div className="relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
+                    src="/images/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=300"
                     alt="Cultural festivals collection"
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform"
                     data-testid="collection-cultural"
@@ -470,7 +470,7 @@ export default function Gallery() {
 
         {/* Gallery Statistics */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="total-photos">500+</div>

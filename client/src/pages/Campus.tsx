@@ -128,7 +128,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="campus-hero-title">
               Campus & Infrastructure
             </h1>
@@ -173,7 +173,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="overview-title">
@@ -217,7 +217,7 @@ export default function Campus() {
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/Gate.jpg"
                   alt="Aerial view of JNV Latur campus"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="campus-overview-image"
@@ -262,7 +262,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="facilities-title">
                 Campus Facilities
@@ -337,7 +337,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="infrastructure-title">
                 Infrastructure Details
@@ -406,7 +406,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="hostel" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="hostel-mess-title">
@@ -422,7 +422,7 @@ export default function Campus() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <img
-                      src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                      src="/images/Classroom3.jpg"
                       alt="Comfortable hostel dormitory rooms"
                       className="rounded-xl shadow-lg w-full h-auto mb-6"
                       data-testid="hostel-image"
@@ -493,7 +493,7 @@ export default function Campus() {
                   </div>
                   <div>
                     <img
-                      src="https://images.unsplash.com/photo-1567521464027-f127ff144326?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                      src="/images/ground2.jpg"
                       alt="Clean and modern mess hall dining area"
                       className="rounded-xl shadow-lg w-full h-auto"
                       data-testid="mess-image"
@@ -540,7 +540,7 @@ export default function Campus() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="gallery-title">
                 Campus Gallery
@@ -555,7 +555,7 @@ export default function Campus() {
 
         {/* Campus Statistics */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-area">25</div>

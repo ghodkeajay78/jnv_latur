@@ -70,10 +70,10 @@
   "school": {
     "name": "Jankalyan Nivasi Vidyalay",
     "location": "Latur, Maharashtra",
-    "tagline": "Excellence in Education Since 1986",
-    "established": "1986",
-    "affiliation": "CBSE",
-    "classes": "VI to XII",
+    "tagline": "Excellence in Education Since 1993",
+    "established": "1993",
+    "affiliation": "SSC Board",
+    "classes": "V to X",
     "students": "580",
     "faculty": "45",
     "phone": "+91-2382-123456",
@@ -85,7 +85,7 @@
     "values": "Excellence, Integrity, Innovation, Compassion"
   },
   "hero": {
-    "title": "Excellence in Education Since 1986",
+    "title": "Excellence in Education Since 1993",
     "description": "Nurturing young minds to become tomorrow's leaders at {schoolName}, {location}",
     "applyButton": "Apply Now",
     "tourButton": "Virtual Tour"
@@ -155,14 +155,14 @@
     "learnMore": "Learn More About Us",
     "milestones": {
       "establishment": {
-        "year": "1986",
+        "year": "1993",
         "event": "School Establishment",
-        "description": "Jankalyan Nivasi Vidyalay, Latur was established as a residential school."
+        "description": "Jankalyan Nivasi Vidyalay, Latur was established on December 5th, 1993 as a residential school."
       },
-      "cbse": {
-        "year": "1990",
-        "event": "CBSE Affiliation",
-        "description": "School got affiliated with Central Board of Secondary Education."
+      "ssc": {
+        "year": "1995",
+        "event": "SSC Board Affiliation",
+        "description": "School got affiliated with Maharashtra State Board of Secondary and Higher Secondary Education."
       },
       "expansion": {
         "year": "2000",

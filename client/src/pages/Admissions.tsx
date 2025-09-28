@@ -22,7 +22,7 @@ export default function Admissions() {
     {
       step: 2,
       title: 'Entrance Test',
-      description: 'Jawahar Navodaya Vidyalaya Selection Test (JNVST) for Class VI admission. Test date: April 20, 2024.',
+      description: 'Jankalyan Nivasi Vidyalay Selection Test (JNVST) for Class V admission. Test date: April 20, 2024.',
       duration: 'April 20, 2024',
     },
     {
@@ -52,22 +52,16 @@ export default function Admissions() {
 
   const eligibilityCriteria = [
     {
-      class: 'Class VI',
-      age: '9-13 years as on 30th April',
-      qualification: 'Passed Class V from recognized school',
+      class: 'Class V',
+      age: '9-11 years as on 30th April',
+      qualification: 'Passed Class IV from recognized school',
       requirements: ['Rural area domicile', 'Family income below specified limit'],
     },
     {
-      class: 'Class IX',
-      age: '13-16 years as on 30th April',
-      qualification: 'Passed Class VIII from Navodaya Vidyalaya',
-      requirements: ['Transfer from other JNV', 'Lateral entry test'],
-    },
-    {
-      class: 'Class XI',
-      age: '15-18 years as on 30th April',
-      qualification: 'Passed Class X with minimum 55% marks',
-      requirements: ['Science/Commerce/Arts streams', 'Merit-based selection'],
+      class: 'Class VI',
+      age: '10-12 years as on 30th April',
+      qualification: 'Passed Class V from recognized school',
+      requirements: ['Rural area domicile', 'Family income below specified limit'],
     },
   ];
 
@@ -206,7 +200,7 @@ export default function Admissions() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="process-title">
                 Admission Process
@@ -284,7 +278,7 @@ export default function Admissions() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="eligibility" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="requirements-title">
@@ -403,7 +397,7 @@ export default function Admissions() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Fee Structure */}
               <div className="lg:col-span-2">
@@ -555,7 +549,7 @@ export default function Admissions() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="faq-title">
                 Frequently Asked Questions
@@ -570,7 +564,7 @@ export default function Admissions() {
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-2">What is the selection criteria for JNV admission?</h3>
                   <p className="text-muted-foreground text-sm">
-                    Selection is based on the Jawahar Navodaya Vidyalaya Selection Test (JNVST) performance, 
+                    Selection is based on the Jankalyan Nivasi Vidyalay Selection Test (JNVST) performance, 
                     followed by document verification and medical examination.
                   </p>
                 </CardContent>

@@ -57,24 +57,52 @@ export default function Home() {
 
   const heroImages = [
     {
-      src: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
-      alt: 'School campus with modern buildings and students'
+      src: '/images/Gate.jpg',
+      alt: 'JNV Latur main entrance gate and campus view'
     },
     {
-      src: 'https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
-      alt: 'Panoramic view of school campus with main building'
+      src: '/images/Culture.jpg',
+      alt: 'Cultural activities and events at JNV Latur'
     },
     {
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
-      alt: 'Modern classroom with smart boards'
+      src: '/images/Acadmics_building2.jpg',
+      alt: 'Academic buildings and infrastructure at JNV Latur'
     },
     {
-      src: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
-      alt: 'Science laboratory with students'
+      src: '/images/Assembly4.jpg',
+      alt: 'Assembly hall and school gatherings at JNV Latur'
     },
     {
-      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600',
-      alt: 'School library with students studying'
+      src: '/images/Classroom2.jpg',
+      alt: 'Modern classrooms and learning environment at JNV Latur'
+    },
+    {
+      src: '/images/ComputerLab.jpg',
+      alt: 'Computer laboratory with modern technology at JNV Latur'
+    },
+    {
+      src: '/images/Study.jpg',
+      alt: 'Students engaged in study sessions at JNV Latur'
+    },
+    {
+      src: '/images/Exercise2.jpg',
+      alt: 'Physical activities and exercises at JNV Latur'
+    },
+    {
+      src: '/images/Donation.jpg',
+      alt: 'Community service and donation activities at JNV Latur'
+    },
+    {
+      src: '/images/Library.jpg',
+      alt: 'Central library with extensive collection of books at JNV Latur'
+    },
+    {
+      src: '/images/ScienceLaboratory.jpg',
+      alt: 'Science laboratory for practical experiments at JNV Latur'
+    },
+    {
+      src: '/images/Culture2.jpg',
+      alt: 'Cultural performances and celebrations at JNV Latur'
     }
   ];
 
@@ -118,33 +146,33 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 py-8 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div className="slide-in-up space-y-8">
-                <div className="space-y-6">
+          <div className="w-4/5 mx-auto px-4 py-6 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="slide-in-up space-y-6">
+                <div className="space-y-4">
                 <h1 
-                  className={`text-5xl lg:text-7xl font-bold leading-relaxed py-2 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent ${language === 'mr' ? 'marathi-text' : ''}`}
+                  className={`text-3xl lg:text-5xl font-bold leading-relaxed py-1 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent ${language === 'mr' ? 'marathi-text' : ''}`}
                   lang={language}
                   data-testid="hero-title"
                 >
                   {t('hero.title')}
                 </h1>
                 <p 
-                  className={`text-xl lg:text-2xl text-gray-700 leading-relaxed ${language === 'mr' ? 'marathi-text' : ''}`}
+                  className={`text-base lg:text-lg text-gray-700 leading-relaxed ${language === 'mr' ? 'marathi-text' : ''}`}
                   lang={language}
                   data-testid="hero-description"
                 >
                   {t('hero.description', { schoolName: t('school.name'), location: t('school.location') })}
                 </p>
                 </div>
-                <div className="flex flex-wrap gap-6">
+                <div className="flex flex-wrap gap-4">
                   <Link href="/about">
-                    <Button size="lg" className="bg-orange-600 text-white hover:bg-orange-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg font-semibold" data-testid="hero-read-more-button">
+                    <Button size="lg" className="bg-orange-600 text-white hover:bg-orange-700 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-6 py-3 text-base font-semibold" data-testid="hero-read-more-button">
                       {t('common.readMore')}
                     </Button>
                   </Link>
                   <Link href="/gallery">
-                    <Button size="lg" variant="outline" className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-8 py-4 text-lg font-semibold" data-testid="hero-tour-button">
+                    <Button size="lg" variant="outline" className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-6 py-3 text-base font-semibold" data-testid="hero-tour-button">
                       {t('hero.tourButton')}
                     </Button>
                   </Link>
@@ -164,7 +192,7 @@ export default function Home() {
                             <img
                               src={image.src}
                               alt={image.alt}
-                              className="w-full h-[400px] object-cover transform hover:scale-105 transition-transform duration-500"
+                              className="w-full h-[300px] object-cover transform hover:scale-105 transition-transform duration-500"
                               data-testid={`hero-image-${index}`}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
@@ -186,6 +214,63 @@ export default function Home() {
         </section>
 
         {/* Quick Links */}
+        <section className="py-8 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
+          {/* Education Doodles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {/* Book Doodle */}
+            <div className="absolute top-20 left-20 text-orange-200/30 text-6xl transform rotate-12">
+              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+              </svg>
+            </div>
+            {/* Pencil Doodle */}
+            <div className="absolute top-40 right-32 text-orange-200/30 text-5xl transform -rotate-12">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+              </svg>
+            </div>
+            {/* Graduation Cap Doodle */}
+            <div className="absolute bottom-32 left-16 text-orange-200/30 text-7xl transform rotate-6">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18M12,3L1,9L12,15L21,10.09V17H23V9L12,3Z"/>
+              </svg>
+            </div>
+            {/* Lightbulb Doodle */}
+            <div className="absolute top-60 right-20 text-orange-200/30 text-4xl transform -rotate-6">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
+              </svg>
+            </div>
+            {/* Star Doodle */}
+            <div className="absolute bottom-20 right-24 text-orange-200/30 text-5xl transform rotate-12">
+              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+              </svg>
+            </div>
+          </div>
+          <div className="w-4/5 mx-auto px-4 relative z-10">
+            <div className="grid md:grid-cols-3 gap-6">
+              {quickLinks.map((link, index) => (
+                <Card key={index} className="group hover:shadow-md transition-shadow">
+                  <CardContent className="p-4">
+                    <div className={`w-10 h-10 ${link.color} rounded-lg flex items-center justify-center mb-3`}>
+                      <link.icon className="text-white text-lg" />
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">{link.title}</h3>
+                    <p className="text-muted-foreground mb-3 text-sm">{link.description}</p>
+                    <Link href={link.href}>
+                      <Button variant="link" className="p-0 h-auto font-semibold text-sm" data-testid={`quick-link-${link.title.toLowerCase()}`}>
+                        {t('common.learnMore')} →
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Campus Life Photo Slider */}
         <section className="py-12 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
           {/* Education Doodles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -220,69 +305,12 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid md:grid-cols-3 gap-8">
-              {quickLinks.map((link, index) => (
-                <Card key={index} className="group hover:shadow-md transition-shadow">
-                  <CardContent className="p-6">
-                    <div className={`w-12 h-12 ${link.color} rounded-lg flex items-center justify-center mb-4`}>
-                      <link.icon className="text-white text-xl" />
-                    </div>
-                    <h3 className="text-xl font-semibold mb-2">{link.title}</h3>
-                    <p className="text-muted-foreground mb-4">{link.description}</p>
-                    <Link href={link.href}>
-                      <Button variant="link" className="p-0 h-auto font-semibold" data-testid={`quick-link-${link.title.toLowerCase()}`}>
-                        {t('common.learnMore')} →
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Campus Life Photo Slider */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
-          {/* Education Doodles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Book Doodle */}
-            <div className="absolute top-20 left-20 text-orange-200/30 text-6xl transform rotate-12">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-              </svg>
-            </div>
-            {/* Pencil Doodle */}
-            <div className="absolute top-40 right-32 text-orange-200/30 text-5xl transform -rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-              </svg>
-            </div>
-            {/* Graduation Cap Doodle */}
-            <div className="absolute bottom-32 left-16 text-orange-200/30 text-7xl transform rotate-6">
-              <svg width="70" height="70" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18M12,3L1,9L12,15L21,10.09V17H23V9L12,3Z"/>
-              </svg>
-            </div>
-            {/* Lightbulb Doodle */}
-            <div className="absolute top-60 right-20 text-orange-200/30 text-4xl transform -rotate-6">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
-              </svg>
-            </div>
-            {/* Star Doodle */}
-            <div className="absolute bottom-20 right-24 text-orange-200/30 text-5xl transform rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
-              </svg>
-            </div>
-          </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="campus-life-title">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-3" data-testid="campus-life-title">
                 {t('campusLife.title', { schoolName: t('school.name') })}
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 {t('campusLife.description')}
               </p>
             </div>
@@ -291,7 +319,7 @@ export default function Home() {
         </section>
 
         {/* Notice Board & Latest News */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
+        <section className="py-12 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
           {/* Education Doodles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {/* Book Doodle */}
@@ -325,26 +353,26 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-3 gap-8">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
+            <div className="grid lg:grid-cols-3 gap-6">
               {/* News Section */}
               <div className="lg:col-span-2">
-                <h2 className="text-3xl font-bold mb-6" data-testid="news-title">{t('news.title')}</h2>
-                <div className="space-y-4">
+                <h2 className="text-2xl font-bold mb-4" data-testid="news-title">{t('news.title')}</h2>
+                <div className="space-y-3">
                   {newsItems.map((item) => (
                     <Card key={item.id}>
-                      <CardContent className="p-6">
+                      <CardContent className="p-4">
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
                             <Badge 
                               variant={item.type === 'announcement' ? 'default' : item.type === 'event' ? 'secondary' : 'outline'} 
-                              className="mb-2"
+                              className="mb-2 text-xs"
                               data-testid={`news-badge-${item.id}`}
                             >
                               {item.type.toUpperCase()}
                             </Badge>
-                            <h3 className="font-semibold mb-2" data-testid={`news-title-${item.id}`}>{item.title}</h3>
-                            <p className="text-muted-foreground text-sm mb-3">{item.description}</p>
+                            <h3 className="font-semibold mb-2 text-sm" data-testid={`news-title-${item.id}`}>{item.title}</h3>
+                            <p className="text-muted-foreground text-xs mb-2">{item.description}</p>
                             <div className="flex items-center text-xs text-muted-foreground">
                               <Calendar className="w-3 h-3 mr-1" />
                               <span>{new Date(item.date).toLocaleDateString()}</span>
@@ -355,9 +383,9 @@ export default function Home() {
                     </Card>
                   ))}
                 </div>
-                <div className="mt-6">
+                <div className="mt-4">
                   <Link href="/news">
-                    <Button variant="link" className="p-0 h-auto font-semibold" data-testid="view-all-news">
+                    <Button variant="link" className="p-0 h-auto font-semibold text-sm" data-testid="view-all-news">
                       {t('common.viewAll')} News →
                     </Button>
                   </Link>
@@ -365,48 +393,21 @@ export default function Home() {
               </div>
 
               {/* Quick Info & Events Panel */}
-              <div className="space-y-6">
-                <Card>
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold mb-4">Quick Information</h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Established:</span>
-                        <span>{schoolInfo.established}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Affiliation:</span>
-                        <span>{schoolInfo.affiliation}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Classes:</span>
-                        <span>{schoolInfo.classes}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Students:</span>
-                        <span>{schoolInfo.students}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-muted-foreground">Faculty:</span>
-                        <span>{schoolInfo.faculty}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+              <div className="space-y-4">
 
                 <Card className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold mb-4 text-lg">Upcoming Events</h3>
-                    <div className="space-y-4 text-sm">
-                      <div className="border-l-2 border-white/30 pl-3">
+                  <CardContent className="p-4">
+                    <h3 className="font-semibold mb-3 text-base">Upcoming Events</h3>
+                    <div className="space-y-3 text-xs">
+                      <div className="border-l-2 border-white/30 pl-2">
                         <div className="font-medium">Republic Day Celebration</div>
                         <div className="opacity-90">January 26, 2024</div>
                       </div>
-                      <div className="border-l-2 border-white/30 pl-3">
+                      <div className="border-l-2 border-white/30 pl-2">
                         <div className="font-medium">Parent-Teacher Meeting</div>
                         <div className="opacity-90">February 3, 2024</div>
                       </div>
-                      <div className="border-l-2 border-white/30 pl-3">
+                      <div className="border-l-2 border-white/30 pl-2">
                         <div className="font-medium">Annual Sports Meet</div>
                         <div className="opacity-90">February 15-17, 2024</div>
                       </div>
@@ -419,7 +420,7 @@ export default function Home() {
         </section>
 
         {/* About Section Preview */}
-        <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
+        <section className="py-12 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
           {/* Education Doodles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {/* Book Doodle */}
@@ -453,37 +454,37 @@ export default function Home() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="about-title">{t('about.title', { schoolName: t('school.name') })}</h2>
-                <p className="text-lg text-muted-foreground mb-6">
+                <h2 className="text-2xl lg:text-3xl font-bold mb-4" data-testid="about-title">{t('about.title', { schoolName: t('school.name') })}</h2>
+                <p className="text-base text-muted-foreground mb-4">
                   {t('about.description', { established: schoolInfo.established.toString(), schoolName: t('school.name') })} 
                   intellectual, physical, and emotional development.
                 </p>
-                <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div>
-                    <h3 className="font-semibold mb-2">Our Mission</h3>
-                    <p className="text-sm text-muted-foreground">{t('school.mission')}</p>
+                    <h3 className="font-semibold mb-1.5 text-sm">Our Mission</h3>
+                    <p className="text-xs text-muted-foreground">{t('school.mission')}</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Our Vision</h3>
-                    <p className="text-sm text-muted-foreground">{t('school.vision')}</p>
+                    <h3 className="font-semibold mb-1.5 text-sm">Our Vision</h3>
+                    <p className="text-xs text-muted-foreground">{t('school.vision')}</p>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   {stats.map((stat, index) => (
-                    <div key={index} className="text-center p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg">
-                      <div className="text-3xl font-bold text-blue-600 mb-2" data-testid={`stat-value-${index}`}>{stat.value}</div>
-                      <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
+                    <div key={index} className="text-center p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg">
+                      <div className="text-xl font-bold text-blue-600 mb-1" data-testid={`stat-value-${index}`}>{stat.value}</div>
+                      <div className="text-xs text-gray-600 font-medium">{stat.label}</div>
                     </div>
                   ))}
                 </div>
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Panoramic view of JNV Latur campus with main administrative building"
+                  src="/images/Gate.jpg"
+                  alt="JNV Latur main entrance gate and campus view"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="about-image"
                 />

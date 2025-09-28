@@ -5,7 +5,7 @@ import { Trophy, Medal, Star, Award, TrendingUp, Users, BookOpen, Palette } from
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import { useTranslation } from '@/lib/i18n';
-import { achievements } from '@/data/content';
+import { achievements, historicalResults } from '@/data/content';
 
 export default function Achievements() {
   const { t } = useTranslation();
@@ -13,7 +13,7 @@ export default function Achievements() {
   const academicResults = [
     {
       year: '2023-24',
-      class: 'Class XII',
+      class: 'Class X',
       passRate: '98.5%',
       topper: 'Arjun Patil',
       topperMarks: '97.8%',
@@ -31,7 +31,7 @@ export default function Achievements() {
     },
     {
       year: '2022-23',
-      class: 'Class XII',
+      class: 'Class X',
       passRate: '97.8%',
       topper: 'Rakesh Kumar',
       topperMarks: '96.4%',
@@ -205,7 +205,7 @@ export default function Achievements() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="achievements-hero-title">
               Our Achievements
             </h1>
@@ -250,7 +250,7 @@ export default function Achievements() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               <Card className="text-center">
                 <CardContent className="p-6">
@@ -258,7 +258,7 @@ export default function Achievements() {
                     <BookOpen className="w-8 h-8 text-blue-600" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2" data-testid="academic-pass-rate">98.5%</div>
-                  <div className="text-muted-foreground">Class XII Pass Rate 2024</div>
+                  <div className="text-muted-foreground">Class X Pass Rate 2024</div>
                 </CardContent>
               </Card>
 
@@ -330,7 +330,7 @@ export default function Achievements() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="categories-title">
                 Achievement Categories
@@ -341,11 +341,12 @@ export default function Achievements() {
             </div>
 
             <Tabs defaultValue="academic" className="max-w-6xl mx-auto">
-              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 mb-8">
+              <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
                 <TabsTrigger value="academic">Academic</TabsTrigger>
                 <TabsTrigger value="sports">Sports</TabsTrigger>
                 <TabsTrigger value="cultural">Cultural</TabsTrigger>
                 <TabsTrigger value="recognition">Recognition</TabsTrigger>
+                <TabsTrigger value="historical">Historical Results</TabsTrigger>
               </TabsList>
 
               <TabsContent value="academic" className="space-y-6">
@@ -515,6 +516,70 @@ export default function Achievements() {
                   ))}
                 </div>
               </TabsContent>
+
+              <TabsContent value="historical" className="space-y-6">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold mb-4">Year-wise Result Percentage (%)</h3>
+                  <p className="text-muted-foreground">
+                    Historical performance data showing the school's journey from establishment to excellence
+                  </p>
+                </div>
+                
+                <div className="grid gap-4 max-h-96 overflow-y-auto">
+                  {historicalResults.map((result, index) => (
+                    <Card key={index} className="hover:shadow-md transition-shadow">
+                      <CardContent className="p-4">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                              <TrendingUp className="w-6 h-6 text-primary" />
+                            </div>
+                            <div>
+                              <h4 className="font-semibold text-lg">{result.year}</h4>
+                              <p className="text-sm text-muted-foreground">Academic Year</p>
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="text-2xl font-bold text-primary">{result.percentage}%</div>
+                            <div className="text-sm text-muted-foreground">Pass Rate</div>
+                          </div>
+                        </div>
+                        <div className="mt-3">
+                          <div className="w-full bg-gray-200 rounded-full h-2">
+                            <div 
+                              className="bg-gradient-to-r from-primary to-primary/80 h-2 rounded-full transition-all duration-500"
+                              style={{ width: `${Math.min(result.percentage, 100)}%` }}
+                            ></div>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                <Card className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">
+                  <CardContent className="p-6">
+                    <h4 className="font-bold text-lg mb-4 flex items-center">
+                      <Star className="w-5 h-5 text-yellow-500 mr-2" />
+                      Key Insights
+                    </h4>
+                    <div className="space-y-2 text-sm">
+                      <div className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                        <p>Most Recent Years (2012-2024): Consistently near 100%, with excellent performance maintained.</p>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p>Improvement Trend: The school's performance has shown a steep improvement after 2000, stabilizing at ~95–100% since 2001.</p>
+                      </div>
+                      <div className="flex items-start space-x-2">
+                        <div className="w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
+                        <p>Peak Consistency: Out of the last 15 years, 8 years achieved a 100% result.</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
             </Tabs>
           </div>
         </section>
@@ -554,7 +619,7 @@ export default function Achievements() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="yearwise-title">
                 Year-wise Performance
@@ -607,7 +672,7 @@ export default function Achievements() {
 
         {/* Call to Action */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="cta-title">
               Be Part of Our Success Story
             </h2>

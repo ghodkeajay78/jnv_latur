@@ -223,7 +223,7 @@ export default function Policies() {
       <main>
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="policies-hero-title">
               School Policies & Guidelines
             </h1>
@@ -235,7 +235,7 @@ export default function Policies() {
 
         {/* Policies Navigation */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <Tabs defaultValue="discipline" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
@@ -451,7 +451,7 @@ export default function Policies() {
 
         {/* Policy Implementation */}
         <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="implementation-title">
                 Policy Implementation & Enforcement
@@ -497,7 +497,7 @@ export default function Policies() {
 
         {/* Contact for Policies */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="policy-contact-title">
               Questions About Our Policies?
             </h2>

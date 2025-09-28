@@ -34,14 +34,14 @@ export default function About() {
 
   const milestones = [
     {
-      year: '1986',
+      year: '1993',
       event: 'School Establishment',
-      description: 'Jankalyan Nivasi Vidyalay, Latur was established as a residential school.',
+      description: 'Jankalyan Nivasi Vidyalay, Latur was established on December 5th, 1993 as a residential school.',
     },
     {
-      year: '1990',
-      event: 'First Batch Graduation',
-      description: 'The first batch of students successfully completed their education.',
+      year: '1995',
+      event: 'SSC Board Affiliation',
+      description: 'School got affiliated with Maharashtra State Board of Secondary and Higher Secondary Education.',
     },
     {
       year: '2000',
@@ -60,12 +60,6 @@ export default function About() {
     },
   ];
 
-  const stats = [
-    { value: '38+', label: 'Years of Excellence', icon: Award },
-    { value: '5000+', label: 'Alumni', icon: Users },
-    { value: '580+', label: 'Current Students', icon: BookOpen },
-    { value: '98.5%', label: 'Success Rate', icon: Target },
-  ];
 
   return (
     <>
@@ -107,15 +101,15 @@ export default function About() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="about-hero-title">
+              <h1 className="text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="about-hero-title">
                 About {t('school.name')}
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed">
                 Dedicated to nurturing young minds and building future leaders through quality education and holistic development.
               </p>
-              <Badge variant="secondary" className="text-lg px-4 py-2">
+              <Badge variant="secondary" className="text-sm px-3 py-1.5">
                 Established {schoolInfo.established} • {schoolInfo.affiliation} Affiliated
               </Badge>
             </div>
@@ -158,26 +152,26 @@ export default function About() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                  alt="Students in classroom learning environment"
+                  src="/images/Gate.jpg"
+                  alt="JNV Latur main entrance gate and campus view"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="mission-image"
                 />
               </div>
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-3xl font-bold mb-4" data-testid="mission-title">Our Mission</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <h2 className="text-2xl font-bold mb-3" data-testid="mission-title">Our Mission</h2>
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {t('school.mission')}
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold mb-4" data-testid="vision-title">Our Vision</h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <h2 className="text-2xl font-bold mb-3" data-testid="vision-title">Our Vision</h2>
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {t('school.vision')}
                   </p>
                 </div>
@@ -222,7 +216,7 @@ export default function About() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="values-title">Our Core Values</h2>
               <p className="text-lg text-muted-foreground">
@@ -249,34 +243,10 @@ export default function About() {
           </div>
         </section>
 
-        {/* Statistics */}
-        <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="stats-title">Our Impact</h2>
-              <p className="text-lg text-muted-foreground">
-                Numbers that reflect our commitment to educational excellence
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-10 h-10 text-primary" />
-                  </div>
-                  <div className="text-4xl font-bold text-primary mb-2" data-testid={`stat-value-${index}`}>
-                    {stat.value}
-                  </div>
-                  <div className="text-muted-foreground font-medium">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* History Timeline */}
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="history-title">Our Journey</h2>
               <p className="text-lg text-muted-foreground">
@@ -343,7 +313,7 @@ export default function About() {
             </div>
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center">
               <h2 className="text-3xl lg:text-4xl font-bold mb-8" data-testid="recognition-title">
                 Recognition & Affiliations
@@ -354,9 +324,9 @@ export default function About() {
                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <BookOpen className="w-8 h-8 text-blue-600" />
                     </div>
-                    <h3 className="font-semibold mb-2">CBSE Affiliation</h3>
+                    <h3 className="font-semibold mb-2">SSC Board Affiliation</h3>
                     <p className="text-muted-foreground text-sm">
-                      Affiliated with Central Board of Secondary Education
+                      Affiliated with Maharashtra State Board of Secondary and Higher Secondary Education
                     </p>
                   </CardContent>
                 </Card>

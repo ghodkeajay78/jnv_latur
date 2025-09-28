@@ -47,8 +47,8 @@ export default function Resources() {
       category: 'Academic',
     },
     {
-      title: 'Syllabus - Class IX to XII',
-      description: 'Detailed curriculum for secondary and senior secondary classes.',
+      title: 'Syllabus - Class V to X',
+      description: 'Detailed curriculum for primary to secondary classes.',
       fileType: 'PDF',
       fileSize: '4.1 MB',
       category: 'Academic',
@@ -106,9 +106,9 @@ export default function Resources() {
 
   const quickLinks = [
     {
-      title: 'CBSE Official Website',
-      description: 'Central Board of Secondary Education official portal',
-      url: 'https://cbse.gov.in',
+      title: 'SSC Board Official Website',
+      description: 'Maharashtra State Board of Secondary and Higher Secondary Education official portal',
+      url: 'https://mahahsscboard.in',
       category: 'Official',
     },
     {
@@ -154,7 +154,7 @@ export default function Resources() {
       title: 'Virtual Laboratories',
       description: 'Interactive virtual labs for science experiments and simulations',
       features: ['Physics Simulations', 'Chemistry Experiments', 'Biology Models', 'Math Tools'],
-      access: 'Class IX-XII Students',
+      access: 'Class VIII-X Students',
     },
     {
       title: 'Online Test Platform',
@@ -166,7 +166,7 @@ export default function Resources() {
       title: 'Career Guidance Portal',
       description: 'Resources for career planning and higher education guidance',
       features: ['Career Assessments', 'College Information', 'Scholarship Details', 'Counseling'],
-      access: 'Class XI-XII Students',
+      access: 'Class IX-X Students',
     },
   ];
 
@@ -221,7 +221,7 @@ export default function Resources() {
       <main>
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="resources-hero-title">
               Resources & Downloads
             </h1>
@@ -233,7 +233,7 @@ export default function Resources() {
 
         {/* Resources Navigation */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <Tabs defaultValue="downloads" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
@@ -448,7 +448,7 @@ export default function Resources() {
 
         {/* Help Section */}
         <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="help-section-title">
                 Need Help?
@@ -503,7 +503,7 @@ export default function Resources() {
 
         {/* Resource Statistics */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="total-downloads">50+</div>

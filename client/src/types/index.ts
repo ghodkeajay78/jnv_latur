@@ -72,3 +72,8 @@ export interface ContactInfo {
     sunday: string;
   };
 }
+
+export interface HistoricalResult {
+  year: string;
+  percentage: number;
+}

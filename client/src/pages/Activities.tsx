@@ -225,7 +225,7 @@ export default function Activities() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="activities-hero-title">
               Co-curricular & Extra-curricular Activities
             </h1>
@@ -270,7 +270,7 @@ export default function Activities() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="clubs" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4">
@@ -505,7 +505,7 @@ export default function Activities() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="upcoming-events-title">
                 Upcoming Events
@@ -549,7 +549,7 @@ export default function Activities() {
 
         {/* Activity Statistics */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-8">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="activity-stats-title">
                 Activity Participation

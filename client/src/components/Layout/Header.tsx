@@ -44,28 +44,32 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
       {/* Main Navigation */}
-      <nav className="container mx-auto px-4 py-6">
+      <nav className="w-4/5 mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           {/* Logo and School Name */}
-          <Link href="/" className="flex items-center space-x-4" data-testid="school-logo">
-            <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center">
-              <GraduationCap className="text-white text-2xl" />
+          <Link href="/" className="flex items-center space-x-3" data-testid="school-logo">
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src="/logo.png" 
+                alt="JNV Latur Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-foreground">{t('school.name')}</h1>
-              <p className="text-base text-muted-foreground">{t('school.location')}</p>
+              <h1 className="text-lg font-bold text-foreground">{t('school.name')}</h1>
+              <p className="text-sm text-muted-foreground">{t('school.location')}</p>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             {navigationItems.map((item, index) => (
               <div key={index} className="relative group">
                 {item.items ? (
                   <DropdownMenu>
-                    <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary font-medium transition-colors text-lg">
+                    <DropdownMenuTrigger className="flex items-center text-foreground hover:text-primary font-medium transition-colors text-base">
                       {item.label}
-                      <ChevronDown className="ml-1 h-4 w-4" />
+                      <ChevronDown className="ml-1 h-3 w-3" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="w-48">
                       {item.items.map((subItem, subIndex) => (
@@ -80,7 +84,7 @@ export default function Header() {
                 ) : (
                   <Link
                     href={item.href!}
-                    className={`text-foreground hover:text-primary font-medium transition-colors text-lg ${
+                    className={`text-foreground hover:text-primary font-medium transition-colors text-base ${
                       location === item.href ? 'text-primary' : ''
                     }`}
                     data-testid={`nav-${item.label.toLowerCase()}`}
@@ -90,7 +94,7 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="ml-4">
+            <div className="ml-3">
               <LanguageToggle />
             </div>
           </div>
@@ -102,19 +106,19 @@ export default function Header() {
                 <Menu className="h-4 w-4" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-72">
-              <div className="flex flex-col space-y-4 mt-6">
+            <SheetContent side="right" className="w-64">
+              <div className="flex flex-col space-y-3 mt-4">
                 {navigationItems.map((item, index) => (
                   <div key={index}>
                     {item.items ? (
                       <>
-                        <div className="font-medium text-foreground py-2 text-lg">{item.label}</div>
-                        <div className="ml-4 space-y-2">
+                        <div className="font-medium text-foreground py-1.5 text-base">{item.label}</div>
+                        <div className="ml-3 space-y-1.5">
                           {item.items.map((subItem, subIndex) => (
                             <Link
                               key={subIndex}
                               href={subItem.href}
-                              className="block py-2 text-muted-foreground hover:text-primary text-base"
+                              className="block py-1.5 text-muted-foreground hover:text-primary text-sm"
                               onClick={() => setIsOpen(false)}
                             >
                               {subItem.label}
@@ -125,7 +129,7 @@ export default function Header() {
                     ) : (
                       <Link
                         href={item.href!}
-                        className="block py-2 text-foreground hover:text-primary font-medium text-lg"
+                        className="block py-1.5 text-foreground hover:text-primary font-medium text-base"
                         onClick={() => setIsOpen(false)}
                       >
                         {item.label}

@@ -60,7 +60,7 @@ export default function News() {
     {
       id: '9',
       title: 'Career Guidance Workshop',
-      description: 'Three-day career guidance workshop for Class XI and XII students. Industry experts and alumni sharing career insights.',
+      description: 'Three-day career guidance workshop for Class IX and X students. Industry experts and alumni sharing career insights.',
       date: '2024-02-10',
       type: 'event' as const,
       category: 'Career',
@@ -138,7 +138,7 @@ export default function News() {
       <main>
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="news-hero-title">
               News & Events
             </h1>
@@ -150,7 +150,7 @@ export default function News() {
 
         {/* Filters and Search */}
         <section className="py-8 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
               <div className="flex flex-col sm:flex-row gap-4 flex-1">
                 <div className="relative flex-1 max-w-md">
@@ -187,7 +187,7 @@ export default function News() {
 
         {/* News Grid */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Main News Content */}
               <div className="lg:col-span-2">
@@ -354,7 +354,7 @@ export default function News() {
 
         {/* Archives Section */}
         <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="archives-title">
                 News Archives

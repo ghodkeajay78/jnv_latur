@@ -11,7 +11,7 @@ export default function Management() {
 
   const managementCommittee = [
     {
-      name: 'Dr. Rajesh Sharma',
+      name: 'Mr. Sonttake Sir',
       position: 'Principal & Chief Executive',
       qualification: 'Ph.D. in Education Administration',
       experience: '25 years',
@@ -26,10 +26,10 @@ export default function Management() {
         email: 'principal@jnvlatur.edu.in',
         phone: '+91-2382-123457'
       },
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300',
+      image: '/images/HeadMaster.jpg',
     },
     {
-      name: 'Mrs. Sunita Patil',
+      name: 'Mrs. Rekha Ma\'am',
       position: 'Vice Principal',
       qualification: 'M.Ed. in Educational Psychology',
       experience: '20 years',
@@ -44,10 +44,10 @@ export default function Management() {
         email: 'vp@jnvlatur.edu.in',
         phone: '+91-2382-123460'
       },
-      image: 'https://images.unsplash.com/photo-1594736797933-d0200ba2715b?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300',
+      image: '/images/RekhaMaam.jpg',
     },
     {
-      name: 'Mr. Anil Kumar',
+      name: 'Mr. Patil Sir',
       position: 'Academic Coordinator',
       qualification: 'M.Sc. Mathematics, B.Ed.',
       experience: '18 years',
@@ -62,10 +62,10 @@ export default function Management() {
         email: 'academic@jnvlatur.edu.in',
         phone: '+91-2382-123461'
       },
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300',
+      image: '/images/PatilSir.jpg',
     },
     {
-      name: 'Mrs. Priya Kale',
+      name: 'Mr. Kale Sir',
       position: 'Administrative Officer',
       qualification: 'MBA in Education Management',
       experience: '15 years',
@@ -80,7 +80,25 @@ export default function Management() {
         email: 'admin@jnvlatur.edu.in',
         phone: '+91-2382-123462'
       },
-      image: 'https://images.unsplash.com/photo-1559548331-f9cb98001426?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300',
+      image: '/images/KaleSir.jpg',
+    },
+    {
+      name: 'Mr. Babalsure Sir',
+      position: 'Hostel Warden',
+      qualification: 'M.A. History, B.Ed.',
+      experience: '12 years',
+      specialization: 'Student Welfare & Hostel Management',
+      responsibilities: [
+        'Hostel administration and student accommodation',
+        'Student discipline and safety in residential areas',
+        'Health and hygiene maintenance in hostels',
+        'Coordination with parents and guardians'
+      ],
+      contact: {
+        email: 'hostel@jnvlatur.edu.in',
+        phone: '+91-2382-123463'
+      },
+      image: '/images/HostelWardon.jpg',
     },
   ];
 
@@ -132,7 +150,7 @@ export default function Management() {
     },
     {
       department: 'Social Sciences Department',
-      head: 'Mr. Deepak Singh',
+      head: 'Mr. Babalsure Sir',
       qualification: 'M.A. History',
       faculty: 5,
       subjects: ['History', 'Geography', 'Political Science', 'Economics'],
@@ -260,7 +278,7 @@ export default function Management() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="management-hero-title">
               Management & Leadership
             </h1>
@@ -305,7 +323,7 @@ export default function Management() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="vision-mission-title">
                 Our Vision, Mission & Values
@@ -393,7 +411,7 @@ export default function Management() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="leadership" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="management-team-title">
@@ -562,7 +580,7 @@ export default function Management() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="org-structure-title">
                 Organizational Structure
@@ -633,7 +651,7 @@ export default function Management() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="management-achievements-title">
                 Management Achievements
@@ -671,7 +689,7 @@ export default function Management() {
 
         {/* Contact Management */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="contact-management-title">
               Contact Management
             </h2>

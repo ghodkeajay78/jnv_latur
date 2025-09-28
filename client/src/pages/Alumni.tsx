@@ -18,7 +18,7 @@ export default function Alumni() {
       profession: 'Medical Doctor & Researcher',
       achievement: 'Leading cardiologist at AIIMS, Delhi',
       currentLocation: 'New Delhi',
-      image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/Result.jpg',
     },
     {
       id: '2',
@@ -27,7 +27,7 @@ export default function Alumni() {
       profession: 'IAS Officer',
       achievement: 'District Collector, Pune',
       currentLocation: 'Pune, Maharashtra',
-      image: 'https://images.unsplash.com/photo-1594736797933-d0200ba2715b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/photo-1594736797933-d0200ba2715b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
     },
     {
       id: '3',
@@ -36,7 +36,7 @@ export default function Alumni() {
       profession: 'Software Engineer',
       achievement: 'Senior Director at Microsoft, USA',
       currentLocation: 'Seattle, USA',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
     },
     {
       id: '4',
@@ -45,7 +45,7 @@ export default function Alumni() {
       profession: 'Research Scientist',
       achievement: 'NASA Space Research Program',
       currentLocation: 'Houston, USA',
-      image: 'https://images.unsplash.com/photo-1559548331-f9cb98001426?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/photo-1559548331-f9cb98001426?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
     },
     {
       id: '5',
@@ -54,7 +54,7 @@ export default function Alumni() {
       profession: 'Entrepreneur',
       achievement: 'Founder & CEO of Tech Startup',
       currentLocation: 'Bangalore, Karnataka',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
     },
     {
       id: '6',
@@ -63,7 +63,7 @@ export default function Alumni() {
       profession: 'Journalist',
       achievement: 'Senior Editor at National News Channel',
       currentLocation: 'Mumbai, Maharashtra',
-      image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
+      image: '/images/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400',
     },
   ];
 
@@ -148,7 +148,7 @@ export default function Alumni() {
       <main>
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-primary/10 to-accent/10 py-16">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="alumni-hero-title">
               Alumni Network
             </h1>
@@ -160,7 +160,7 @@ export default function Alumni() {
 
         {/* Alumni Statistics */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               {alumniStats.map((stat, index) => (
                 <Card key={index}>
@@ -181,7 +181,7 @@ export default function Alumni() {
 
         {/* Notable Alumni */}
         <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="notable-alumni-title">
                 Notable Alumni
@@ -220,7 +220,7 @@ export default function Alumni() {
 
         {/* Success Stories */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="success-stories-title">
                 Success Stories
@@ -250,7 +250,7 @@ export default function Alumni() {
 
         {/* Alumni Association */}
         <section className="py-16 bg-muted">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="association-title">
                 Alumni Association
@@ -364,7 +364,7 @@ export default function Alumni() {
 
         {/* Alumni Achievements */}
         <section className="py-16">
-          <div className="container mx-auto px-4">
+          <div className="w-4/5 mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="achievements-title">
@@ -385,7 +385,7 @@ export default function Alumni() {
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/ParentsMeet3.jpg"
                   alt="Alumni group photo at annual meet"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="alumni-group-image"
@@ -397,7 +397,7 @@ export default function Alumni() {
 
         {/* Join Alumni Network */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 text-center">
+          <div className="w-4/5 mx-auto px-4 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="join-network-title">
               Join Our Alumni Network
             </h2>

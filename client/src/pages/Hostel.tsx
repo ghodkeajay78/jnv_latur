@@ -167,7 +167,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="hostel-hero-title">
               Hostel Life at JNV Latur
             </h1>
@@ -212,7 +212,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="routine-title">
                 Daily Routine
@@ -284,7 +284,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="facilities-title">
                 Hostel Facilities
@@ -359,7 +359,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="wardens-title">
                 Hostel Wardens & Staff
@@ -427,7 +427,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <Tabs defaultValue="weekly" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="activities-title">
@@ -528,7 +528,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="rules-title">
@@ -551,7 +551,7 @@ export default function Hostel() {
               </div>
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                  src="/images/Classroom3.jpg"
                   alt="Students in hostel common area following guidelines"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="rules-image"
@@ -563,7 +563,7 @@ export default function Hostel() {
 
         {/* Hostel Statistics */}
         <section className="py-16 bg-primary text-primary-foreground">
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-8">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="stats-title">
                 Hostel at a Glance
@@ -625,7 +625,7 @@ export default function Hostel() {
               </svg>
             </div>
           </div>
-          <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="virtual-tour-title">
               Virtual Hostel Tour
             </h2>
