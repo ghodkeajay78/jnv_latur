@@ -13,7 +13,7 @@ export default function Faculty() {
   const extendedFaculty = [
     ...facultyMembers,
     {
-      id: '4',
+      id: '6',
       name: 'Dr. Priya Sharma',
       designation: 'Head of Science Department',
       subject: 'Physics',
@@ -21,7 +21,7 @@ export default function Faculty() {
       experience: 15,
     },
     {
-      id: '5',
+      id: '7',
       name: 'Mr. Rahul Deshmukh',
       designation: 'Senior Teacher',
       subject: 'Chemistry',
@@ -29,7 +29,7 @@ export default function Faculty() {
       experience: 12,
     },
     {
-      id: '6',
+      id: '8',
       name: 'Mrs. Kavita Jadhav',
       designation: 'Senior Teacher',
       subject: 'Biology',
@@ -37,15 +37,7 @@ export default function Faculty() {
       experience: 14,
     },
     {
-      id: '7',
-      name: 'Mr. Suresh Kumar',
-      designation: 'Head of Mathematics Department',
-      subject: 'Mathematics',
-      qualification: 'M.Sc. Mathematics',
-      experience: 16,
-    },
-    {
-      id: '8',
+      id: '9',
       name: 'Mrs. Shweta Patil',
       designation: 'English Teacher',
       subject: 'English Literature',
@@ -53,7 +45,7 @@ export default function Faculty() {
       experience: 10,
     },
     {
-      id: '9',
+      id: '10',
       name: 'Mr. Ganesh Rao',
       designation: 'Hindi Teacher',
       subject: 'Hindi Literature',
@@ -61,20 +53,12 @@ export default function Faculty() {
       experience: 13,
     },
     {
-      id: '10',
+      id: '11',
       name: 'Mrs. Manjusha Bhosale',
       designation: 'Marathi Teacher',
       subject: 'Marathi Literature',
       qualification: 'M.A. Marathi',
       experience: 11,
-    },
-    {
-      id: '11',
-      name: 'Mr. Deepak Singh',
-      designation: 'Social Science Teacher',
-      subject: 'History & Geography',
-      qualification: 'M.A. History, B.Ed.',
-      experience: 9,
     },
     {
       id: '12',
@@ -104,7 +88,7 @@ export default function Faculty() {
     },
     {
       name: 'Social Sciences Department',
-      faculty: extendedFaculty.filter(f => f.subject === 'History & Geography'),
+      faculty: extendedFaculty.filter(f => f.subject === 'History' || f.subject === 'History & Geography'),
       description: 'Understanding society, culture, and the world around us',
     },
     {
@@ -114,7 +98,7 @@ export default function Faculty() {
     },
     {
       name: 'Administration',
-      faculty: extendedFaculty.filter(f => ['Education Administration', 'Educational Psychology'].includes(f.subject)),
+      faculty: extendedFaculty.filter(f => ['Education Administration', 'Educational Psychology', 'Education Management'].includes(f.subject)),
       description: 'Leading the institution towards excellence',
     },
   ];

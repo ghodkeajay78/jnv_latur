@@ -13,18 +13,11 @@ export default function Academics() {
 
   const curriculumLevels = [
     {
-      level: 'Classes VI-VIII',
-      title: 'Foundation Level',
-      description: 'Focus on basic concepts, language development, and skill building with emphasis on conceptual understanding.',
-      subjects: ['Mathematics', 'Science', 'Social Science', 'English', 'Hindi', 'Marathi', 'Sanskrit', 'Computer Science'],
+      level: 'Classes V-X',
+      title: 'Primary to Secondary Level',
+      description: 'Structured learning approach from foundation to advanced levels. Focus on basic concepts, language development, and skill building with emphasis on conceptual understanding, progressing to comprehensive SSC Board curriculum with board examination preparation and career guidance.',
+      subjects: ['Mathematics', 'Science', 'Social Science', 'English', 'Hindi', 'Marathi', 'Sanskrit', 'Computer Science', 'Information Technology'],
       color: 'border-l-blue-500',
-    },
-    {
-      level: 'Classes IX-X',
-      title: 'Secondary Level',
-      description: 'Comprehensive SSC Board curriculum with board examination preparation and career guidance.',
-      subjects: ['Mathematics', 'Science', 'Social Science', 'English', 'Hindi', 'Marathi', 'Information Technology'],
-      color: 'border-l-green-500',
     },
   ];
 
@@ -78,23 +71,6 @@ export default function Academics() {
     },
   ];
 
-  const streams = [
-    {
-      name: 'Science Stream',
-      subjects: ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'English', 'Physical Education'],
-      career: 'Engineering, Medicine, Research, Technology',
-    },
-    {
-      name: 'Commerce Stream',
-      subjects: ['Accountancy', 'Business Studies', 'Economics', 'Mathematics', 'English', 'Physical Education'],
-      career: 'Business, Finance, Accounting, Management',
-    },
-    {
-      name: 'Humanities Stream',
-      subjects: ['History', 'Political Science', 'Geography', 'Psychology', 'English', 'Physical Education'],
-      career: 'Civil Services, Law, Literature, Social Work',
-    },
-  ];
 
   const assessmentMethods = [
     'Formative Assessment (40%)',
@@ -196,7 +172,7 @@ export default function Academics() {
                 Curriculum Overview
               </h2>
               <p className="text-lg text-muted-foreground">
-                Structured learning approach from foundation to advanced levels
+                Comprehensive SSC Board curriculum from Classes V to X
               </p>
             </div>
 
@@ -358,91 +334,6 @@ export default function Academics() {
           </div>
         </section>
 
-        {/* Streams Information */}
-        <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
-          {/* Education Doodles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Book Doodle */}
-            <div className="absolute top-20 left-20 text-orange-200/30 text-6xl transform rotate-12">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-              </svg>
-            </div>
-            {/* Pencil Doodle */}
-            <div className="absolute top-40 right-32 text-orange-200/30 text-5xl transform -rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-              </svg>
-            </div>
-            {/* Graduation Cap Doodle */}
-            <div className="absolute bottom-32 left-16 text-orange-200/30 text-7xl transform rotate-6">
-              <svg width="70" height="70" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18M12,3L1,9L12,15L21,10.09V17H23V9L12,3Z"/>
-              </svg>
-            </div>
-            {/* Lightbulb Doodle */}
-            <div className="absolute top-60 right-20 text-orange-200/30 text-4xl transform -rotate-6">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
-              </svg>
-            </div>
-            {/* Star Doodle */}
-            <div className="absolute bottom-20 right-24 text-orange-200/30 text-5xl transform rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
-              </svg>
-            </div>
-          </div>
-          
-          <div className="w-4/5 mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="streams-title">
-                Senior Secondary Streams
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Specialized academic tracks for Classes VIII-X
-              </p>
-            </div>
-
-            <Tabs defaultValue="science" className="max-w-4xl mx-auto">
-              <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="science">Science</TabsTrigger>
-                <TabsTrigger value="commerce">Commerce</TabsTrigger>
-                <TabsTrigger value="humanities">Humanities</TabsTrigger>
-              </TabsList>
-
-              {streams.map((stream, index) => (
-                <TabsContent 
-                  key={index} 
-                  value={stream.name.toLowerCase().split(' ')[0]}
-                  className="mt-6"
-                >
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="text-2xl">{stream.name}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-6">
-                      <div>
-                        <h4 className="font-semibold mb-3">Core Subjects:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {stream.subjects.map((subject, subIndex) => (
-                            <Badge key={subIndex} variant="outline">
-                              {subject}
-                            </Badge>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold mb-2">Career Opportunities:</h4>
-                        <p className="text-muted-foreground">{stream.career}</p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </TabsContent>
-              ))}
-            </Tabs>
-          </div>
-        </section>
 
         {/* Assessment Methods */}
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">

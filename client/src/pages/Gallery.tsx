@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -12,6 +12,11 @@ import { galleryItems } from '@/data/content';
 export default function Gallery() {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const extendedGalleryItems = [
     ...galleryItems,

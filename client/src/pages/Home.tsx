@@ -33,18 +33,18 @@ export default function Home() {
       color: 'bg-blue-600',
     },
     {
-      icon: Book,
-      title: t('quickLinks.academics.title'),
-      description: t('quickLinks.academics.description'),
-      href: '/academics',
-      color: 'bg-emerald-600',
-    },
-    {
       icon: Trophy,
       title: t('nav.achievements'),
       description: 'Discover our students\' outstanding achievements in academics, sports, and cultural activities.',
       href: '/achievements',
       color: 'bg-purple-600',
+    },
+    {
+      icon: Users,
+      title: 'Photo & Video Gallery',
+      description: 'Explore the vibrant life at JNV Latur through our comprehensive collection of photos and videos',
+      href: '/gallery',
+      color: 'bg-emerald-600',
     },
   ];
 
