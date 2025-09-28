@@ -11,94 +11,537 @@ export default function Management() {
 
   const managementCommittee = [
     {
-      name: 'Mr. Sonttake Sir',
-      position: 'Principal & Chief Executive',
-      qualification: 'Ph.D. in Education Administration',
-      experience: '25 years',
-      specialization: 'Educational Leadership & Policy Development',
+      name: 'Shri Prakash Kishanrao Raychukur',
+      position: 'President',
+      qualification: 'Education Leader',
+      experience: '20+ years',
+      specialization: 'Educational Leadership & Governance',
       responsibilities: [
-        'Overall school administration and management',
-        'Academic policy formulation and implementation',
-        'Staff recruitment and professional development',
-        'External relations and community engagement'
+        'Overall governance and policy direction',
+        'Strategic planning and decision making',
+        'Community relations and partnerships',
+        'Financial oversight and accountability'
+      ],
+      contact: {
+        email: 'president@jnvlatur.edu.in',
+        phone: '+91-2382-123457'
+      },
+    },
+    {
+      name: 'Dr. Rajesh Shivajirao Patil',
+      position: 'Vice President',
+      qualification: 'Ph.D. in Education',
+      experience: '18+ years',
+      specialization: 'Academic Excellence & Policy Development',
+      responsibilities: [
+        'Academic policy formulation',
+        'Educational quality assurance',
+        'Strategic academic planning',
+        'Faculty development programs'
+      ],
+      contact: {
+        email: 'vicepresident@jnvlatur.edu.in',
+        phone: '+91-2382-123458'
+      },
+    },
+    {
+      name: 'Adv. Balkrishna Harirrao Deshpande',
+      position: 'Secretary',
+      qualification: 'LL.B., Education Law Specialist',
+      experience: '15+ years',
+      specialization: 'Legal Affairs & Administrative Compliance',
+      responsibilities: [
+        'Legal compliance and documentation',
+        'Administrative procedures and policies',
+        'Regulatory affairs management',
+        'Contract and agreement oversight'
+      ],
+      contact: {
+        email: 'secretary@jnvlatur.edu.in',
+        phone: '+91-2382-123459'
+      },
+    },
+    {
+      name: 'Shri Arvind Renukadasrao Deshpande',
+      position: 'Member',
+      qualification: 'Education Management',
+      experience: '12+ years',
+      specialization: 'Operations & Resource Management',
+      responsibilities: [
+        'Operational efficiency and improvement',
+        'Resource allocation and management',
+        'Infrastructure development planning',
+        'Performance monitoring and evaluation'
+      ],
+      contact: {
+        email: 'member1@jnvlatur.edu.in',
+        phone: '+91-2382-123460'
+      },
+    },
+    {
+      name: 'Shri Vasant Yewarkar Nayakvadi',
+      position: 'Member',
+      qualification: 'Community Development',
+      experience: '10+ years',
+      specialization: 'Community Engagement & Social Development',
+      responsibilities: [
+        'Community outreach and engagement',
+        'Social development initiatives',
+        'Local partnership development',
+        'Public relations and communication'
+      ],
+      contact: {
+        email: 'member2@jnvlatur.edu.in',
+        phone: '+91-2382-123461'
+      },
+    },
+    {
+      name: 'Principal Dr. Atmaram Vinayakrao Pachpute',
+      position: 'Member',
+      qualification: 'Ph.D. in Education Administration',
+      experience: '25+ years',
+      specialization: 'Educational Leadership & School Management',
+      responsibilities: [
+        'School administration and management',
+        'Academic excellence and quality assurance',
+        'Staff development and training',
+        'Student welfare and development'
+      ],
+      contact: {
+        email: 'principal@jnvlatur.edu.in',
+        phone: '+91-2382-123462'
+      },
+    },
+    {
+      name: 'Shri Rajesh Maheshwarappa Sugure',
+      position: 'Member',
+      qualification: 'Education & Administration',
+      experience: '14+ years',
+      specialization: 'Administrative Operations & Quality Management',
+      responsibilities: [
+        'Administrative operations oversight',
+        'Quality management systems',
+        'Process improvement initiatives',
+        'Compliance and audit management'
+      ],
+      contact: {
+        email: 'member3@jnvlatur.edu.in',
+        phone: '+91-2382-123463'
+      },
+    },
+    {
+      name: 'Shri Vivek Kishanrao Agachit',
+      position: 'Nominated Member',
+      qualification: 'Education & Development',
+      experience: '8+ years',
+      specialization: 'Special Projects & Innovation',
+      responsibilities: [
+        'Special project management',
+        'Innovation and development initiatives',
+        'Technology integration projects',
+        'Research and development activities'
+      ],
+      contact: {
+        email: 'nominated@jnvlatur.edu.in',
+        phone: '+91-2382-123464'
+      },
+    },
+    {
+      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
+      position: 'Co-opted Member (Male)',
+      qualification: 'Education & Community Service',
+      experience: '16+ years',
+      specialization: 'Community Development & Student Welfare',
+      responsibilities: [
+        'Community development programs',
+        'Student welfare initiatives',
+        'Local engagement activities',
+        'Social responsibility projects'
+      ],
+      contact: {
+        email: 'coopted1@jnvlatur.edu.in',
+        phone: '+91-2382-123465'
+      },
+    },
+    {
+      name: 'Shri Ravindra Madhukarrao Purnapatre',
+      position: 'Co-opted Member (Female)',
+      qualification: 'Education & Women Empowerment',
+      experience: '12+ years',
+      specialization: 'Gender Equality & Inclusive Education',
+      responsibilities: [
+        'Gender equality initiatives',
+        'Inclusive education programs',
+        'Women empowerment activities',
+        'Diversity and inclusion management'
+      ],
+      contact: {
+        email: 'coopted2@jnvlatur.edu.in',
+        phone: '+91-2382-123466'
+      },
+    },
+  ];
+
+  const schoolCommittee = [
+    {
+      name: 'Principal Dr. Atmaram Vinayakrao Pachpute',
+      position: 'President',
+      qualification: 'Ph.D. in Education Administration',
+      experience: '25+ years',
+      specialization: 'Educational Leadership & School Management',
+      responsibilities: [
+        'Overall academic leadership',
+        'Curriculum development and implementation',
+        'Academic policy formulation',
+        'Quality assurance and improvement'
       ],
       contact: {
         email: 'principal@jnvlatur.edu.in',
         phone: '+91-2382-123457'
       },
-      image: '/images/HeadMaster.jpg',
     },
     {
-      name: 'Mrs. Rekha Ma\'am',
-      position: 'Vice Principal',
-      qualification: 'M.Ed. in Educational Psychology',
-      experience: '20 years',
-      specialization: 'Curriculum Development & Student Counseling',
+      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
+      position: 'Secretary (Local)',
+      qualification: 'Education & Administration',
+      experience: '16+ years',
+      specialization: 'Academic Coordination & Local Administration',
       responsibilities: [
-        'Academic coordination and curriculum oversight',
-        'Student discipline and welfare management',
-        'Examination coordination and evaluation',
-        'Parent-teacher communication coordination'
+        'Academic coordination and planning',
+        'Local administrative support',
+        'Community liaison activities',
+        'Student affairs management'
       ],
       contact: {
-        email: 'vp@jnvlatur.edu.in',
+        email: 'secretary.local@jnvlatur.edu.in',
+        phone: '+91-2382-123458'
+      },
+    },
+    {
+      name: 'Shri Prabhakar Manikrao Joshi',
+      position: 'Member',
+      qualification: 'Education & Development',
+      experience: '14+ years',
+      specialization: 'Educational Development & Community Engagement',
+      responsibilities: [
+        'Educational development initiatives',
+        'Community engagement programs',
+        'Academic support activities',
+        'Student development programs'
+      ],
+      contact: {
+        email: 'member1@jnvlatur.edu.in',
+        phone: '+91-2382-123459'
+      },
+    },
+    {
+      name: 'Shri Dilip Rajaram Halbhange',
+      position: 'Member',
+      qualification: 'Education Management',
+      experience: '12+ years',
+      specialization: 'Academic Planning & Resource Management',
+      responsibilities: [
+        'Academic planning and scheduling',
+        'Resource allocation and management',
+        'Performance monitoring',
+        'Quality improvement initiatives'
+      ],
+      contact: {
+        email: 'member2@jnvlatur.edu.in',
         phone: '+91-2382-123460'
       },
-      image: '/images/RekhaMaam.jpg',
     },
     {
-      name: 'Mr. Patil Sir',
-      position: 'Academic Coordinator',
-      qualification: 'M.Sc. Mathematics, B.Ed.',
-      experience: '18 years',
-      specialization: 'Academic Planning & Assessment',
+      name: 'Shri Ajay Madhavrao Renpure',
+      position: 'Member',
+      qualification: 'Education & Technology',
+      experience: '10+ years',
+      specialization: 'Educational Technology & Innovation',
       responsibilities: [
-        'Timetable planning and class scheduling',
-        'Academic performance monitoring',
-        'Teacher training and development programs',
-        'Educational resource management'
+        'Technology integration in education',
+        'Digital learning initiatives',
+        'Innovation in teaching methods',
+        'Technical support and training'
       ],
       contact: {
-        email: 'academic@jnvlatur.edu.in',
+        email: 'member3@jnvlatur.edu.in',
         phone: '+91-2382-123461'
       },
-      image: '/images/PatilSir.jpg',
     },
     {
-      name: 'Mr. Kale Sir',
-      position: 'Administrative Officer',
-      qualification: 'MBA in Education Management',
-      experience: '15 years',
-      specialization: 'Operations & Financial Management',
+      name: 'Shri Mayas Jyotiram Karad',
+      position: 'Member',
+      qualification: 'Education & Research',
+      experience: '11+ years',
+      specialization: 'Research & Development in Education',
       responsibilities: [
-        'Financial planning and budget management',
-        'Infrastructure development and maintenance',
-        'Legal compliance and documentation',
-        'Vendor management and procurement'
+        'Educational research activities',
+        'Development of new methodologies',
+        'Data analysis and reporting',
+        'Evidence-based decision making'
       ],
       contact: {
-        email: 'admin@jnvlatur.edu.in',
+        email: 'member4@jnvlatur.edu.in',
         phone: '+91-2382-123462'
       },
-      image: '/images/KaleSir.jpg',
     },
     {
-      name: 'Mr. Babalsure Sir',
-      position: 'Hostel Warden',
-      qualification: 'M.A. History, B.Ed.',
-      experience: '12 years',
-      specialization: 'Student Welfare & Hostel Management',
+      name: 'Dr. (Mrs.) Archanatayi Shailendra Apte',
+      position: 'Member',
+      qualification: 'Ph.D. in Education',
+      experience: '15+ years',
+      specialization: 'Academic Excellence & Student Development',
       responsibilities: [
-        'Hostel administration and student accommodation',
-        'Student discipline and safety in residential areas',
-        'Health and hygiene maintenance in hostels',
-        'Coordination with parents and guardians'
+        'Academic excellence programs',
+        'Student development initiatives',
+        'Curriculum enhancement',
+        'Assessment and evaluation'
       ],
       contact: {
-        email: 'hostel@jnvlatur.edu.in',
+        email: 'member5@jnvlatur.edu.in',
         phone: '+91-2382-123463'
       },
-      image: '/images/HostelWardon.jpg',
+    },
+    {
+      name: 'Shri Balbhim Kishanrao Jadhav',
+      position: 'Parents\' Representative',
+      qualification: 'Community Leadership',
+      experience: '8+ years',
+      specialization: 'Parent Engagement & Community Relations',
+      responsibilities: [
+        'Parent engagement activities',
+        'Community relations management',
+        'Student welfare advocacy',
+        'Feedback and communication'
+      ],
+      contact: {
+        email: 'parents@jnvlatur.edu.in',
+        phone: '+91-2382-123464'
+      },
+    },
+    {
+      name: 'Shri Manmath Kashinath Khichade',
+      position: 'Teachers\' Representative',
+      qualification: 'Education & Teaching',
+      experience: '18+ years',
+      specialization: 'Teaching Excellence & Faculty Development',
+      responsibilities: [
+        'Teacher welfare and development',
+        'Teaching methodology improvement',
+        'Faculty coordination and support',
+        'Academic quality enhancement'
+      ],
+      contact: {
+        email: 'teachers@jnvlatur.edu.in',
+        phone: '+91-2382-123465'
+      },
+    },
+    {
+      name: 'Shri Sanjay Kantarao Joshi',
+      position: 'Non-teaching Staff Representative',
+      qualification: 'Administration & Support Services',
+      experience: '12+ years',
+      specialization: 'Support Services & Administrative Efficiency',
+      responsibilities: [
+        'Support services management',
+        'Administrative efficiency improvement',
+        'Staff coordination and support',
+        'Operational excellence'
+      ],
+      contact: {
+        email: 'staff@jnvlatur.edu.in',
+        phone: '+91-2382-123466'
+      },
+    },
+    {
+      name: 'Shri Ravindra Madhukarrao Purnapatre',
+      position: 'Special Invitee Member',
+      qualification: 'Education & Development',
+      experience: '12+ years',
+      specialization: 'Special Projects & External Relations',
+      responsibilities: [
+        'Special project coordination',
+        'External relations management',
+        'Partnership development',
+        'Strategic initiatives'
+      ],
+      contact: {
+        email: 'special@jnvlatur.edu.in',
+        phone: '+91-2382-123467'
+      },
+    },
+  ];
+
+  const hostelCommittee = [
+    {
+      name: 'Shri Rajesh Maheshwarappa Sugure',
+      position: 'President',
+      qualification: 'Education & Administration',
+      experience: '14+ years',
+      specialization: 'Hostel Management & Student Welfare',
+      responsibilities: [
+        'Overall hostel governance',
+        'Student welfare and safety',
+        'Policy formulation and implementation',
+        'Quality assurance in hostel services'
+      ],
+      contact: {
+        email: 'hostel.president@jnvlatur.edu.in',
+        phone: '+91-2382-123457'
+      },
+    },
+    {
+      name: 'Shri Ravindra Madhukarrao Purnapatre',
+      position: 'Secretary (Hostel)',
+      qualification: 'Education & Development',
+      experience: '12+ years',
+      specialization: 'Hostel Administration & Student Services',
+      responsibilities: [
+        'Hostel administration and operations',
+        'Student services coordination',
+        'Daily operations management',
+        'Staff coordination and supervision'
+      ],
+      contact: {
+        email: 'hostel.secretary@jnvlatur.edu.in',
+        phone: '+91-2382-123458'
+      },
+    },
+    {
+      name: 'Adv. Vishwanath Uddhavrao Jadhav',
+      position: 'Member',
+      qualification: 'LL.B., Legal Affairs',
+      experience: '10+ years',
+      specialization: 'Legal Compliance & Student Rights',
+      responsibilities: [
+        'Legal compliance in hostel operations',
+        'Student rights protection',
+        'Disciplinary procedures oversight',
+        'Legal documentation and procedures'
+      ],
+      contact: {
+        email: 'hostel.member1@jnvlatur.edu.in',
+        phone: '+91-2382-123459'
+      },
+    },
+    {
+      name: 'Shri Valmik Nivruttirao Kale',
+      position: 'Member',
+      qualification: 'Education & Community Service',
+      experience: '13+ years',
+      specialization: 'Community Relations & Student Development',
+      responsibilities: [
+        'Community relations management',
+        'Student development programs',
+        'Local engagement activities',
+        'Cultural and social programs'
+      ],
+      contact: {
+        email: 'hostel.member2@jnvlatur.edu.in',
+        phone: '+91-2382-123460'
+      },
+    },
+    {
+      name: 'Dr. (Mrs.) Aruna Srinivas Sadake',
+      position: 'Member',
+      qualification: 'Ph.D. in Education',
+      experience: '15+ years',
+      specialization: 'Student Counseling & Welfare',
+      responsibilities: [
+        'Student counseling services',
+        'Mental health and wellness programs',
+        'Student welfare initiatives',
+        'Personal development support'
+      ],
+      contact: {
+        email: 'hostel.member3@jnvlatur.edu.in',
+        phone: '+91-2382-123461'
+      },
+    },
+    {
+      name: 'Shri Shailesh Shatrughna Kulkarni',
+      position: 'Member',
+      qualification: 'Education & Administration',
+      experience: '11+ years',
+      specialization: 'Administrative Operations & Quality Management',
+      responsibilities: [
+        'Administrative operations oversight',
+        'Quality management in hostel services',
+        'Process improvement initiatives',
+        'Performance monitoring and evaluation'
+      ],
+      contact: {
+        email: 'hostel.member4@jnvlatur.edu.in',
+        phone: '+91-2382-123462'
+      },
+    },
+    {
+      name: 'Shri Manoj Manikrao Kulkarni (Devangikar)',
+      position: 'Member',
+      qualification: 'Education & Development',
+      experience: '9+ years',
+      specialization: 'Student Activities & Cultural Programs',
+      responsibilities: [
+        'Student activity coordination',
+        'Cultural program management',
+        'Recreational activities planning',
+        'Student engagement initiatives'
+      ],
+      contact: {
+        email: 'hostel.member5@jnvlatur.edu.in',
+        phone: '+91-2382-123463'
+      },
+    },
+    {
+      name: 'Shri Dattu Keshavrao Mane',
+      position: 'Member',
+      qualification: 'Community Leadership',
+      experience: '12+ years',
+      specialization: 'Community Development & Local Relations',
+      responsibilities: [
+        'Community development initiatives',
+        'Local relations management',
+        'Public engagement activities',
+        'Social responsibility programs'
+      ],
+      contact: {
+        email: 'hostel.member6@jnvlatur.edu.in',
+        phone: '+91-2382-123464'
+      },
+    },
+    {
+      name: 'Shri Bahubali Nagnath Bhambe',
+      position: 'Staff Representative',
+      qualification: 'Education & Support Services',
+      experience: '16+ years',
+      specialization: 'Staff Welfare & Support Services',
+      responsibilities: [
+        'Staff welfare and development',
+        'Support services coordination',
+        'Staff training and development',
+        'Operational efficiency improvement'
+      ],
+      contact: {
+        email: 'hostel.staff@jnvlatur.edu.in',
+        phone: '+91-2382-123465'
+      },
+    },
+    {
+      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
+      position: 'Co-opted Member',
+      qualification: 'Education & Community Service',
+      experience: '16+ years',
+      specialization: 'Special Projects & Community Engagement',
+      responsibilities: [
+        'Special project coordination',
+        'Community engagement activities',
+        'Partnership development',
+        'Strategic initiatives'
+      ],
+      contact: {
+        email: 'hostel.coopted@jnvlatur.edu.in',
+        phone: '+91-2382-123466'
+      },
     },
   ];
 
@@ -412,31 +855,28 @@ export default function Management() {
             </div>
           </div>
           <div className="w-4/5 mx-auto px-4 relative z-10">
-            <Tabs defaultValue="leadership" className="max-w-6xl mx-auto">
+            <Tabs defaultValue="management" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="management-team-title">
                   Management Team
                 </h2>
                 <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3">
-                  <TabsTrigger value="leadership">Leadership</TabsTrigger>
-                  <TabsTrigger value="advisory">Advisory</TabsTrigger>
-                  <TabsTrigger value="departments">Departments</TabsTrigger>
+                  <TabsTrigger value="management">Management Committee</TabsTrigger>
+                  <TabsTrigger value="school">School Committee</TabsTrigger>
+                  <TabsTrigger value="hostel">Hostel Committee</TabsTrigger>
                 </TabsList>
               </div>
 
-              <TabsContent value="leadership">
+              <TabsContent value="management">
                 <div className="grid gap-8">
                   {managementCommittee.map((member, index) => (
                     <Card key={index}>
                       <CardContent className="p-8">
                         <div className="grid lg:grid-cols-4 gap-6">
                           <div className="lg:col-span-1 text-center">
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                              data-testid={`leader-image-${index}`}
-                            />
+                            <div className="w-32 h-32 rounded-full mx-auto mb-4 bg-orange-100 flex items-center justify-center">
+                              <Users className="w-16 h-16 text-orange-600" />
+                            </div>
                             <h3 className="font-semibold text-xl mb-1" data-testid={`leader-name-${index}`}>
                               {member.name}
                             </h3>
@@ -476,29 +916,51 @@ export default function Management() {
                 </div>
               </TabsContent>
 
-              <TabsContent value="advisory">
-                <div className="grid md:grid-cols-2 gap-6">
-                  {advisoryBoard.map((advisor, index) => (
-                    <Card key={index} className="h-full">
-                      <CardHeader>
-                        <CardTitle className="text-lg" data-testid={`advisor-name-${index}`}>
-                          {advisor.name}
-                        </CardTitle>
-                        <Badge variant="outline">{advisor.position}</Badge>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3 text-sm">
-                          <div>
-                            <span className="font-medium">Qualification:</span>
-                            <p className="text-muted-foreground">{advisor.qualification}</p>
+              <TabsContent value="school">
+                <div className="grid gap-8">
+                  {schoolCommittee.map((member, index) => (
+                    <Card key={index}>
+                      <CardContent className="p-8">
+                        <div className="grid lg:grid-cols-4 gap-6">
+                          <div className="lg:col-span-1 text-center">
+                            <div className="w-32 h-32 rounded-full mx-auto mb-4 bg-orange-100 flex items-center justify-center">
+                              <BookOpen className="w-16 h-16 text-orange-600" />
+                            </div>
+                            <h3 className="font-semibold text-xl mb-1" data-testid={`school-member-name-${index}`}>
+                              {member.name}
+                            </h3>
+                            <Badge variant="default" className="mb-2">{member.position}</Badge>
+                            <div className="text-sm text-muted-foreground space-y-1">
+                              <p><span className="font-medium">Experience:</span> {member.experience}</p>
+                              <p><span className="font-medium">Qualification:</span> {member.qualification}</p>
+                            </div>
                           </div>
-                          <div>
-                            <span className="font-medium">Affiliation:</span>
-                            <p className="text-muted-foreground">{advisor.affiliation}</p>
-                          </div>
-                          <div>
-                            <span className="font-medium">Expertise:</span>
-                            <p className="text-muted-foreground">{advisor.expertise}</p>
+                          <div className="lg:col-span-3">
+                            <div className="mb-4">
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Specialization</h4>
+                              <p className="text-muted-foreground">{member.specialization}</p>
+                            </div>
+                            <div className="mb-4">
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Key Responsibilities</h4>
+                              <ul className="space-y-1">
+                                {member.responsibilities.map((responsibility, idx) => (
+                                  <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                    <Star className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                    {responsibility}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="flex items-center gap-4 pt-4 border-t">
+                              <div className="flex items-center gap-2">
+                                <Mail className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm">{member.contact.email}</span>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <Phone className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm">{member.contact.phone}</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </CardContent>
@@ -507,32 +969,50 @@ export default function Management() {
                 </div>
               </TabsContent>
 
-              <TabsContent value="departments">
-                <div className="grid md:grid-cols-2 gap-6">
-                  {departmentHeads.map((dept, index) => (
-                    <Card key={index} className="h-full">
-                      <CardHeader>
-                        <CardTitle className="text-lg" data-testid={`dept-name-${index}`}>
-                          {dept.department}
-                        </CardTitle>
-                        <div className="text-sm text-muted-foreground">
-                          Head: {dept.head} ({dept.qualification})
-                        </div>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-3">
-                          <div className="flex justify-between text-sm">
-                            <span>Faculty Members:</span>
-                            <Badge variant="secondary">{dept.faculty}</Badge>
+              <TabsContent value="hostel">
+                <div className="grid gap-8">
+                  {hostelCommittee.map((member, index) => (
+                    <Card key={index}>
+                      <CardContent className="p-8">
+                        <div className="grid lg:grid-cols-4 gap-6">
+                          <div className="lg:col-span-1 text-center">
+                            <div className="w-32 h-32 rounded-full mx-auto mb-4 bg-orange-100 flex items-center justify-center">
+                              <Building className="w-16 h-16 text-orange-600" />
+                            </div>
+                            <h3 className="font-semibold text-xl mb-1" data-testid={`hostel-member-name-${index}`}>
+                              {member.name}
+                            </h3>
+                            <Badge variant="default" className="mb-2">{member.position}</Badge>
+                            <div className="text-sm text-muted-foreground space-y-1">
+                              <p><span className="font-medium">Experience:</span> {member.experience}</p>
+                              <p><span className="font-medium">Qualification:</span> {member.qualification}</p>
+                            </div>
                           </div>
-                          <div>
-                            <span className="font-medium text-sm">Subjects:</span>
-                            <div className="flex flex-wrap gap-1 mt-1">
-                              {dept.subjects.map((subject, subIndex) => (
-                                <Badge key={subIndex} variant="outline" className="text-xs">
-                                  {subject}
-                                </Badge>
-                              ))}
+                          <div className="lg:col-span-3">
+                            <div className="mb-4">
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Specialization</h4>
+                              <p className="text-muted-foreground">{member.specialization}</p>
+                            </div>
+                            <div className="mb-4">
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Key Responsibilities</h4>
+                              <ul className="space-y-1">
+                                {member.responsibilities.map((responsibility, idx) => (
+                                  <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                    <Star className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                    {responsibility}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="flex items-center gap-4 pt-4 border-t">
+                              <div className="flex items-center gap-2">
+                                <Mail className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm">{member.contact.email}</span>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                <Phone className="w-4 h-4 text-muted-foreground" />
+                                <span className="text-sm">{member.contact.phone}</span>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -545,76 +1025,6 @@ export default function Management() {
           </div>
         </section>
 
-        {/* Organizational Structure */}
-        <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
-          {/* Education Doodles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Book Doodle */}
-            <div className="absolute top-20 left-20 text-orange-200/30 text-6xl transform rotate-12">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-              </svg>
-            </div>
-            {/* Pencil Doodle */}
-            <div className="absolute top-40 right-32 text-orange-200/30 text-5xl transform -rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-              </svg>
-            </div>
-            {/* Graduation Cap Doodle */}
-            <div className="absolute bottom-32 left-16 text-orange-200/30 text-7xl transform rotate-6">
-              <svg width="70" height="70" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18M12,3L1,9L12,15L21,10.09V17H23V9L12,3Z"/>
-              </svg>
-            </div>
-            {/* Lightbulb Doodle */}
-            <div className="absolute top-60 right-20 text-orange-200/30 text-4xl transform -rotate-6">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
-              </svg>
-            </div>
-            {/* Star Doodle */}
-            <div className="absolute bottom-20 right-24 text-orange-200/30 text-5xl transform rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
-              </svg>
-            </div>
-          </div>
-          <div className="w-4/5 mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="org-structure-title">
-                Organizational Structure
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Hierarchical structure ensuring effective governance and management
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6">
-                {organizationalStructure.map((level, index) => (
-                  <Card key={index}>
-                    <CardHeader>
-                      <CardTitle className="flex items-center space-x-2">
-                        <Building className="w-5 h-5 text-primary" />
-                        <span data-testid={`org-level-${index}`}>{level.level}</span>
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="grid md:grid-cols-3 gap-4">
-                        {level.positions.map((position, posIndex) => (
-                          <div key={posIndex} className="p-3 bg-muted rounded-lg text-center">
-                            <span className="text-sm font-medium">{position}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Management Achievements */}
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">

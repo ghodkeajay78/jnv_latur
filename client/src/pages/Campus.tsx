@@ -422,8 +422,8 @@ export default function Campus() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <img
-                      src="/images/Classroom3.jpg"
-                      alt="Comfortable hostel dormitory rooms"
+                      src="/images/Hostelmainimage.jpg"
+                      alt="Main hostel building and dormitory facilities"
                       className="rounded-xl shadow-lg w-full h-auto mb-6"
                       data-testid="hostel-image"
                     />
@@ -493,8 +493,8 @@ export default function Campus() {
                   </div>
                   <div>
                     <img
-                      src="/images/ground2.jpg"
-                      alt="Clean and modern mess hall dining area"
+                      src="/images/Lunch.jpg"
+                      alt="Students enjoying nutritious lunch in the mess hall"
                       className="rounded-xl shadow-lg w-full h-auto"
                       data-testid="mess-image"
                     />

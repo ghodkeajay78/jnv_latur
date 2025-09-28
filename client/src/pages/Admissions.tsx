@@ -496,18 +496,6 @@ export default function Admissions() {
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardContent className="p-6 text-center">
-                    <Users className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="font-semibold mb-2">Join Our Community</h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      Become part of the JNV Latur family and experience excellence in education.
-                    </p>
-                    <Button className="w-full" data-testid="join-community-button">
-                      Start Your Journey
-                    </Button>
-                  </CardContent>
-                </Card>
               </div>
             </div>
           </div>

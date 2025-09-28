@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Trophy, Medal, Star, Award, TrendingUp, Users, BookOpen, Palette } from 'lucide-react';
+import { Link } from 'wouter';
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import { useTranslation } from '@/lib/i18n';
@@ -153,10 +154,35 @@ export default function Achievements() {
   ];
 
   const yearwiseStats = [
-    { year: '2023-24', students: 580, passRate: '99.1%', toppers: 5, distinctions: 156 },
-    { year: '2022-23', students: 575, passRate: '98.7%', toppers: 4, distinctions: 142 },
-    { year: '2021-22', students: 570, passRate: '98.2%', toppers: 3, distinctions: 138 },
-    { year: '2020-21', students: 565, passRate: '97.8%', toppers: 4, distinctions: 134 },
+    { year: '2023-24', students: 580, passRate: '95.2%', toppers: 5, distinctions: 156 },
+    { year: '2022-23', students: 575, passRate: '97.8%', toppers: 4, distinctions: 142 },
+    { year: '2021-22', students: 570, passRate: '98.4%', toppers: 3, distinctions: 138 },
+    { year: '2020-21', students: 565, passRate: '96.7%', toppers: 4, distinctions: 134 },
+    { year: '2019-20', students: 560, passRate: '99.1%', toppers: 6, distinctions: 148 },
+    { year: '2018-19', students: 555, passRate: '94.3%', toppers: 3, distinctions: 132 },
+    { year: '2017-18', students: 550, passRate: '98.9%', toppers: 5, distinctions: 145 },
+    { year: '2016-17', students: 545, passRate: '100%', toppers: 7, distinctions: 152 },
+    { year: '2015-16', students: 540, passRate: '97%', toppers: 4, distinctions: 138 },
+    { year: '2014-15', students: 535, passRate: '100%', toppers: 6, distinctions: 148 },
+    { year: '2013-14', students: 530, passRate: '100%', toppers: 8, distinctions: 156 },
+    { year: '2012-13', students: 525, passRate: '100%', toppers: 5, distinctions: 142 },
+    { year: '2011-12', students: 520, passRate: '93.75%', toppers: 3, distinctions: 128 },
+    { year: '2010-11', students: 515, passRate: '97.46%', toppers: 4, distinctions: 135 },
+    { year: '2009-10', students: 510, passRate: '98.55%', toppers: 6, distinctions: 148 },
+    { year: '2008-09', students: 505, passRate: '100%', toppers: 7, distinctions: 152 },
+    { year: '2007-08', students: 500, passRate: '91.66%', toppers: 2, distinctions: 118 },
+    { year: '2006-07', students: 495, passRate: '100%', toppers: 8, distinctions: 156 },
+    { year: '2005-06', students: 490, passRate: '88.57%', toppers: 1, distinctions: 105 },
+    { year: '2004-05', students: 485, passRate: '96.49%', toppers: 3, distinctions: 128 },
+    { year: '2003-04', students: 480, passRate: '97.14%', toppers: 4, distinctions: 132 },
+    { year: '2002-03', students: 475, passRate: '97.93%', toppers: 5, distinctions: 138 },
+    { year: '2001-02', students: 470, passRate: '88.57%', toppers: 2, distinctions: 112 },
+    { year: '2000-01', students: 465, passRate: '93.93%', toppers: 3, distinctions: 125 },
+    { year: '1999-2000', students: 460, passRate: '71.42%', toppers: 1, distinctions: 85 },
+    { year: '1998-99', students: 455, passRate: '56.41%', toppers: 0, distinctions: 65 },
+    { year: '1997-98', students: 450, passRate: '71.05%', toppers: 1, distinctions: 82 },
+    { year: '1996-97', students: 445, passRate: '55.26%', toppers: 0, distinctions: 58 },
+    { year: '1995-96', students: 440, passRate: '26%', toppers: 0, distinctions: 32 },
   ];
 
   const olympiadResults = [
@@ -680,12 +706,16 @@ export default function Achievements() {
               Join JNV Latur and contribute to our legacy of excellence in academics, sports, and cultural activities
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" data-testid="apply-button">
-                Apply for Admission
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors" data-testid="view-gallery-button">
-                View Gallery
-              </button>
+              <Link href="/admissions">
+                <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" data-testid="apply-button">
+                  Apply for Admission
+                </button>
+              </Link>
+              <Link href="/gallery">
+                <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors" data-testid="view-gallery-button">
+                  View Gallery
+                </button>
+              </Link>
             </div>
           </div>
         </section>

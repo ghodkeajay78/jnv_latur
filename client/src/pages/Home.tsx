@@ -7,6 +7,7 @@ import { GraduationCap, Book, Trophy, Calendar, MapPin, Phone, Mail, Users, Awar
 import Header from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 import PhotoGallery from '@/components/Common/PhotoGallery';
+import VideoModal from '@/components/Common/VideoModal';
 import { useTranslation } from '@/lib/i18n';
 import { schoolInfo, newsItems, galleryItems } from '@/data/content';
 import { useEffect, useState } from 'react';
@@ -14,6 +15,7 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const { t, language } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   // Auto-rotate carousel
   useEffect(() => {
@@ -171,11 +173,15 @@ export default function Home() {
                       {t('common.readMore')}
                     </Button>
                   </Link>
-                  <Link href="/gallery">
-                    <Button size="lg" variant="outline" className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-6 py-3 text-base font-semibold" data-testid="hero-tour-button">
-                      {t('hero.tourButton')}
-                    </Button>
-                  </Link>
+                  <Button 
+                    size="lg" 
+                    variant="outline" 
+                    onClick={() => setIsVideoModalOpen(true)}
+                    className="border-2 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 px-6 py-3 text-base font-semibold" 
+                    data-testid="hero-tour-button"
+                  >
+                    {t('hero.tourButton')}
+                  </Button>
                 </div>
               </div>
               <div className="relative w-full">
@@ -494,6 +500,14 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoSrc="/videos/About_Video.mp4"
+        title="About JNV Latur"
+      />
     </>
   );
 }

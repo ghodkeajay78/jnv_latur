@@ -55,32 +55,32 @@ export default function Hostel() {
 
   const wardenInfo = [
     {
-      name: 'Mr. Ramesh Patil',
-      designation: 'Senior Warden (Boys Hostel)',
-      experience: '15 years',
-      qualifications: 'M.A., B.Ed.',
-      specialization: 'Student counseling and discipline',
+      name: 'Shri Rajesh Maheshwarappa Sugure',
+      designation: 'President, Hostel Committee',
+      experience: '14+ years',
+      qualifications: 'Education & Administration',
+      specialization: 'Hostel Management & Student Welfare',
     },
     {
-      name: 'Mrs. Kavita Sharma',
-      designation: 'Senior Warden (Girls Hostel)',
-      experience: '12 years',
-      qualifications: 'M.Sc., M.Ed.',
-      specialization: 'Health and wellness management',
+      name: 'Shri Ravindra Madhukarrao Purnapatre',
+      designation: 'Secretary (Hostel)',
+      experience: '12+ years',
+      qualifications: 'Education & Development',
+      specialization: 'Hostel Administration & Student Services',
     },
     {
-      name: 'Mr. Suresh Kumar',
-      designation: 'Assistant Warden',
-      experience: '8 years',
-      qualifications: 'M.A.',
-      specialization: 'Sports and recreation activities',
+      name: 'Dr. (Mrs.) Aruna Srinivas Sadake',
+      designation: 'Member, Hostel Committee',
+      experience: '15+ years',
+      qualifications: 'Ph.D. in Education',
+      specialization: 'Student Counseling & Welfare',
     },
     {
-      name: 'Mrs. Priya Jadhav',
-      designation: 'Assistant Warden',
-      experience: '6 years',
-      qualifications: 'M.Sc.',
-      specialization: 'Academic support and guidance',
+      name: 'Shri Bahubali Nagnath Bhambe',
+      designation: 'Staff Representative',
+      experience: '16+ years',
+      qualifications: 'Education & Support Services',
+      specialization: 'Staff Welfare & Support Services',
     },
   ];
 
@@ -551,8 +551,8 @@ export default function Hostel() {
               </div>
               <div>
                 <img
-                  src="/images/Classroom3.jpg"
-                  alt="Students in hostel common area following guidelines"
+                  src="/images/Prayer.jpg"
+                  alt="Students participating in prayer and spiritual activities"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="rules-image"
                 />

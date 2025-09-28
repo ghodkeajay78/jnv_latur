@@ -514,8 +514,8 @@ export default function Faculty() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="/images/ParentsMeet2.jpg"
-                  alt="Teacher counseling and guiding students"
+                  src="/images/EveningPrayer.jpg"
+                  alt="Evening prayer session with students and teachers"
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="counseling-image"
                 />
