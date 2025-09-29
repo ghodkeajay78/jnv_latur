@@ -12,51 +12,51 @@ export default function About() {
   const values = [
     {
       icon: BookOpen,
-      title: 'Academic Excellence',
-      description: 'Commitment to providing the highest quality education and fostering intellectual growth.',
+      title: t('about.values.academicExcellence.title'),
+      description: t('about.values.academicExcellence.description'),
     },
     {
       icon: Heart,
-      title: 'Holistic Development',
-      description: 'Nurturing physical, emotional, social, and spiritual development alongside academics.',
+      title: t('about.values.holisticDevelopment.title'),
+      description: t('about.values.holisticDevelopment.description'),
     },
     {
       icon: Globe,
-      title: 'Cultural Integration',
-      description: 'Celebrating diversity and promoting cultural understanding and global citizenship.',
+      title: t('about.values.culturalIntegration.title'),
+      description: t('about.values.culturalIntegration.description'),
     },
     {
       icon: Target,
-      title: 'Character Building',
-      description: 'Instilling values of integrity, discipline, and social responsibility.',
+      title: t('about.values.characterBuilding.title'),
+      description: t('about.values.characterBuilding.description'),
     },
   ];
 
   const milestones = [
     {
-      year: '1993',
-      event: 'School Establishment',
-      description: 'Jankalyan Nivasi Vidyalay, Latur was established on December 5th, 1993 as a residential school.',
+      year: t('about.milestones.establishment.year'),
+      event: t('about.milestones.establishment.event'),
+      description: t('about.milestones.establishment.description'),
     },
     {
-      year: '1995',
-      event: 'SSC Board Affiliation',
-      description: 'School got affiliated with Maharashtra State Board of Secondary and Higher Secondary Education.',
+      year: t('about.milestones.ssc.year'),
+      event: t('about.milestones.ssc.event'),
+      description: t('about.milestones.ssc.description'),
     },
     {
-      year: '2000',
-      event: 'Infrastructure Expansion',
-      description: 'Major expansion of campus facilities including new laboratories and hostels.',
+      year: t('about.milestones.expansion.year'),
+      event: t('about.milestones.expansion.event'),
+      description: t('about.milestones.expansion.description'),
     },
     {
-      year: '2010',
-      event: 'Digital Learning Initiative',
-      description: 'Introduction of smart classrooms and digital learning resources.',
+      year: t('about.milestones.digitalLearning.year'),
+      event: t('about.milestones.digitalLearning.event'),
+      description: t('about.milestones.digitalLearning.description'),
     },
     {
-      year: '2020',
-      event: 'Excellence Recognition',
-      description: 'Awarded "Best Navodaya Vidyalaya" at state level for outstanding performance.',
+      year: t('about.milestones.excellenceRecognition.year'),
+      event: t('about.milestones.excellenceRecognition.event'),
+      description: t('about.milestones.excellenceRecognition.description'),
     },
   ];
 

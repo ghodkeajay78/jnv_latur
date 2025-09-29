@@ -36,75 +36,75 @@ export default function Home() {
     },
     {
       icon: Trophy,
-      title: t('nav.achievements'),
-      description: 'Discover our students\' outstanding achievements in academics, sports, and cultural activities.',
+      title: t('quickLinks.achievements.title'),
+      description: t('quickLinks.achievements.description'),
       href: '/achievements',
       color: 'bg-purple-600',
     },
     {
       icon: Users,
-      title: 'Photo & Video Gallery',
-      description: 'Explore the vibrant life at JNV Latur through our comprehensive collection of photos and videos',
+      title: t('quickLinks.gallery.title'),
+      description: t('quickLinks.gallery.description'),
       href: '/gallery',
       color: 'bg-emerald-600',
     },
   ];
 
   const stats = [
-    { label: 'Years of Excellence', value: '38+', icon: Award },
-    { label: 'Students', value: '580+', icon: Users },
-    { label: 'Faculty Members', value: '45+', icon: GraduationCap },
-    { label: 'Success Rate', value: '95%', icon: Target },
+    { label: t('stats.years'), value: '38+', icon: Award },
+    { label: t('stats.students'), value: '580+', icon: Users },
+    { label: t('stats.faculty'), value: '45+', icon: GraduationCap },
+    { label: t('stats.achievements'), value: '95%', icon: Target },
   ];
 
   const heroImages = [
     {
       src: '/images/Gate.jpg',
-      alt: 'JNV Latur main entrance gate and campus view'
+      alt: t('imageAlt.gate')
     },
     {
       src: '/images/Culture.jpg',
-      alt: 'Cultural activities and events at JNV Latur'
+      alt: t('imageAlt.culture')
     },
     {
       src: '/images/Acadmics_building2.jpg',
-      alt: 'Academic buildings and infrastructure at JNV Latur'
+      alt: t('imageAlt.academicBuilding')
     },
     {
       src: '/images/Assembly4.jpg',
-      alt: 'Assembly hall and school gatherings at JNV Latur'
+      alt: t('imageAlt.assembly')
     },
     {
       src: '/images/Classroom2.jpg',
-      alt: 'Modern classrooms and learning environment at JNV Latur'
+      alt: t('imageAlt.classroom')
     },
     {
       src: '/images/ComputerLab.jpg',
-      alt: 'Computer laboratory with modern technology at JNV Latur'
+      alt: t('imageAlt.computerLab')
     },
     {
       src: '/images/Study.jpg',
-      alt: 'Students engaged in study sessions at JNV Latur'
+      alt: t('imageAlt.study')
     },
     {
       src: '/images/Exercise2.jpg',
-      alt: 'Physical activities and exercises at JNV Latur'
+      alt: t('imageAlt.exercise')
     },
     {
       src: '/images/Donation.jpg',
-      alt: 'Community service and donation activities at JNV Latur'
+      alt: t('imageAlt.donation')
     },
     {
       src: '/images/Library.jpg',
-      alt: 'Central library with extensive collection of books at JNV Latur'
+      alt: t('imageAlt.library')
     },
     {
       src: '/images/ScienceLaboratory.jpg',
-      alt: 'Science laboratory for practical experiments at JNV Latur'
+      alt: t('imageAlt.scienceLab')
     },
     {
       src: '/images/Culture2.jpg',
-      alt: 'Cultural performances and celebrations at JNV Latur'
+      alt: t('imageAlt.culturalPerformances')
     }
   ];
 

@@ -14,50 +14,50 @@ export default function Campus() {
   const facilities = [
     {
       icon: Building,
-      title: 'Academic Blocks',
-      description: 'Modern classrooms with smart boards, audio-visual equipment, and comfortable seating arrangements.',
-      features: ['24 Smart Classrooms', 'Audio-Visual Aids', 'Air Conditioning', 'Ergonomic Furniture'],
+      title: t('campus.facilities.academicBlocks.title'),
+      description: t('campus.facilities.academicBlocks.description'),
+      features: t('campus.facilities.academicBlocks.features'),
     },
     {
       icon: FlaskConical,
-      title: 'Laboratories',
-      description: 'Well-equipped science and computer laboratories for practical learning and research.',
-      features: ['Physics Lab', 'Chemistry Lab', 'Biology Lab', 'Computer Lab', 'Language Lab'],
+      title: t('campus.facilities.laboratories.title'),
+      description: t('campus.facilities.laboratories.description'),
+      features: t('campus.facilities.laboratories.features'),
     },
     {
       icon: BookOpen,
-      title: 'Central Library',
-      description: 'Extensive collection of books, journals, and digital resources for comprehensive learning.',
-      features: ['15,000+ Books', 'Digital Library', 'Reading Rooms', 'Reference Section'],
+      title: t('campus.facilities.centralLibrary.title'),
+      description: t('campus.facilities.centralLibrary.description'),
+      features: t('campus.facilities.centralLibrary.features'),
     },
     {
       icon: Dumbbell,
-      title: 'Sports Complex',
-      description: 'Comprehensive sports facilities for physical fitness and competitive sports training.',
-      features: ['Football Ground', 'Cricket Pitch', 'Basketball Court', 'Volleyball Court', 'Athletics Track'],
+      title: t('campus.facilities.sportsComplex.title'),
+      description: t('campus.facilities.sportsComplex.description'),
+      features: t('campus.facilities.sportsComplex.features'),
     },
   ];
 
   const hostelFeatures = [
     {
-      title: 'Accommodation',
-      description: 'Comfortable dormitory-style rooms with modern amenities.',
-      details: ['4-6 students per room', 'Study tables and chairs', 'Storage lockers', 'Ceiling fans'],
+      title: t('campus.hostelFeatures.accommodation.title'),
+      description: t('campus.hostelFeatures.accommodation.description'),
+      details: t('campus.hostelFeatures.accommodation.details'),
     },
     {
-      title: 'Safety & Security',
-      description: '24/7 security and supervision for student safety.',
-      details: ['24/7 Security Guards', 'CCTV Surveillance', 'Trained Wardens', 'Emergency Protocols'],
+      title: t('campus.hostelFeatures.safetySecurity.title'),
+      description: t('campus.hostelFeatures.safetySecurity.description'),
+      details: t('campus.hostelFeatures.safetySecurity.details'),
     },
     {
-      title: 'Recreation',
-      description: 'Indoor and outdoor recreational facilities for leisure time.',
-      details: ['Indoor Games', 'TV Room', 'Music Room', 'Garden Area'],
+      title: t('campus.hostelFeatures.recreation.title'),
+      description: t('campus.hostelFeatures.recreation.description'),
+      details: t('campus.hostelFeatures.recreation.details'),
     },
     {
-      title: 'Health Care',
-      description: 'Medical facilities and health monitoring for student wellbeing.',
-      details: ['Medical Room', 'First Aid', 'Regular Health Checkups', 'Emergency Care'],
+      title: t('campus.hostelFeatures.healthCare.title'),
+      description: t('campus.hostelFeatures.healthCare.description'),
+      details: t('campus.hostelFeatures.healthCare.details'),
     },
   ];
 

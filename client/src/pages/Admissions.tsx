@@ -15,53 +15,44 @@ export default function Admissions() {
   const admissionProcess = [
     {
       step: 1,
-      title: 'Online Registration',
-      description: 'Complete the online application form at the official JNV portal. Registration opens on January 15, 2024.',
-      duration: 'Jan 15 - Mar 15, 2024',
+      title: t('admissions.process.onlineRegistration.title'),
+      description: t('admissions.process.onlineRegistration.description'),
+      duration: t('admissions.process.onlineRegistration.duration'),
     },
     {
       step: 2,
-      title: 'Entrance Test',
-      description: 'Jankalyan Nivasi Vidyalay Selection Test (JNVST) for Class V admission. Test date: April 20, 2024.',
-      duration: 'April 20, 2024',
+      title: t('admissions.process.entranceTest.title'),
+      description: t('admissions.process.entranceTest.description'),
+      duration: t('admissions.process.entranceTest.duration'),
     },
     {
       step: 3,
-      title: 'Merit List',
-      description: 'Merit list will be published based on test performance. Results announced by May 30, 2024.',
-      duration: 'May 30, 2024',
+      title: t('admissions.process.meritList.title'),
+      description: t('admissions.process.meritList.description'),
+      duration: t('admissions.process.meritList.duration'),
     },
     {
       step: 4,
-      title: 'Document Verification',
-      description: 'Selected candidates must complete document verification and fee payment by June 15, 2024.',
-      duration: 'June 15, 2024',
+      title: t('admissions.process.documentVerification.title'),
+      description: t('admissions.process.documentVerification.description'),
+      duration: t('admissions.process.documentVerification.duration'),
     },
   ];
 
-  const requiredDocuments = [
-    'Birth Certificate',
-    'Class V Mark Sheet',
-    'Transfer Certificate',
-    'Caste Certificate (if applicable)',
-    'Income Certificate',
-    'Domicile Certificate',
-    'Passport Size Photos',
-    'Medical Certificate',
-  ];
+  const requiredDocuments = t('admissions.requiredDocuments');
 
   const eligibilityCriteria = [
     {
-      class: 'Class V',
-      age: '9-11 years as on 30th April',
-      qualification: 'Passed Class IV from recognized school',
-      requirements: ['Rural area domicile', 'Family income below specified limit'],
+      class: t('admissions.eligibilityCriteria.classV.class'),
+      age: t('admissions.eligibilityCriteria.classV.age'),
+      qualification: t('admissions.eligibilityCriteria.classV.qualification'),
+      requirements: t('admissions.eligibilityCriteria.classV.requirements'),
     },
     {
-      class: 'Class VI',
-      age: '10-12 years as on 30th April',
-      qualification: 'Passed Class V from recognized school',
-      requirements: ['Rural area domicile', 'Family income below specified limit'],
+      class: t('admissions.eligibilityCriteria.classVI.class'),
+      age: t('admissions.eligibilityCriteria.classVI.age'),
+      qualification: t('admissions.eligibilityCriteria.classVI.qualification'),
+      requirements: t('admissions.eligibilityCriteria.classVI.requirements'),
     },
   ];
 

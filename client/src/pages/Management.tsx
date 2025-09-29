@@ -12,15 +12,15 @@ export default function Management() {
   const managementCommittee = [
     {
       name: 'Shri Prakash Kishanrao Raychukur',
-      position: 'President',
-      qualification: 'Education Leader',
+      position: t('management.positions.president'),
+      qualification: t('management.qualifications.educationLeader'),
       experience: '20+ years',
-      specialization: 'Educational Leadership & Governance',
+      specialization: t('management.specializations.educationalLeadershipGovernance'),
       responsibilities: [
-        'Overall governance and policy direction',
-        'Strategic planning and decision making',
-        'Community relations and partnerships',
-        'Financial oversight and accountability'
+        t('management.responsibilities.overallGovernancePolicyDirection'),
+        t('management.responsibilities.strategicPlanningDecisionMaking'),
+        t('management.responsibilities.communityRelationsPartnerships'),
+        t('management.responsibilities.financialOversightAccountability')
       ],
       contact: {
         email: 'president@jnvlatur.edu.in',
@@ -29,15 +29,15 @@ export default function Management() {
     },
     {
       name: 'Dr. Rajesh Shivajirao Patil',
-      position: 'Vice President',
-      qualification: 'Ph.D. in Education',
+      position: t('management.positions.vicePresident'),
+      qualification: t('management.qualifications.phdEducation'),
       experience: '18+ years',
-      specialization: 'Academic Excellence & Policy Development',
+      specialization: t('management.specializations.academicExcellencePolicyDevelopment'),
       responsibilities: [
-        'Academic policy formulation',
-        'Educational quality assurance',
-        'Strategic academic planning',
-        'Faculty development programs'
+        t('management.responsibilities.academicPolicyFormulation'),
+        t('management.responsibilities.educationalQualityAssurance'),
+        t('management.responsibilities.strategicAcademicPlanning'),
+        t('management.responsibilities.facultyDevelopmentPrograms')
       ],
       contact: {
         email: 'vicepresident@jnvlatur.edu.in',
@@ -46,8 +46,8 @@ export default function Management() {
     },
     {
       name: 'Adv. Balkrishna Harirrao Deshpande',
-      position: 'Secretary',
-      qualification: 'LL.B., Education Law Specialist',
+      position: t('management.positions.secretary'),
+      qualification: t('management.qualifications.llbEducationLawSpecialist'),
       experience: '15+ years',
       specialization: 'Legal Affairs & Administrative Compliance',
       responsibilities: [

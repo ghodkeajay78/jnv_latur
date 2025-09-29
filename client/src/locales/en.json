@@ -90,10 +90,32 @@
     "applyButton": "Apply Now",
     "tourButton": "Watch a video"
   },
+  "imageAlt": {
+    "gate": "JNV Latur main entrance gate and campus view",
+    "culture": "Cultural activities and events at JNV Latur",
+    "academicBuilding": "Academic buildings and infrastructure at JNV Latur",
+    "assembly": "Assembly hall and school gatherings at JNV Latur",
+    "classroom": "Modern classrooms and learning environment at JNV Latur",
+    "computerLab": "Computer laboratory with modern technology at JNV Latur",
+    "study": "Students engaged in study sessions at JNV Latur",
+    "exercise": "Physical activities and exercises at JNV Latur",
+    "donation": "Community service and donation activities at JNV Latur",
+    "library": "Central library with extensive collection of books at JNV Latur",
+    "scienceLab": "Science laboratory for practical experiments at JNV Latur",
+    "culturalPerformances": "Cultural performances and celebrations at JNV Latur"
+  },
   "quickLinks": {
     "admissions": {
       "title": "Admissions",
       "description": "Apply for admission to our school"
+    },
+    "achievements": {
+      "title": "Achievements",
+      "description": "Discover our students' outstanding achievements in academics, sports, and cultural activities"
+    },
+    "gallery": {
+      "title": "Photo & Video Gallery",
+      "description": "Explore the vibrant life at JNV Latur through our comprehensive collection of photos and videos"
     },
     "academics": {
       "title": "Academics",
@@ -153,6 +175,24 @@
     "title": "About {schoolName}",
     "description": "Established in {established}, {schoolName} stands as a beacon of excellence in education. We are committed to providing quality education and holistic development to our students.",
     "learnMore": "Learn More About Us",
+    "values": {
+      "academicExcellence": {
+        "title": "Academic Excellence",
+        "description": "Commitment to providing the highest quality education and fostering intellectual growth."
+      },
+      "holisticDevelopment": {
+        "title": "Holistic Development",
+        "description": "Nurturing physical, emotional, social, and spiritual development alongside academics."
+      },
+      "culturalIntegration": {
+        "title": "Cultural Integration",
+        "description": "Celebrating diversity and promoting cultural understanding and global citizenship."
+      },
+      "characterBuilding": {
+        "title": "Character Building",
+        "description": "Instilling values of integrity, discipline, and social responsibility."
+      }
+    },
     "milestones": {
       "establishment": {
         "year": "1993",
@@ -169,11 +209,594 @@
         "event": "Infrastructure Expansion",
         "description": "New buildings and modern facilities were added to the campus."
       },
-      "recognition": {
+      "digitalLearning": {
         "year": "2010",
-        "event": "State Recognition",
-        "description": "School received recognition for academic excellence from state government."
+        "event": "Digital Learning Initiative",
+        "description": "Introduction of smart classrooms and digital learning resources."
+      },
+      "excellenceRecognition": {
+        "year": "2020",
+        "event": "Excellence Recognition",
+        "description": "Awarded \"Best Navodaya Vidyalaya\" at state level for outstanding performance."
       }
+    }
+  },
+  "academics": {
+    "curriculumLevels": {
+      "primaryToSecondary": {
+        "level": "Classes V-X",
+        "title": "Primary to Secondary Level",
+        "description": "Structured learning approach from foundation to advanced levels. Focus on basic concepts, language development, and skill building with emphasis on conceptual understanding, progressing to comprehensive SSC Board curriculum with board examination preparation and career guidance.",
+        "subjects": ["Mathematics", "Science", "Social Science", "English", "Hindi", "Marathi", "Sanskrit", "Computer Science", "Information Technology"]
+      }
+    },
+    "keyFeatures": {
+      "marathiSemiEnglish": {
+        "title": "Marathi & Semi-English Medium",
+        "description": "Education offered in Marathi and semi-English medium to cater to diverse learning needs."
+      },
+      "smartClassrooms": {
+        "title": "Smart Classrooms",
+        "description": "Technology-enabled learning environment with digital boards and interactive content."
+      },
+      "projectBasedLearning": {
+        "title": "Project-Based Learning",
+        "description": "Hands-on approach to understanding concepts through practical application."
+      },
+      "continuousAssessment": {
+        "title": "Continuous Assessment",
+        "description": "Regular evaluation and feedback system for holistic development tracking."
+      }
+    },
+    "subjectAreas": {
+      "sciences": {
+        "title": "Sciences",
+        "description": "Physics, Chemistry, Biology with well-equipped practical laboratories."
+      },
+      "mathematics": {
+        "title": "Mathematics",
+        "description": "Advanced mathematics with problem-solving focus and analytical thinking."
+      },
+      "languages": {
+        "title": "Languages",
+        "description": "English, Hindi, Marathi, and Sanskrit for cultural and linguistic development."
+      },
+      "socialStudies": {
+        "title": "Social Studies",
+        "description": "History, Geography, Political Science, and Economics for social awareness."
+      },
+      "computerScience": {
+        "title": "Computer Science",
+        "description": "Programming and software development with modern technology and programming languages."
+      }
+    }
+  },
+  "campus": {
+    "facilities": {
+      "academicBlocks": {
+        "title": "Academic Blocks",
+        "description": "Modern classrooms with smart boards, audio-visual equipment, and comfortable seating arrangements.",
+        "features": ["24 Smart Classrooms", "Audio-Visual Aids", "Air Conditioning", "Ergonomic Furniture"]
+      },
+      "laboratories": {
+        "title": "Laboratories",
+        "description": "Well-equipped science and computer laboratories for practical learning and research.",
+        "features": ["Physics Lab", "Chemistry Lab", "Biology Lab", "Computer Lab", "Language Lab"]
+      },
+      "centralLibrary": {
+        "title": "Central Library",
+        "description": "Extensive collection of books, journals, and digital resources for comprehensive learning.",
+        "features": ["15,000+ Books", "Digital Library", "Reading Rooms", "Reference Section"]
+      },
+      "sportsComplex": {
+        "title": "Sports Complex",
+        "description": "Comprehensive sports facilities for physical fitness and competitive sports training.",
+        "features": ["Football Ground", "Cricket Pitch", "Basketball Court", "Volleyball Court", "Athletics Track"]
+      }
+    },
+    "hostelFeatures": {
+      "accommodation": {
+        "title": "Accommodation",
+        "description": "Comfortable dormitory-style rooms with modern amenities.",
+        "details": ["4-6 students per room", "Study tables and chairs", "Storage lockers", "Ceiling fans"]
+      },
+      "safetySecurity": {
+        "title": "Safety & Security",
+        "description": "24/7 security and supervision for student safety.",
+        "details": ["24/7 Security Guards", "CCTV Surveillance", "Trained Wardens", "Emergency Protocols"]
+      },
+      "recreation": {
+        "title": "Recreation",
+        "description": "Indoor and outdoor recreational facilities for leisure time.",
+        "details": ["TV Room", "Game Rooms", "Outdoor Spaces", "Cultural Activities"]
+      },
+      "messFacilities": {
+        "title": "Mess Facilities",
+        "description": "Nutritious and balanced meal facilities.",
+        "details": ["Nutritious Meals", "Hygiene Standards", "Varied Cuisines", "Special Diets"]
+      },
+      "healthCare": {
+        "title": "Health Care",
+        "description": "Medical facilities and health monitoring for student wellbeing.",
+        "details": ["Medical Room", "First Aid", "Regular Health Checkups", "Emergency Care"]
+      }
+    }
+  },
+  "admissions": {
+    "process": {
+      "onlineRegistration": {
+        "title": "Online Registration",
+        "description": "Complete the online application form at the official JNV portal. Registration opens on January 15, 2024.",
+        "duration": "Jan 15 - Mar 15, 2024"
+      },
+      "entranceTest": {
+        "title": "Entrance Test",
+        "description": "Jankalyan Nivasi Vidyalay Selection Test (JNVST) for Class V admission. Test date: April 20, 2024.",
+        "duration": "April 20, 2024"
+      },
+      "meritList": {
+        "title": "Merit List",
+        "description": "Merit list will be published based on test performance. Results announced by May 30, 2024.",
+        "duration": "May 30, 2024"
+      },
+      "documentVerification": {
+        "title": "Document Verification",
+        "description": "Selected candidates must complete document verification and fee payment by June 15, 2024.",
+        "duration": "June 15, 2024"
+      }
+    },
+    "requiredDocuments": [
+      "Birth Certificate",
+      "Class V Mark Sheet",
+      "Transfer Certificate",
+      "Caste Certificate (if applicable)",
+      "Income Certificate",
+      "Domicile Certificate",
+      "Passport Size Photos",
+      "Medical Certificate"
+    ],
+    "eligibilityCriteria": {
+      "classV": {
+        "class": "Class V",
+        "age": "9-11 years as on 30th April",
+        "qualification": "Passed Class IV from recognized school",
+        "requirements": ["Rural area domicile", "Family income below specified limit"]
+      },
+      "classVI": {
+        "class": "Class VI",
+        "age": "10-12 years as on 30th April",
+        "qualification": "Passed Class V from recognized school",
+        "requirements": ["Rural area domicile", "Family income below specified limit"]
+      }
+    }
+  },
+  "achievements": {
+    "academicResults": {
+      "classX": "Class X",
+      "streams": {
+        "science": "Science",
+        "allSubjects": "All Subjects",
+        "commerce": "Commerce"
+      }
+    },
+    "sportsAchievements": {
+      "sports": {
+        "cricket": "Cricket",
+        "football": "Football",
+        "basketball": "Basketball",
+        "athletics": "Athletics",
+        "athletics400m": "Athletics (400m)"
+      },
+      "levels": {
+        "state": "State",
+        "district": "District",
+        "national": "National"
+      },
+      "achievements": {
+        "champions": "Champions",
+        "runnersUp": "Runners Up",
+        "thirdPlace": "Third Place",
+        "bronzeMedal": "Bronze Medal",
+        "winners": "Winners"
+      },
+      "participants": {
+        "schoolTeam": "School Team",
+        "individual": "Individual"
+      },
+      "medals": {
+        "gold": "Gold",
+        "silver": "Silver",
+        "bronze": "Bronze"
+      }
+    },
+    "culturalAchievements": {
+      "events": {
+        "dance": "Dance",
+        "music": "Music",
+        "debate": "Debate",
+        "drama": "Drama"
+      },
+      "levels": {
+        "state": "State",
+        "district": "District",
+        "national": "National"
+      },
+      "achievements": {
+        "firstPlace": "First Place",
+        "secondPlace": "Second Place",
+        "thirdPlace": "Third Place"
+      }
+    }
+  },
+  "contact": {
+    "contactMethods": {
+      "phoneNumbers": {
+        "title": "Phone Numbers",
+        "items": {
+          "principalOffice": "Principal Office",
+          "generalOffice": "General Office",
+          "admissions": "Admissions"
+        }
+      },
+      "emailAddresses": {
+        "title": "Email Addresses",
+        "items": {
+          "generalInquiries": "General Inquiries",
+          "principal": "Principal",
+          "admissions": "Admissions"
+        }
+      },
+      "address": {
+        "title": "Address",
+        "items": {
+          "address": "Address",
+          "location": "Location",
+          "statePin": "State & PIN"
+        }
+      },
+      "officeHours": {
+        "title": "Office Hours",
+        "items": {
+          "weekdays": "Monday - Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        }
+      }
+    }
+  },
+  "faculty": {
+    "designations": {
+      "headOfScienceDepartment": "Head of Science Department",
+      "seniorTeacher": "Senior Teacher",
+      "englishTeacher": "English Teacher",
+      "hindiTeacher": "Hindi Teacher",
+      "marathiTeacher": "Marathi Teacher",
+      "mathematicsTeacher": "Mathematics Teacher",
+      "socialStudiesTeacher": "Social Studies Teacher",
+      "computerTeacher": "Computer Teacher",
+      "computerScienceTeacher": "Computer Science Teacher",
+      "physicalEducationTeacher": "Physical Education Teacher"
+    },
+    "subjects": {
+      "physics": "Physics",
+      "chemistry": "Chemistry",
+      "biology": "Biology",
+      "englishLiterature": "English Literature",
+      "hindi": "Hindi",
+      "hindiLiterature": "Hindi Literature",
+      "mathematics": "Mathematics",
+      "socialStudies": "Social Studies",
+      "computerScience": "Computer Science",
+      "physicalEducation": "Physical Education",
+      "history": "History",
+      "geography": "Geography",
+      "marathi": "Marathi",
+      "marathiLiterature": "Marathi Literature",
+      "sanskrit": "Sanskrit"
+    },
+    "qualifications": {
+      "phdPhysics": "Ph.D. in Physics",
+      "mscChemistry": "M.Sc. Chemistry",
+      "mscBiologyBed": "M.Sc. Biology, B.Ed.",
+      "maEnglishBed": "M.A. English, B.Ed.",
+      "maHindi": "M.A. Hindi",
+      "maHindiBed": "M.A. Hindi, B.Ed.",
+      "maMarathi": "M.A. Marathi",
+      "mscMathematicsBed": "M.Sc. Mathematics, B.Ed.",
+      "maHistoryBed": "M.A. History, B.Ed.",
+      "mcaBtech": "MCA, B.Tech",
+      "btechComputer": "B.Tech Computer",
+      "bped": "B.P.Ed."
+    }
+  },
+  "gallery": {
+    "items": {
+      "sportsComplex": {
+        "title": "Sports Complex",
+        "description": "Modern sports facilities including football ground, basketball court, and athletics track."
+      },
+      "culturalPerformance": {
+        "title": "Cultural Performance",
+        "description": "Students performing traditional dance during annual cultural festival."
+      },
+      "hostelFacilities": {
+        "title": "Hostel Facilities",
+        "description": "Clean and comfortable dormitory rooms with study areas."
+      },
+      "scienceExhibition": {
+        "title": "Science Exhibition",
+        "description": "Students showcasing innovative science projects and experiments."
+      },
+      "annualSportsMeet": {
+        "title": "Annual Sports Meet",
+        "description": "Inter-house athletics competition with students participating in various events."
+      },
+      "independenceDayCelebration": {
+        "title": "Independence Day Celebration",
+        "description": "Flag hoisting ceremony and patriotic cultural programs."
+      },
+      "computerLaboratory": {
+        "title": "Computer Laboratory",
+        "description": "Modern computer lab with latest hardware and software for student learning."
+      }
+    }
+  },
+  "hostel": {
+    "dailySchedule": {
+      "wakeUpBell": "Wake Up Bell",
+      "physicalExercise": "Physical Exercise",
+      "breakfast": "Breakfast",
+      "morningAssembly": "Morning Assembly",
+      "academicClasses": "Academic Classes",
+      "lunchBreak": "Lunch Break",
+      "afternoonClasses": "Afternoon Classes",
+      "teaSnacks": "Tea & Snacks",
+      "gamesSports": "Games & Sports",
+      "studyHour": "Study Hour",
+      "dinner": "Dinner",
+      "recreationTime": "Recreation Time",
+      "studyTime": "Study Time",
+      "lightsOut": "Lights Out"
+    },
+    "scheduleDescriptions": {
+      "wakeUpBell": "Morning wake-up call for all students",
+      "physicalExercise": "Morning exercises and yoga session",
+      "breakfast": "Nutritious morning meal in mess hall",
+      "morningAssembly": "School assembly and prayer",
+      "academicClasses": "Regular classroom teaching",
+      "lunchBreak": "Midday meal and rest time",
+      "afternoonClasses": "Continuation of academic sessions",
+      "teaSnacks": "Evening refreshments",
+      "gamesSports": "Outdoor and indoor sports activities",
+      "studyHour": "Supervised self-study time",
+      "dinner": "Evening meal with variety of dishes",
+      "recreationTime": "TV, music, indoor games",
+      "studyTime": "Homework and preparation",
+      "lightsOut": "Sleep time for all students"
+    },
+    "facilities": {
+      "comfortableAccommodation": {
+        "title": "Comfortable Accommodation",
+        "description": "Well-ventilated dormitories with 4-6 students per room, equipped with individual study tables, storage lockers, and comfortable beds.",
+        "features": ["Separate rooms for boys and girls", "Individual study space", "Storage facilities", "Comfortable bedding"]
+      },
+      "nutritiousMessFacilities": {
+        "title": "Nutritious Mess Facilities",
+        "description": "Hygienic kitchen and dining hall serving balanced vegetarian meals prepared by experienced cooks with focus on nutrition.",
+        "features": ["Nutritious vegetarian meals", "Hygienic food preparation", "Balanced diet planning", "Cultural food diversity"]
+      },
+      "safetySecurity": {
+        "title": "Safety & Security",
+        "description": "24/7 security arrangements with trained wardens and support staff ensuring complete safety of all resident students.",
+        "features": ["24/7 Security guards", "CCTV surveillance", "Trained wardens", "Emergency protocols"]
+      },
+      "healthWellness": {
+        "title": "Health & Wellness",
+        "description": "Regular health check-ups, emergency medical services, and mental health support.",
+        "features": ["Regular health check-ups", "Emergency medical services", "Mental health support", "Yoga and meditation"]
+      }
+    }
+  },
+  "management": {
+    "positions": {
+      "president": "President",
+      "vicePresident": "Vice President",
+      "secretary": "Secretary",
+      "member": "Member",
+      "nominatedMember": "Nominated Member",
+      "cooptedMember": "Co-opted Member",
+      "parentsRepresentative": "Parents' Representative",
+      "teachersRepresentative": "Teachers' Representative",
+      "nonTeachingStaffRepresentative": "Non-teaching Staff Representative",
+      "specialInviteeMember": "Special Invitee Member",
+      "staffRepresentative": "Staff Representative",
+      "localSecretary": "Local Secretary",
+      "hostelSecretary": "Hostel Secretary"
+    },
+    "qualifications": {
+      "educationLeader": "Education Leader",
+      "phdEducation": "Ph.D. in Education",
+      "llbEducationLawSpecialist": "LL.B., Education Law Specialist",
+      "mbaEducation": "MBA in Education",
+      "maEducation": "M.A. in Education",
+      "bscEducation": "B.Sc. in Education",
+      "mscEducation": "M.Sc. in Education",
+      "bcomEducation": "B.Com. in Education",
+      "mcomEducation": "M.Com. in Education"
+    },
+    "specializations": {
+      "educationalLeadershipGovernance": "Educational Leadership & Governance",
+      "academicExcellencePolicyDevelopment": "Academic Excellence & Policy Development",
+      "legalComplianceAdministration": "Legal Compliance & Administration",
+      "financialManagementBudgeting": "Financial Management & Budgeting",
+      "communityEngagementOutreach": "Community Engagement & Outreach",
+      "academicPolicyFormulation": "Academic Policy Formulation",
+      "educationalQualityAssurance": "Educational Quality Assurance",
+      "strategicAcademicPlanning": "Strategic Academic Planning",
+      "facultyDevelopmentPrograms": "Faculty Development Programs"
+    },
+    "responsibilities": {
+      "overallGovernancePolicyDirection": "Overall governance and policy direction",
+      "strategicPlanningDecisionMaking": "Strategic planning and decision making",
+      "communityRelationsPartnerships": "Community relations and partnerships",
+      "financialOversightAccountability": "Financial oversight and accountability",
+      "academicPolicyFormulation": "Academic policy formulation",
+      "educationalQualityAssurance": "Educational quality assurance",
+      "strategicAcademicPlanning": "Strategic academic planning",
+      "facultyDevelopmentPrograms": "Faculty development programs",
+      "legalComplianceAdministration": "Legal compliance and administration",
+      "contractManagementDocumentation": "Contract management and documentation",
+      "financialPlanningBudgeting": "Financial planning and budgeting",
+      "resourceAllocationManagement": "Resource allocation and management",
+      "communityEngagementOutreach": "Community engagement and outreach",
+      "publicRelationsCommunication": "Public relations and communication"
+    }
+  },
+  "alumni": {
+    "professions": {
+      "medicalDoctorResearcher": "Medical Doctor & Researcher",
+      "iasOfficer": "IAS Officer",
+      "softwareEngineer": "Software Engineer",
+      "researchScientist": "Research Scientist",
+      "businessEntrepreneur": "Business Entrepreneur",
+      "civilEngineer": "Civil Engineer",
+      "teacher": "Teacher",
+      "bankManager": "Bank Manager",
+      "governmentOfficer": "Government Officer",
+      "socialWorker": "Social Worker"
+    },
+    "achievements": {
+      "leadingCardiologistAIIMS": "Leading cardiologist at AIIMS, Delhi",
+      "districtCollectorPune": "District Collector, Pune",
+      "seniorDirectorMicrosoft": "Senior Director at Microsoft, USA",
+      "nasaSpaceResearch": "NASA Space Research Program",
+      "successfulEntrepreneur": "Successful Entrepreneur",
+      "infrastructureProjects": "Major infrastructure projects",
+      "excellentTeacher": "Excellent Teacher",
+      "bankingExcellence": "Banking Excellence",
+      "governmentService": "Government Service",
+      "socialImpact": "Social Impact"
+    },
+    "locations": {
+      "newDelhi": "New Delhi",
+      "puneMaharashtra": "Pune, Maharashtra",
+      "seattleUSA": "Seattle, USA",
+      "houstonUSA": "Houston, USA",
+      "mumbaiMaharashtra": "Mumbai, Maharashtra",
+      "bangaloreKarnataka": "Bangalore, Karnataka",
+      "laturMaharashtra": "Latur, Maharashtra",
+      "hyderabadTelangana": "Hyderabad, Telangana",
+      "chennaiTamilNadu": "Chennai, Tamil Nadu",
+      "kolkataWestBengal": "Kolkata, West Bengal"
+    }
+  },
+  "news": {
+    "items": {
+      "interHouseSportsCompetition2024": {
+        "title": "Inter-House Sports Competition 2024",
+        "description": "Annual inter-house sports competition begins with swimming and athletics events. All four houses competing for the championship trophy."
+      },
+      "digitalLibraryInauguration": {
+        "title": "Digital Library Inauguration",
+        "description": "State-of-the-art digital library with 10,000+ e-books and online resources inaugurated by Education Minister."
+      },
+      "nationalScienceDayCelebration": {
+        "title": "National Science Day Celebration",
+        "description": "Special programs and exhibitions planned for National Science Day. Guest lecture by renowned scientist Dr. A.P.J. Abdul Kalam Institute."
+      },
+      "studentExchangeProgram": {
+        "title": "Student Exchange Program",
+        "description": "Cultural exchange program with sister school in Japan. Selected students will participate in 2-week educational tour."
+      },
+      "annualDayPreparation": {
+        "title": "Annual Day Preparation",
+        "description": "Students busy with preparations for Annual Day celebration. Cultural programs, drama, and musical performances planned."
+      }
+    },
+    "categories": {
+      "sports": "Sports",
+      "infrastructure": "Infrastructure",
+      "academic": "Academic",
+      "international": "International",
+      "cultural": "Cultural"
+    }
+  },
+  "policies": {
+    "disciplinePolicies": {
+      "codeOfConduct": {
+        "title": "Code of Conduct",
+        "description": "Students must maintain respectful behavior towards teachers, staff, and fellow students at all times.",
+        "details": [
+          "Respectful communication with all members of the school community",
+          "No use of abusive language or inappropriate behavior",
+          "Proper etiquette during meals, study hours, and recreational activities",
+          "Maintaining dignity of the institution in all interactions"
+        ]
+      },
+      "attendanceRequirements": {
+        "title": "Attendance Requirements",
+        "description": "Regular attendance is mandatory for all academic and co-curricular activities.",
+        "details": [
+          "Minimum 75% attendance required for internal assessment",
+          "Medical certificates required for extended absences",
+          "Prior permission needed for planned leave",
+          "Punctuality expected for all classes and activities"
+        ]
+      },
+      "uniformAndGrooming": {
+        "title": "Uniform and Grooming",
+        "description": "Proper uniform and grooming standards must be maintained as per school guidelines.",
+        "details": [
+          "Complete school uniform to be worn during school hours",
+          "Neat and clean appearance with proper grooming",
+          "No unauthorized accessories or modifications to uniform",
+          "Specific dress code for different activities and events"
+        ]
+      },
+      "academicIntegrity": {
+        "title": "Academic Integrity",
+        "description": "Students must maintain honesty and integrity in all academic work and examinations.",
+        "details": [
+          "No cheating, plagiarism, or academic dishonesty",
+          "Original work submission for all assignments",
+          "Proper citation and acknowledgment of sources",
+          "Fair play in competitions and assessments"
+        ]
+      }
+    }
+  },
+  "resources": {
+    "downloads": {
+      "schoolProspectus202425": {
+        "title": "School Prospectus 2024-25",
+        "description": "Comprehensive guide about JNV Latur including admission procedures, academics, and facilities."
+      },
+      "academicCalendar202425": {
+        "title": "Academic Calendar 2024-25",
+        "description": "Complete academic year schedule including holidays, examinations, and important events."
+      },
+      "feeStructure": {
+        "title": "Fee Structure",
+        "description": "Detailed breakdown of all fees including hostel, mess, and other charges."
+      },
+      "admissionApplicationForm": {
+        "title": "Admission Application Form",
+        "description": "Printable application form for Class VI and lateral entry admissions."
+      },
+      "syllabusClassVIToVIII": {
+        "title": "Syllabus - Class VI to VIII",
+        "description": "Comprehensive syllabus for foundation level classes with subject-wise breakdown."
+      },
+      "syllabusClassVToX": {
+        "title": "Syllabus - Class V to X",
+        "description": "Complete academic year syllabus with SSC Board curriculum."
+      }
+    },
+    "categories": {
+      "admissions": "Admissions",
+      "academic": "Academic",
+      "forms": "Forms",
+      "documents": "Documents"
     }
   },
   "stats": {

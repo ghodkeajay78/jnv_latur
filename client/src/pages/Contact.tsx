@@ -12,38 +12,38 @@ export default function Contact() {
   const contactMethods = [
     {
       icon: Phone,
-      title: 'Phone Numbers',
+      title: t('contact.contactMethods.phoneNumbers.title'),
       items: [
-        { label: 'Principal Office', value: contactInfo.principal },
-        { label: 'General Office', value: contactInfo.office },
-        { label: 'Admissions', value: contactInfo.admissions },
+        { label: t('contact.contactMethods.phoneNumbers.items.principalOffice'), value: contactInfo.principal },
+        { label: t('contact.contactMethods.phoneNumbers.items.generalOffice'), value: contactInfo.office },
+        { label: t('contact.contactMethods.phoneNumbers.items.admissions'), value: contactInfo.admissions },
       ],
     },
     {
       icon: Mail,
-      title: 'Email Addresses',
+      title: t('contact.contactMethods.emailAddresses.title'),
       items: [
-        { label: 'General Inquiries', value: contactInfo.email.general },
-        { label: 'Principal', value: contactInfo.email.principal },
-        { label: 'Admissions', value: contactInfo.email.admissions },
+        { label: t('contact.contactMethods.emailAddresses.items.generalInquiries'), value: contactInfo.email.general },
+        { label: t('contact.contactMethods.emailAddresses.items.principal'), value: contactInfo.email.principal },
+        { label: t('contact.contactMethods.emailAddresses.items.admissions'), value: contactInfo.email.admissions },
       ],
     },
     {
       icon: MapPin,
-      title: 'Address',
+      title: t('contact.contactMethods.address.title'),
       items: [
-        { label: 'Address', value: `${contactInfo.address.street}, ${contactInfo.address.village}` },
-        { label: 'Location', value: contactInfo.address.district },
-        { label: 'State & PIN', value: `${contactInfo.address.state} - ${contactInfo.address.pincode}` },
+        { label: t('contact.contactMethods.address.items.address'), value: `${contactInfo.address.street}, ${contactInfo.address.village}` },
+        { label: t('contact.contactMethods.address.items.location'), value: contactInfo.address.district },
+        { label: t('contact.contactMethods.address.items.statePin'), value: `${contactInfo.address.state} - ${contactInfo.address.pincode}` },
       ],
     },
     {
       icon: Clock,
-      title: 'Office Hours',
+      title: t('contact.contactMethods.officeHours.title'),
       items: [
-        { label: 'Monday - Friday', value: contactInfo.hours.weekdays },
-        { label: 'Saturday', value: contactInfo.hours.saturday },
-        { label: 'Sunday', value: contactInfo.hours.sunday },
+        { label: t('contact.contactMethods.officeHours.items.weekdays'), value: contactInfo.hours.weekdays },
+        { label: t('contact.contactMethods.officeHours.items.saturday'), value: contactInfo.hours.saturday },
+        { label: t('contact.contactMethods.officeHours.items.sunday'), value: contactInfo.hours.sunday },
       ],
     },
   ];

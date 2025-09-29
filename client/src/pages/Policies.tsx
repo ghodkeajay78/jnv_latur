@@ -11,44 +11,24 @@ export default function Policies() {
 
   const disciplinePolicies = [
     {
-      title: 'Code of Conduct',
-      description: 'Students must maintain respectful behavior towards teachers, staff, and fellow students at all times.',
-      details: [
-        'Respectful communication with all members of the school community',
-        'No use of abusive language or inappropriate behavior',
-        'Proper etiquette during meals, study hours, and recreational activities',
-        'Maintaining dignity of the institution in all interactions'
-      ],
+      title: t('policies.disciplinePolicies.codeOfConduct.title'),
+      description: t('policies.disciplinePolicies.codeOfConduct.description'),
+      details: t('policies.disciplinePolicies.codeOfConduct.details'),
     },
     {
-      title: 'Attendance Requirements',
-      description: 'Regular attendance is mandatory for all academic and co-curricular activities.',
-      details: [
-        'Minimum 75% attendance required for internal assessment',
-        'Medical certificates required for extended absences',
-        'Prior permission needed for planned leave',
-        'Punctuality expected for all classes and activities'
-      ],
+      title: t('policies.disciplinePolicies.attendanceRequirements.title'),
+      description: t('policies.disciplinePolicies.attendanceRequirements.description'),
+      details: t('policies.disciplinePolicies.attendanceRequirements.details'),
     },
     {
-      title: 'Uniform and Grooming',
-      description: 'Proper uniform and grooming standards must be maintained as per school guidelines.',
-      details: [
-        'Complete school uniform to be worn during school hours',
-        'Neat and clean appearance with proper grooming',
-        'No unauthorized accessories or modifications to uniform',
-        'Specific dress code for different activities and events'
-      ],
+      title: t('policies.disciplinePolicies.uniformAndGrooming.title'),
+      description: t('policies.disciplinePolicies.uniformAndGrooming.description'),
+      details: t('policies.disciplinePolicies.uniformAndGrooming.details'),
     },
     {
-      title: 'Academic Integrity',
-      description: 'Students must maintain honesty and integrity in all academic work and examinations.',
-      details: [
-        'No cheating, plagiarism, or academic dishonesty',
-        'Original work submission for all assignments',
-        'Proper citation and acknowledgment of sources',
-        'Fair play in competitions and assessments'
-      ],
+      title: t('policies.disciplinePolicies.academicIntegrity.title'),
+      description: t('policies.disciplinePolicies.academicIntegrity.description'),
+      details: t('policies.disciplinePolicies.academicIntegrity.details'),
     },
   ];
 

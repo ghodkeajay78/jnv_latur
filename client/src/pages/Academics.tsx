@@ -13,10 +13,10 @@ export default function Academics() {
 
   const curriculumLevels = [
     {
-      level: 'Classes V-X',
-      title: 'Primary to Secondary Level',
-      description: 'Structured learning approach from foundation to advanced levels. Focus on basic concepts, language development, and skill building with emphasis on conceptual understanding, progressing to comprehensive SSC Board curriculum with board examination preparation and career guidance.',
-      subjects: ['Mathematics', 'Science', 'Social Science', 'English', 'Hindi', 'Marathi', 'Sanskrit', 'Computer Science', 'Information Technology'],
+      level: t('academics.curriculumLevels.primaryToSecondary.level'),
+      title: t('academics.curriculumLevels.primaryToSecondary.title'),
+      description: t('academics.curriculumLevels.primaryToSecondary.description'),
+      subjects: t('academics.curriculumLevels.primaryToSecondary.subjects'),
       color: 'border-l-blue-500',
     },
   ];
@@ -24,49 +24,49 @@ export default function Academics() {
   const keyFeatures = [
     {
       icon: CheckCircle,
-      title: 'Marathi & Semi-English Medium',
-      description: 'Education offered in Marathi and semi-English medium to cater to diverse learning needs.',
+      title: t('academics.keyFeatures.marathiSemiEnglish.title'),
+      description: t('academics.keyFeatures.marathiSemiEnglish.description'),
     },
     {
       icon: BookOpen,
-      title: 'Smart Classrooms',
-      description: 'Technology-enabled learning environment with digital boards and interactive content.',
+      title: t('academics.keyFeatures.smartClassrooms.title'),
+      description: t('academics.keyFeatures.smartClassrooms.description'),
     },
     {
       icon: Users,
-      title: 'Project-Based Learning',
-      description: 'Hands-on approach to understanding concepts through practical application.',
+      title: t('academics.keyFeatures.projectBasedLearning.title'),
+      description: t('academics.keyFeatures.projectBasedLearning.description'),
     },
     {
       icon: Award,
-      title: 'Continuous Assessment',
-      description: 'Regular evaluation and feedback system for holistic development tracking.',
+      title: t('academics.keyFeatures.continuousAssessment.title'),
+      description: t('academics.keyFeatures.continuousAssessment.description'),
     },
   ];
 
   const subjectAreas = [
     {
       icon: FlaskConical,
-      title: 'Sciences',
-      description: 'Physics, Chemistry, Biology with well-equipped practical laboratories.',
+      title: t('academics.subjectAreas.sciences.title'),
+      description: t('academics.subjectAreas.sciences.description'),
       color: 'bg-blue-100 text-blue-600',
     },
     {
       icon: Calculator,
-      title: 'Mathematics',
-      description: 'Advanced mathematics with problem-solving focus and analytical thinking.',
+      title: t('academics.subjectAreas.mathematics.title'),
+      description: t('academics.subjectAreas.mathematics.description'),
       color: 'bg-green-100 text-green-600',
     },
     {
       icon: Languages,
-      title: 'Languages',
-      description: 'English, Hindi, Marathi, and Sanskrit for cultural and linguistic development.',
+      title: t('academics.subjectAreas.languages.title'),
+      description: t('academics.subjectAreas.languages.description'),
       color: 'bg-purple-100 text-purple-600',
     },
     {
       icon: Globe,
-      title: 'Social Studies',
-      description: 'History, Geography, Political Science, Economics for social awareness.',
+      title: t('academics.subjectAreas.socialStudies.title'),
+      description: t('academics.subjectAreas.socialStudies.description'),
       color: 'bg-orange-100 text-orange-600',
     },
   ];
