@@ -15,6 +15,36 @@ import { useEffect, useState } from 'react';
 export default function Home() {
   const { t, language } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
+
+
+  // Gallery item translation mapping
+  const getGalleryItemTranslationKey = (item: any) => {
+    const keyMap: { [key: string]: string } = {
+      'Modern Classrooms': 'modernClassrooms',
+      'Science Laboratory': 'scienceLaboratory',
+      'Computer Laboratory': 'computerLaboratory',
+      'Central Library': 'centralLibrary',
+      'Academic Buildings': 'academicBuildings',
+      'Sports Ground': 'sportsGround',
+      'Assembly Hall': 'assemblyHall',
+      'Cultural Events': 'culturalEvents',
+      'Morning Exercise': 'morningExercise',
+      'Study Sessions': 'studySessions',
+      'Teachers Meeting': 'teachersMeeting',
+      'Parent-Teacher Meeting': 'parentTeacherMeeting'
+    };
+    return keyMap[item.title] || item.id;
+  };
+
+  const getTranslatedTitle = (item: any) => {
+    const key = getGalleryItemTranslationKey(item);
+    return t(`gallery.items.${key}.title`);
+  };
+
+  const getTranslatedDescription = (item: any) => {
+    const key = getGalleryItemTranslationKey(item);
+    return t(`gallery.items.${key}.description`);
+  };
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   // Auto-rotate carousel
@@ -320,7 +350,11 @@ export default function Home() {
                 {t('campusLife.description')}
               </p>
             </div>
-            <PhotoGallery items={galleryItems} />
+            <PhotoGallery 
+              items={galleryItems} 
+              getTranslatedTitle={getTranslatedTitle}
+              getTranslatedDescription={getTranslatedDescription}
+            />
           </div>
         </section>
 
@@ -365,29 +399,72 @@ export default function Home() {
               <div className="lg:col-span-2">
                 <h2 className="text-2xl font-bold mb-4" data-testid="news-title">{t('news.title')}</h2>
                 <div className="space-y-3">
-                  {newsItems.map((item) => (
-                    <Card key={item.id}>
-                      <CardContent className="p-4">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <Badge 
-                              variant={item.type === 'announcement' ? 'default' : item.type === 'event' ? 'secondary' : 'outline'} 
-                              className="mb-2 text-xs"
-                              data-testid={`news-badge-${item.id}`}
-                            >
-                              {item.type.toUpperCase()}
-                            </Badge>
-                            <h3 className="font-semibold mb-2 text-sm" data-testid={`news-title-${item.id}`}>{item.title}</h3>
-                            <p className="text-muted-foreground text-xs mb-2">{item.description}</p>
-                            <div className="flex items-center text-xs text-muted-foreground">
-                              <Calendar className="w-3 h-3 mr-1" />
-                              <span>{new Date(item.date).toLocaleDateString()}</span>
-                            </div>
+                  {/* Static news items with translations */}
+                  <Card>
+                    <CardContent className="p-4">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <Badge 
+                            variant="default" 
+                            className="mb-2 text-xs"
+                            data-testid="news-badge-1"
+                          >
+                            {t('common.announcement')}
+                          </Badge>
+                          <h3 className="font-semibold mb-2 text-sm" data-testid="news-title-1">{t('news.staticItems.admissionProcess.title')}</h3>
+                          <p className="text-muted-foreground text-xs mb-2">{t('news.staticItems.admissionProcess.description')}</p>
+                          <div className="flex items-center text-xs text-muted-foreground">
+                            <Calendar className="w-3 h-3 mr-1" />
+                            <span>{t('news.staticItems.admissionProcess.date')}</span>
                           </div>
                         </div>
-                      </CardContent>
-                    </Card>
-                  ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card>
+                    <CardContent className="p-4">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <Badge 
+                            variant="secondary" 
+                            className="mb-2 text-xs"
+                            data-testid="news-badge-2"
+                          >
+                            {t('common.event')}
+                          </Badge>
+                          <h3 className="font-semibold mb-2 text-sm" data-testid="news-title-2">{t('news.staticItems.scienceExhibition.title')}</h3>
+                          <p className="text-muted-foreground text-xs mb-2">{t('news.staticItems.scienceExhibition.description')}</p>
+                          <div className="flex items-center text-xs text-muted-foreground">
+                            <Calendar className="w-3 h-3 mr-1" />
+                            <span>{t('news.staticItems.scienceExhibition.date')}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  
+                  <Card>
+                    <CardContent className="p-4">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <Badge 
+                            variant="outline" 
+                            className="mb-2 text-xs"
+                            data-testid="news-badge-3"
+                          >
+                            {t('common.result')}
+                          </Badge>
+                          <h3 className="font-semibold mb-2 text-sm" data-testid="news-title-3">{t('news.staticItems.boardResults.title')}</h3>
+                          <p className="text-muted-foreground text-xs mb-2">{t('news.staticItems.boardResults.description')}</p>
+                          <div className="flex items-center text-xs text-muted-foreground">
+                            <Calendar className="w-3 h-3 mr-1" />
+                            <span>{t('news.staticItems.boardResults.date')}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
                 <div className="mt-4">
                   <Link href="/news">
@@ -403,18 +480,18 @@ export default function Home() {
 
                 <Card className="bg-gradient-to-br from-blue-600 to-indigo-700 text-white">
                   <CardContent className="p-4">
-                    <h3 className="font-semibold mb-3 text-base">Upcoming Events</h3>
+                    <h3 className="font-semibold mb-3 text-base">{t('upcomingEvents.title')}</h3>
                     <div className="space-y-3 text-xs">
                       <div className="border-l-2 border-white/30 pl-2">
-                        <div className="font-medium">Republic Day Celebration</div>
+                        <div className="font-medium">{t('upcomingEvents.republicDay')}</div>
                         <div className="opacity-90">January 26, 2024</div>
                       </div>
                       <div className="border-l-2 border-white/30 pl-2">
-                        <div className="font-medium">Parent-Teacher Meeting</div>
+                        <div className="font-medium">{t('upcomingEvents.parentTeacherMeeting')}</div>
                         <div className="opacity-90">February 3, 2024</div>
                       </div>
                       <div className="border-l-2 border-white/30 pl-2">
-                        <div className="font-medium">Annual Sports Meet</div>
+                        <div className="font-medium">{t('upcomingEvents.annualSportsMeet')}</div>
                         <div className="opacity-90">February 15-17, 2024</div>
                       </div>
                     </div>
@@ -465,16 +542,15 @@ export default function Home() {
               <div>
                 <h2 className="text-2xl lg:text-3xl font-bold mb-4" data-testid="about-title">{t('about.title', { schoolName: t('school.name') })}</h2>
                 <p className="text-base text-muted-foreground mb-4">
-                  {t('about.description', { established: schoolInfo.established.toString(), schoolName: t('school.name') })} 
-                  intellectual, physical, and emotional development.
+                  {t('about.description', { established: schoolInfo.established.toString(), schoolName: t('school.name') })}
                 </p>
                 <div className="grid md:grid-cols-2 gap-4 mb-6">
                   <div>
-                    <h3 className="font-semibold mb-1.5 text-sm">Our Mission</h3>
+                    <h3 className="font-semibold mb-1.5 text-sm">{t('about.mission')}</h3>
                     <p className="text-xs text-muted-foreground">{t('school.mission')}</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1.5 text-sm">Our Vision</h3>
+                    <h3 className="font-semibold mb-1.5 text-sm">{t('about.vision')}</h3>
                     <p className="text-xs text-muted-foreground">{t('school.vision')}</p>
                   </div>
                 </div>

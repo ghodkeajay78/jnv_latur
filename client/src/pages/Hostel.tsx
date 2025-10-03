@@ -53,80 +53,13 @@ export default function Hostel() {
     },
   ];
 
-  const wardenInfo = [
-    {
-      name: 'Shri Rajesh Maheshwarappa Sugure',
-      designation: 'President, Hostel Committee',
-      experience: '14+ years',
-      qualifications: 'Education & Administration',
-      specialization: 'Hostel Management & Student Welfare',
-    },
-    {
-      name: 'Shri Ravindra Madhukarrao Purnapatre',
-      designation: 'Secretary (Hostel)',
-      experience: '12+ years',
-      qualifications: 'Education & Development',
-      specialization: 'Hostel Administration & Student Services',
-    },
-    {
-      name: 'Dr. (Mrs.) Aruna Srinivas Sadake',
-      designation: 'Member, Hostel Committee',
-      experience: '15+ years',
-      qualifications: 'Ph.D. in Education',
-      specialization: 'Student Counseling & Welfare',
-    },
-    {
-      name: 'Shri Bahubali Nagnath Bhambe',
-      designation: 'Staff Representative',
-      experience: '16+ years',
-      qualifications: 'Education & Support Services',
-      specialization: 'Staff Welfare & Support Services',
-    },
-  ];
+  const wardenInfo = t('hostel.wardens.wardenInfo');
 
-  const weeklyActivities = [
-    { day: 'Monday', activity: 'House Meeting', description: 'Weekly house discussions and planning' },
-    { day: 'Tuesday', activity: 'Cultural Programs', description: 'Music, dance, and drama activities' },
-    { day: 'Wednesday', activity: 'Sports Tournament', description: 'Inter-house sports competitions' },
-    { day: 'Thursday', activity: 'Study Groups', description: 'Collaborative learning sessions' },
-    { day: 'Friday', activity: 'Movie Night', description: 'Educational and entertainment films' },
-    { day: 'Saturday', activity: 'Outdoor Activities', description: 'Picnics, excursions, and field trips' },
-    { day: 'Sunday', activity: 'Free Time', description: 'Personal time, family calls, and relaxation' },
-  ];
+  const weeklyActivities = t('hostel.activities.weeklyActivitiesData');
 
-  const hostelRules = [
-    'Students must follow the daily routine and timings strictly',
-    'Maintain cleanliness in dormitories and common areas',
-    'Respect fellow students and hostel staff',
-    'No use of mobile phones during study hours',
-    'Obtain permission before leaving the hostel premises',
-    'Participate actively in hostel activities and programs',
-    'Report any health issues immediately to wardens',
-    'Follow discipline and code of conduct at all times',
-  ];
+  const hostelRules = t('hostel.rules.rulesList');
 
-  const celebrations = [
-    {
-      festival: 'Diwali Celebration',
-      description: 'Traditional festival celebration with diyas, rangoli, and cultural programs',
-      activities: ['Decoration competition', 'Sweet distribution', 'Cultural performances'],
-    },
-    {
-      festival: 'Holi Festival',
-      description: 'Colorful celebration of Holi with organic colors and traditional festivities',
-      activities: ['Color play', 'Traditional games', 'Special feast'],
-    },
-    {
-      festival: 'Republic Day',
-      description: 'Patriotic celebration with flag hoisting and cultural programs',
-      activities: ['Flag hoisting', 'Parade', 'Cultural events'],
-    },
-    {
-      festival: 'Independence Day',
-      description: 'National celebration with inspiring speeches and performances',
-      activities: ['Flag ceremony', 'Speeches', 'Cultural programs'],
-    },
-  ];
+  const celebrations = t('hostel.activities.celebrations');
 
   return (
     <>
@@ -169,10 +102,10 @@ export default function Hostel() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="hostel-hero-title">
-              Hostel Life at JNV Latur
+              {t('hostel.heroTitle')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A home away from home where students develop independence, friendships, and life skills in a supportive residential environment
+              {t('hostel.heroSubtitle')}
             </p>
           </div>
         </section>
@@ -215,10 +148,10 @@ export default function Hostel() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="routine-title">
-                Daily Routine
+                {t('hostel.dailyRoutine.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Well-structured daily schedule promoting academic excellence and personal development
+                {t('hostel.dailyRoutine.subtitle')}
               </p>
             </div>
 
@@ -287,10 +220,10 @@ export default function Hostel() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="facilities-title">
-                Hostel Facilities
+                {t('hostel.facilities.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Modern amenities and services ensuring comfort and well-being of all students
+                {t('hostel.facilities.subtitle')}
               </p>
             </div>
 
@@ -362,10 +295,10 @@ export default function Hostel() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="wardens-title">
-                Hostel Wardens & Staff
+                {t('hostel.wardens.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Experienced and caring wardens ensuring proper guidance and supervision
+                {t('hostel.wardens.subtitle')}
               </p>
             </div>
 
@@ -431,11 +364,11 @@ export default function Hostel() {
             <Tabs defaultValue="weekly" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="activities-title">
-                  Activities & Celebrations
+                  {t('hostel.activities.title')}
                 </h2>
                 <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
-                  <TabsTrigger value="weekly">Weekly Activities</TabsTrigger>
-                  <TabsTrigger value="festivals">Festivals</TabsTrigger>
+                  <TabsTrigger value="weekly">{t('hostel.activities.weeklyActivities')}</TabsTrigger>
+                  <TabsTrigger value="festivals">{t('hostel.activities.festivals')}</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -532,11 +465,10 @@ export default function Hostel() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="rules-title">
-                  Hostel Rules & Guidelines
+                  {t('hostel.rules.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Simple rules and guidelines to ensure a harmonious living environment 
-                  and optimal learning conditions for all students.
+                  {t('hostel.rules.subtitle')}
                 </p>
                 <div className="space-y-3">
                   {hostelRules.map((rule, index) => (
@@ -566,25 +498,25 @@ export default function Hostel() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-8">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="stats-title">
-                Hostel at a Glance
+                {t('hostel.stats.title')}
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="total-capacity">580</div>
-                <div className="text-lg opacity-90">Total Capacity</div>
+                <div className="text-lg opacity-90">{t('hostel.stats.totalCapacity')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="boys-capacity">300</div>
-                <div className="text-lg opacity-90">Boys Hostel</div>
+                <div className="text-lg opacity-90">{t('hostel.stats.boysHostel')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="girls-capacity">280</div>
-                <div className="text-lg opacity-90">Girls Hostel</div>
+                <div className="text-lg opacity-90">{t('hostel.stats.girlsHostel')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="wardens-count">6</div>
-                <div className="text-lg opacity-90">Wardens & Staff</div>
+                <div className="text-lg opacity-90">{t('hostel.stats.wardensStaff')}</div>
               </div>
             </div>
           </div>
@@ -627,19 +559,19 @@ export default function Hostel() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="virtual-tour-title">
-              Virtual Hostel Tour
+              {t('hostel.virtualTour.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Take a virtual tour of our hostel facilities and get a feel of the living environment
+              {t('hostel.virtualTour.subtitle')}
             </p>
             <div className="bg-muted rounded-xl p-12 max-w-4xl mx-auto">
               <Camera className="w-16 h-16 text-muted-foreground mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">360° Virtual Tour</h3>
               <p className="text-muted-foreground mb-6">
-                Experience the hostel facilities through our interactive virtual tour
+                {t('hostel.virtualTour.description')}
               </p>
               <button className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors" data-testid="start-tour-button">
-                Start Virtual Tour
+                {t('hostel.virtualTour.startTour')}
               </button>
             </div>
           </div>

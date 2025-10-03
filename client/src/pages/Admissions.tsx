@@ -56,43 +56,10 @@ export default function Admissions() {
     },
   ];
 
-  const feeStructure = [
-    { category: 'Admission Fee', amount: '₹2,000', frequency: 'One-time' },
-    { category: 'Annual Tuition', amount: 'Free*', frequency: 'Yearly' },
-    { category: 'Hostel Fee', amount: '₹1,500', frequency: 'Monthly' },
-    { category: 'Mess Fee', amount: '₹2,200', frequency: 'Monthly' },
-    { category: 'Books & Uniform', amount: '₹5,000', frequency: 'Yearly' },
-    { category: 'Miscellaneous', amount: '₹1,000', frequency: 'Yearly' },
-  ];
+  const feeStructure = t('admissions.feeStructure');
 
-  const importantDates = [
-    { event: 'Registration Opens', date: 'January 15, 2024' },
-    { event: 'Registration Closes', date: 'March 15, 2024' },
-    { event: 'Admit Card Download', date: 'April 5, 2024' },
-    { event: 'Entrance Test', date: 'April 20, 2024' },
-    { event: 'Results Declaration', date: 'May 30, 2024' },
-    { event: 'Document Verification', date: 'June 1-15, 2024' },
-    { event: 'Admission Confirmation', date: 'June 20, 2024' },
-    { event: 'Academic Session Begins', date: 'July 1, 2024' },
-  ];
+  const importantDates = t('admissions.importantDates');
 
-  const scholarships = [
-    {
-      name: 'Merit Scholarship',
-      criteria: 'Top 10% students in entrance test',
-      amount: '100% fee waiver',
-    },
-    {
-      name: 'Need-based Support',
-      criteria: 'Family income below poverty line',
-      amount: 'Hostel and mess fee waiver',
-    },
-    {
-      name: 'Sports Scholarship',
-      criteria: 'District/State level sports achievements',
-      amount: '50% hostel fee waiver',
-    },
-  ];
 
   return (
     <>
@@ -136,20 +103,20 @@ export default function Admissions() {
           
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="admissions-hero-title">
-              Admissions 2024-25
+              {t('admissions.heroTitle')}
             </h1>
             <p className="text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-              Join our prestigious institution and embark on a journey of excellence in education and holistic development
+              {t('admissions.heroSubtitle')}
             </p>
             <Badge variant="default" className="text-lg px-4 py-2 mb-4">
-              Now Accepting Applications
+              {t('admissions.nowAcceptingApplications')}
             </Badge>
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <Button size="lg" data-testid="apply-online-button">
-                Apply Online
+                {t('admissions.applyOnline')}
               </Button>
               <Button size="lg" variant="outline" data-testid="download-brochure-button">
-                Download Brochure
+                {t('admissions.downloadBrochure')}
               </Button>
             </div>
           </div>
@@ -194,10 +161,10 @@ export default function Admissions() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="process-title">
-                Admission Process
+                {t('admissions.admissionProcessTitle')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Step-by-step guide to secure your admission at JNV Latur
+                {t('admissions.admissionProcessSubtitle')}
               </p>
             </div>
 
@@ -273,11 +240,11 @@ export default function Admissions() {
             <Tabs defaultValue="eligibility" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="requirements-title">
-                  Eligibility & Requirements
+                  {t('admissions.eligibilityRequirementsTitle')}
                 </h2>
                 <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
-                  <TabsTrigger value="eligibility">Eligibility</TabsTrigger>
-                  <TabsTrigger value="documents">Documents</TabsTrigger>
+                  <TabsTrigger value="eligibility">{t('admissions.eligibilityTab')}</TabsTrigger>
+                  <TabsTrigger value="documents">{t('admissions.documentsTab')}</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -294,15 +261,15 @@ export default function Admissions() {
                       <CardContent>
                         <div className="grid md:grid-cols-3 gap-6">
                           <div>
-                            <h4 className="font-semibold mb-2">Age Limit</h4>
+                            <h4 className="font-semibold mb-2">{t('admissions.ageLimit')}</h4>
                             <p className="text-muted-foreground">{criteria.age}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold mb-2">Qualification</h4>
+                            <h4 className="font-semibold mb-2">{t('admissions.qualification')}</h4>
                             <p className="text-muted-foreground">{criteria.qualification}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold mb-2">Requirements</h4>
+                            <h4 className="font-semibold mb-2">{t('admissions.requirements')}</h4>
                             <ul className="space-y-1">
                               {criteria.requirements.map((req, reqIndex) => (
                                 <li key={reqIndex} className="text-muted-foreground text-sm flex items-center space-x-2">
@@ -324,12 +291,12 @@ export default function Admissions() {
                   <CardHeader>
                     <CardTitle className="text-xl flex items-center space-x-2">
                       <FileText className="w-5 h-5 text-primary" />
-                      <span>Required Documents</span>
+                      <span>{t('admissions.requiredDocumentsTitle')}</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-6">
-                      Please ensure all documents are in original and carry one set of photocopies for verification.
+                      {t('admissions.documentsDescription')}
                     </p>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
                       {requiredDocuments.map((doc, index) => (
@@ -341,8 +308,7 @@ export default function Admissions() {
                     </div>
                     <div className="mt-6 p-4 bg-amber-50 border border-amber-200 rounded-lg">
                       <p className="text-amber-800 text-sm">
-                        <strong>Note:</strong> All documents must be attested by a gazetted officer. 
-                        Incomplete or non-attested documents will lead to rejection of application.
+                        {t('admissions.documentsNote')}
                       </p>
                     </div>
                   </CardContent>
@@ -396,7 +362,7 @@ export default function Admissions() {
                   <CardHeader>
                     <CardTitle className="text-2xl flex items-center space-x-2">
                       <DollarSign className="w-6 h-6 text-primary" />
-                      <span data-testid="fee-structure-title">Fee Structure</span>
+                      <span data-testid="fee-structure-title">{t('admissions.feeStructureTitle')}</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -413,31 +379,12 @@ export default function Admissions() {
                     </div>
                     <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
                       <p className="text-blue-800 text-sm">
-                        *Tuition fee is completely free for students from families with annual income below ₹2,50,000
+                        {t('admissions.tuitionNote')}
                       </p>
                     </div>
                   </CardContent>
                 </Card>
 
-                {/* Scholarships */}
-                <Card className="mt-8">
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Scholarships & Financial Aid</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid gap-4">
-                      {scholarships.map((scholarship, index) => (
-                        <div key={index} className="p-4 border border-border rounded-lg">
-                          <h4 className="font-semibold mb-2" data-testid={`scholarship-name-${index}`}>
-                            {scholarship.name}
-                          </h4>
-                          <p className="text-muted-foreground text-sm mb-2">{scholarship.criteria}</p>
-                          <Badge variant="secondary">{scholarship.amount}</Badge>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
 
               {/* Important Dates & Contact */}
@@ -446,7 +393,7 @@ export default function Admissions() {
                   <CardHeader>
                     <CardTitle className="text-xl flex items-center space-x-2">
                       <Calendar className="w-5 h-5" />
-                      <span>Important Dates</span>
+                      <span>{t('admissions.importantDatesTitle')}</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
@@ -463,11 +410,11 @@ export default function Admissions() {
 
                 <Card className="bg-accent text-accent-foreground">
                   <CardHeader>
-                    <CardTitle className="text-xl">Need Help?</CardTitle>
+                    <CardTitle className="text-xl">{t('admissions.needHelpTitle')}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm mb-4 opacity-90">
-                      Contact our admission office for any queries or assistance.
+                      {t('admissions.contactDescription')}
                     </p>
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center space-x-2">
@@ -480,7 +427,7 @@ export default function Admissions() {
                       </div>
                       <div className="mt-4">
                         <Badge variant="secondary">
-                          Office Hours: {contactInfo.hours.weekdays}
+                          {t('admissions.officeHours')}
                         </Badge>
                       </div>
                     </div>
@@ -531,53 +478,24 @@ export default function Admissions() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="faq-title">
-                Frequently Asked Questions
+                {t('admissions.faq.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Get answers to commonly asked questions about admissions
+                {t('admissions.faq.subtitle')}
               </p>
             </div>
 
             <div className="max-w-4xl mx-auto grid gap-6">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">What is the selection criteria for JNV admission?</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Selection is based on the Jankalyan Nivasi Vidyalay Selection Test (JNVST) performance, 
-                    followed by document verification and medical examination.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">Is there any reservation policy?</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Yes, 75% seats are reserved for rural candidates and 25% for urban candidates. 
-                    There are also reservations as per government norms for SC/ST/OBC categories.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">What is the medium of instruction?</h3>
-                  <p className="text-muted-foreground text-sm">
-                    The school follows a trilingual approach with English as the primary medium, 
-                    and Hindi and Marathi as second and third languages respectively.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2">Are hostel facilities mandatory?</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Yes, JNV is a residential school and all students are required to stay in the hostel 
-                    as part of the holistic educational experience.
-                  </p>
-                </CardContent>
-              </Card>
+              {t('admissions.faq.questions').map((faq, index) => (
+                <Card key={index}>
+                  <CardContent className="p-6">
+                    <h3 className="font-semibold mb-2">{faq.question}</h3>
+                    <p className="text-muted-foreground text-sm">
+                      {faq.answer}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>

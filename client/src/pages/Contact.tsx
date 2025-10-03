@@ -99,10 +99,10 @@ export default function Contact() {
           
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="contact-hero-title">
-              Contact Us
+              {t('contact.heroTitle')}
             </h1>
             <p className="text-base lg:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-              Get in touch with us for any queries, information, or assistance. We're here to help you.
+              {t('contact.heroSubtitle')}
             </p>
           </div>
         </section>
@@ -227,9 +227,9 @@ export default function Contact() {
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                         <MapPin className="w-8 h-8 text-primary" />
                       </div>
-                      <h3 className="font-semibold text-lg mb-2">Find Us on Google Maps</h3>
+                      <h3 className="font-semibold text-lg mb-2">{t('contact.map.title')}</h3>
                       <p className="text-muted-foreground text-sm mb-4">
-                        Get directions to Jankalyan Nivasi Vidyalay, Harangul Bu.
+                        {t('contact.map.description')}
                       </p>
                       <a 
                         href="https://maps.app.goo.gl/SYSr2asPXj8B1hVEA" 
@@ -238,7 +238,7 @@ export default function Contact() {
                         className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
                       >
                         <MapPin className="w-5 h-5 mr-2" />
-                        Open in Google Maps
+                        {t('contact.map.button')}
                       </a>
                     </div>
                   </CardContent>
@@ -289,10 +289,10 @@ export default function Contact() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-8">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="social-media-title">
-                Follow Us
+                {t('contact.social.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Stay connected with us on social media for latest updates and news
+                {t('contact.social.subtitle')}
               </p>
             </div>
 
@@ -308,7 +308,7 @@ export default function Contact() {
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">{social.handle}</p>
                     <a href={social.url} className="text-primary text-sm hover:underline">
-                      Follow →
+                      {t('contact.social.follow')}
                     </a>
                   </CardContent>
                 </Card>
@@ -319,19 +319,19 @@ export default function Contact() {
             <Card className="max-w-2xl mx-auto bg-primary text-primary-foreground">
               <CardContent className="p-8 text-center">
                 <Send className="w-12 h-12 mx-auto mb-4 opacity-90" />
-                <h3 className="text-2xl font-semibold mb-4">Stay Updated</h3>
+                <h3 className="text-2xl font-semibold mb-4">{t('contact.newsletter.title')}</h3>
                 <p className="mb-6 opacity-90">
-                  Subscribe to our newsletter to receive the latest news, events, and announcements directly in your inbox.
+                  {t('contact.newsletter.description')}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                   <input
                     type="email"
-                    placeholder="Enter your email"
+                    placeholder={t('contact.newsletter.placeholder')}
                     className="flex-1 px-4 py-2 rounded-lg text-foreground"
                     data-testid="newsletter-email-input"
                   />
                   <button className="bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors" data-testid="newsletter-subscribe-btn">
-                    Subscribe
+                    {t('contact.newsletter.subscribe')}
                   </button>
                 </div>
               </CardContent>

@@ -6,9 +6,11 @@ import { GalleryItem } from '@/types';
 interface PhotoGalleryProps {
   items: GalleryItem[];
   className?: string;
+  getTranslatedTitle?: (item: GalleryItem) => string;
+  getTranslatedDescription?: (item: GalleryItem) => string;
 }
 
-export default function PhotoGallery({ items, className = '' }: PhotoGalleryProps) {
+export default function PhotoGallery({ items, className = '', getTranslatedTitle, getTranslatedDescription }: PhotoGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<GalleryItem | null>(null);
 
   return (
@@ -29,9 +31,11 @@ export default function PhotoGallery({ items, className = '' }: PhotoGalleryProp
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold mb-2" data-testid={`gallery-title-${item.id}`}>
-                    {item.title}
+                    {getTranslatedTitle ? getTranslatedTitle(item) : item.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {getTranslatedDescription ? getTranslatedDescription(item) : item.description}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -45,8 +49,12 @@ export default function PhotoGallery({ items, className = '' }: PhotoGalleryProp
                 data-testid={`lightbox-image-${item.id}`}
               />
               <div>
-                <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
+                <h3 className="text-lg font-semibold mb-2">
+                  {getTranslatedTitle ? getTranslatedTitle(item) : item.title}
+                </h3>
+                <p className="text-muted-foreground">
+                  {getTranslatedDescription ? getTranslatedDescription(item) : item.description}
+                </p>
                 {item.date && (
                   <p className="text-sm text-muted-foreground mt-2">
                     Date: {new Date(item.date).toLocaleDateString()}

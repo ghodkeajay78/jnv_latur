@@ -11,6 +11,35 @@ import { galleryItems } from '@/data/content';
 export default function Campus() {
   const { t } = useTranslation();
 
+  // Gallery translation functions (same as Home page)
+  const getGalleryItemTranslationKey = (item: any) => {
+    const keyMap: { [key: string]: string } = {
+      'Modern Classrooms': 'modernClassrooms',
+      'Science Laboratory': 'scienceLaboratory',
+      'Computer Laboratory': 'computerLaboratory',
+      'Central Library': 'centralLibrary',
+      'Academic Buildings': 'academicBuildings',
+      'Sports Ground': 'sportsGround',
+      'Assembly Hall': 'assemblyHall',
+      'Cultural Events': 'culturalEvents',
+      'Morning Exercise': 'morningExercise',
+      'Study Sessions': 'studySessions',
+      'Teachers Meeting': 'teachersMeeting',
+      'Parent-Teacher Meeting': 'parentTeacherMeeting'
+    };
+    return keyMap[item.title] || item.id;
+  };
+
+  const getTranslatedTitle = (item: any) => {
+    const key = getGalleryItemTranslationKey(item);
+    return t(`gallery.items.${key}.title`);
+  };
+
+  const getTranslatedDescription = (item: any) => {
+    const key = getGalleryItemTranslationKey(item);
+    return t(`gallery.items.${key}.description`);
+  };
+
   const facilities = [
     {
       icon: Building,
@@ -61,31 +90,47 @@ export default function Campus() {
     },
   ];
 
-  const messFeatures = [
-    'Nutritious vegetarian meals',
-    'Hygienic food preparation',
-    'Balanced diet planning',
-    'Cultural food diversity',
-    'Special dietary requirements',
-    'Quality water supply',
-  ];
+  const messFeatures = t('campus.hostelMessFacilities.messFeatures');
 
   const infrastructure = [
     {
-      category: 'Academic',
-      items: ['24 Classrooms', '8 Laboratories', 'Central Library', 'Auditorium', 'Computer Center'],
+      category: t('campus.infrastructureDetails.categories.academic'),
+      items: [
+        t('campus.infrastructureDetails.items.classrooms'),
+        t('campus.infrastructureDetails.items.laboratories'),
+        t('campus.infrastructureDetails.items.centralLibrary'),
+        t('campus.infrastructureDetails.items.auditorium'),
+        t('campus.infrastructureDetails.items.computerCenter')
+      ],
     },
     {
-      category: 'Residential',
-      items: ['Boys Hostel (300 capacity)', 'Girls Hostel (280 capacity)', 'Staff Quarters', 'Guest House'],
+      category: t('campus.infrastructureDetails.categories.residential'),
+      items: [
+        t('campus.infrastructureDetails.items.boysHostel'),
+        t('campus.infrastructureDetails.items.girlsHostel'),
+        t('campus.infrastructureDetails.items.staffQuarters'),
+        t('campus.infrastructureDetails.items.guestHouse')
+      ],
     },
     {
-      category: 'Recreational',
-      items: ['Sports Ground', 'Indoor Games Room', 'Music Room', 'Art & Craft Room', 'Yoga Hall'],
+      category: t('campus.infrastructureDetails.categories.recreational'),
+      items: [
+        t('campus.infrastructureDetails.items.sportsGround'),
+        t('campus.infrastructureDetails.items.indoorGamesRoom'),
+        t('campus.infrastructureDetails.items.musicRoom'),
+        t('campus.infrastructureDetails.items.artCraftRoom'),
+        t('campus.infrastructureDetails.items.yogaHall')
+      ],
     },
     {
-      category: 'Support',
-      items: ['Medical Room', 'Mess Hall', 'Laundry', 'Solar Power Plant', 'Water Treatment Plant'],
+      category: t('campus.infrastructureDetails.categories.support'),
+      items: [
+        t('campus.infrastructureDetails.items.medicalRoom'),
+        t('campus.infrastructureDetails.items.messHall'),
+        t('campus.infrastructureDetails.items.laundry'),
+        t('campus.infrastructureDetails.items.solarPowerPlant'),
+        t('campus.infrastructureDetails.items.waterTreatmentPlant')
+      ],
     },
   ];
 
@@ -130,10 +175,10 @@ export default function Campus() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="campus-hero-title">
-              Campus & Infrastructure
+              {t('campus.heroTitle')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              State-of-the-art facilities designed to provide a conducive environment for learning, growth, and development
+              {t('campus.heroSubtitle')}
             </p>
           </div>
         </section>
@@ -177,40 +222,38 @@ export default function Campus() {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="overview-title">
-                  Campus Overview
+                  {t('campus.overview.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  Spread across 25 acres of lush green campus, JNV Latur provides a serene and conducive 
-                  environment for holistic education. Our modern infrastructure combines traditional 
-                  values with contemporary facilities.
+                  {t('campus.overview.description')}
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <MapPin className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">25 Acres Campus</span>
+                      <span className="font-semibold">{t('campus.overview.features.campusSize')}</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Building className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">Modern Infrastructure</span>
+                      <span className="font-semibold">{t('campus.overview.features.infrastructure')}</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Shield className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">24/7 Security</span>
+                      <span className="font-semibold">{t('campus.overview.features.security')}</span>
                     </div>
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center space-x-2">
                       <Wifi className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">Wi-Fi Enabled</span>
+                      <span className="font-semibold">{t('campus.overview.features.wifi')}</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Users className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">580 Students Capacity</span>
+                      <span className="font-semibold">{t('campus.overview.features.capacity')}</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <BookOpen className="w-5 h-5 text-primary" />
-                      <span className="font-semibold">Learning Focused</span>
+                      <span className="font-semibold">{t('campus.overview.features.learning')}</span>
                     </div>
                   </div>
                 </div>
@@ -265,10 +308,10 @@ export default function Campus() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="facilities-title">
-                Campus Facilities
+                {t('campus.facilities.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive facilities to support academic excellence and personal development
+                {t('campus.facilities.subtitle')}
               </p>
             </div>
 
@@ -340,10 +383,10 @@ export default function Campus() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="infrastructure-title">
-                Infrastructure Details
+                {t('campus.infrastructureDetails.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive infrastructure supporting all aspects of student life
+                {t('campus.infrastructureDetails.subtitle')}
               </p>
             </div>
 
@@ -410,11 +453,11 @@ export default function Campus() {
             <Tabs defaultValue="hostel" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="hostel-mess-title">
-                  Hostel & Mess Facilities
+                  {t('campus.hostelMessFacilities.title')}
                 </h2>
                 <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
-                  <TabsTrigger value="hostel">Hostel Life</TabsTrigger>
-                  <TabsTrigger value="mess">Mess Facilities</TabsTrigger>
+                  <TabsTrigger value="hostel">{t('campus.hostelMessFacilities.tabs.hostelLife')}</TabsTrigger>
+                  <TabsTrigger value="mess">{t('campus.hostelMessFacilities.tabs.messFacilities')}</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -453,11 +496,9 @@ export default function Campus() {
               <TabsContent value="mess" className="mt-8">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                   <div>
-                    <h3 className="text-2xl font-semibold mb-6">Dining Facilities</h3>
+                    <h3 className="text-2xl font-semibold mb-6">{t('campus.hostelMessFacilities.diningFacilities.title')}</h3>
                     <p className="text-lg text-muted-foreground mb-8">
-                      Our mess provides nutritious, hygienic, and delicious vegetarian meals 
-                      prepared by experienced cooks. We maintain the highest standards of 
-                      food safety and nutrition.
+                      {t('campus.hostelMessFacilities.diningFacilities.description')}
                     </p>
                     <div className="grid gap-3">
                       {messFeatures.map((feature, index) => (
@@ -469,23 +510,23 @@ export default function Campus() {
                     </div>
                     <Card className="mt-8 bg-primary/5">
                       <CardContent className="p-6">
-                        <h4 className="font-semibold mb-3">Daily Meal Schedule</h4>
+                        <h4 className="font-semibold mb-3">{t('campus.hostelMessFacilities.mealSchedule.title')}</h4>
                         <div className="space-y-2 text-sm">
                           <div className="flex justify-between">
-                            <span>Breakfast:</span>
-                            <span>7:00 AM - 8:00 AM</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.breakfast')}</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.breakfastTime')}</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>Lunch:</span>
-                            <span>12:30 PM - 1:30 PM</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.lunch')}</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.lunchTime')}</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>Tea/Snacks:</span>
-                            <span>4:00 PM - 4:30 PM</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.teaSnacks')}</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.teaTime')}</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>Dinner:</span>
-                            <span>7:30 PM - 8:30 PM</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.dinner')}</span>
+                            <span>{t('campus.hostelMessFacilities.mealSchedule.dinnerTime')}</span>
                           </div>
                         </div>
                       </CardContent>
@@ -543,13 +584,17 @@ export default function Campus() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="gallery-title">
-                Campus Gallery
+                {t('campus.campusGallery.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Visual tour of our beautiful campus and modern facilities
+                {t('campus.campusGallery.subtitle')}
               </p>
             </div>
-            <PhotoGallery items={galleryItems.filter(item => item.category === 'campus')} />
+            <PhotoGallery 
+              items={galleryItems.filter(item => item.category === 'campus')} 
+              getTranslatedTitle={getTranslatedTitle}
+              getTranslatedDescription={getTranslatedDescription}
+            />
           </div>
         </section>
 
@@ -559,19 +604,19 @@ export default function Campus() {
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-area">25</div>
-                <div className="text-lg opacity-90">Acres Campus</div>
+                <div className="text-lg opacity-90">{t('campus.campusStats.acresCampus')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-buildings">12</div>
-                <div className="text-lg opacity-90">Buildings</div>
+                <div className="text-lg opacity-90">{t('campus.campusStats.buildings')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-capacity">580</div>
-                <div className="text-lg opacity-90">Students Capacity</div>
+                <div className="text-lg opacity-90">{t('campus.campusStats.studentsCapacity')}</div>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2" data-testid="stat-staff">60+</div>
-                <div className="text-lg opacity-90">Staff Members</div>
+                <div className="text-lg opacity-90">{t('campus.campusStats.staffMembers')}</div>
               </div>
             </div>
           </div>

@@ -11,134 +11,193 @@ export default function Faculty() {
   const { t } = useTranslation();
 
   const extendedFaculty = [
-    ...facultyMembers,
+    ...facultyMembers.map(member => ({
+      ...member,
+      name: getFacultyName(member.name),
+      designation: getFacultyDesignation(member.designation),
+      subject: getFacultySubject(member.subject),
+      qualification: getFacultyQualification(member.qualification),
+      subjectKey: member.subject.toLowerCase().replace(/\s+/g, ''),
+    })),
     {
       id: '6',
-      name: 'Dr. Priya Sharma',
+      name: t('faculty.names.priyaSharma'),
       designation: t('faculty.designations.headOfScienceDepartment'),
       subject: t('faculty.subjects.physics'),
+      subjectKey: 'physics',
       qualification: t('faculty.qualifications.phdPhysics'),
       experience: 15,
     },
     {
       id: '7',
-      name: 'Mr. Rahul Deshmukh',
+      name: t('faculty.names.rahulDeshmukh'),
       designation: t('faculty.designations.seniorTeacher'),
       subject: t('faculty.subjects.chemistry'),
+      subjectKey: 'chemistry',
       qualification: t('faculty.qualifications.mscChemistry'),
       experience: 12,
     },
     {
       id: '8',
-      name: 'Mrs. Kavita Jadhav',
+      name: t('faculty.names.kavitaJadhav'),
       designation: t('faculty.designations.seniorTeacher'),
       subject: t('faculty.subjects.biology'),
+      subjectKey: 'biology',
       qualification: t('faculty.qualifications.mscBiologyBed'),
       experience: 14,
     },
     {
       id: '9',
-      name: 'Mrs. Shweta Patil',
+      name: t('faculty.names.shwetaPatil'),
       designation: t('faculty.designations.englishTeacher'),
       subject: t('faculty.subjects.englishLiterature'),
+      subjectKey: 'englishLiterature',
       qualification: t('faculty.qualifications.maEnglishBed'),
       experience: 10,
     },
     {
       id: '10',
-      name: 'Mr. Ganesh Rao',
+      name: t('faculty.names.ganeshRao'),
       designation: t('faculty.designations.hindiTeacher'),
       subject: t('faculty.subjects.hindiLiterature'),
+      subjectKey: 'hindiLiterature',
       qualification: t('faculty.qualifications.maHindi'),
       experience: 13,
     },
     {
       id: '11',
-      name: 'Mrs. Manjusha Bhosale',
+      name: t('faculty.names.manjushaBhosale'),
       designation: t('faculty.designations.marathiTeacher'),
       subject: t('faculty.subjects.marathiLiterature'),
+      subjectKey: 'marathiLiterature',
       qualification: t('faculty.qualifications.maMarathi'),
       experience: 11,
     },
     {
       id: '12',
-      name: 'Mrs. Rupa Kale',
+      name: t('faculty.names.rupaKale'),
       designation: t('faculty.designations.computerScienceTeacher'),
       subject: t('faculty.subjects.computerScience'),
+      subjectKey: 'computerScience',
       qualification: t('faculty.qualifications.mcaBtech'),
       experience: 8,
     },
   ];
 
+  // Helper functions to get translated names, designations, subjects, and qualifications
+  function getFacultyName(englishName: string): string {
+    const nameMap: Record<string, string> = {
+      'Mr. Sonttake Sir': t('faculty.names.sonttakeSir'),
+      'Mrs. Rekha Ma\'am': t('faculty.names.rekhaMaam'),
+      'Mr. Patil Sir': t('faculty.names.patilSir'),
+      'Mr. Kale Sir': t('faculty.names.kaleSir'),
+      'Mr. Babalsure Sir': t('faculty.names.babalsureSir'),
+    };
+    return nameMap[englishName] || englishName;
+  }
+
+  function getFacultyDesignation(englishDesignation: string): string {
+    const designationMap: Record<string, string> = {
+      'Principal': t('faculty.designations.principal'),
+      'Vice Principal': t('faculty.designations.vicePrincipal'),
+      'Academic Coordinator': t('faculty.designations.academicCoordinator'),
+      'Administrative Officer': t('faculty.designations.administrativeOfficer'),
+      'Hostel Warden': t('faculty.designations.hostelWarden'),
+    };
+    return designationMap[englishDesignation] || englishDesignation;
+  }
+
+  function getFacultySubject(englishSubject: string): string {
+    const subjectMap: Record<string, string> = {
+      'Education Administration': t('faculty.subjects.educationAdministration'),
+      'Educational Psychology': t('faculty.subjects.educationalPsychology'),
+      'Mathematics': t('faculty.subjects.mathematics'),
+      'Education Management': t('faculty.subjects.educationManagement'),
+      'History': t('faculty.subjects.history'),
+    };
+    return subjectMap[englishSubject] || englishSubject;
+  }
+
+  function getFacultyQualification(englishQualification: string): string {
+    const qualificationMap: Record<string, string> = {
+      'Ph.D. in Education': t('faculty.qualifications.phdEducation'),
+      'M.Ed.': t('faculty.qualifications.med'),
+      'M.Sc. Mathematics': t('faculty.qualifications.mscMathematicsBed'),
+      'MBA in Education Management': t('faculty.qualifications.mbaEducationManagement'),
+      'M.A. History, B.Ed.': t('faculty.qualifications.maHistoryBed'),
+    };
+    return qualificationMap[englishQualification] || englishQualification;
+  }
+
   const departments = [
     {
-      name: 'Science Department',
-      faculty: extendedFaculty.filter(f => ['Physics', 'Chemistry', 'Biology'].includes(f.subject)),
-      description: 'Dedicated to fostering scientific inquiry and practical learning',
+      name: t('faculty.departments.science.name'),
+      tabValue: 'science',
+      faculty: extendedFaculty.filter(f => ['physics', 'chemistry', 'biology'].includes(f.subjectKey)),
+      description: t('faculty.departments.science.description'),
     },
     {
-      name: 'Mathematics Department',
-      faculty: extendedFaculty.filter(f => f.subject === 'Mathematics'),
-      description: 'Building strong analytical and problem-solving skills',
+      name: t('faculty.departments.mathematics.name'),
+      tabValue: 'mathematics',
+      faculty: extendedFaculty.filter(f => f.subjectKey === 'mathematics'),
+      description: t('faculty.departments.mathematics.description'),
     },
     {
-      name: 'Languages Department',
-      faculty: extendedFaculty.filter(f => ['English Literature', 'Hindi Literature', 'Marathi Literature'].includes(f.subject)),
-      description: 'Promoting multilingual communication and literary appreciation',
+      name: t('faculty.departments.languages.name'),
+      tabValue: 'languages',
+      faculty: extendedFaculty.filter(f => ['englishLiterature', 'hindiLiterature', 'marathiLiterature'].includes(f.subjectKey)),
+      description: t('faculty.departments.languages.description'),
     },
     {
-      name: 'Social Sciences Department',
-      faculty: extendedFaculty.filter(f => f.subject === 'History' || f.subject === 'History & Geography'),
-      description: 'Understanding society, culture, and the world around us',
+      name: t('faculty.departments.socialSciences.name'),
+      tabValue: 'social',
+      faculty: extendedFaculty.filter(f => f.subjectKey === 'history' || f.subjectKey === 'historygeography'),
+      description: t('faculty.departments.socialSciences.description'),
     },
     {
-      name: 'Computer Science Department',
-      faculty: extendedFaculty.filter(f => f.subject === 'Computer Science'),
-      description: 'Preparing students for the digital age',
+      name: t('faculty.departments.computerScience.name'),
+      tabValue: 'computer',
+      faculty: extendedFaculty.filter(f => f.subjectKey === 'computerScience'),
+      description: t('faculty.departments.computerScience.description'),
     },
     {
-      name: 'Administration',
-      faculty: extendedFaculty.filter(f => ['Education Administration', 'Educational Psychology', 'Education Management'].includes(f.subject)),
-      description: 'Leading the institution towards excellence',
+      name: t('faculty.departments.administration.name'),
+      tabValue: 'admin',
+      faculty: extendedFaculty.filter(f => ['educationadministration', 'educationalpsychology', 'educationmanagement'].includes(f.subjectKey)),
+      description: t('faculty.departments.administration.description'),
     },
   ];
 
   const trainingPrograms = [
     {
-      program: 'SSC Board Teacher Training',
-      description: 'Regular training programs by SSC Board for curriculum updates and teaching methodologies',
-      frequency: 'Bi-annual',
+      program: t('faculty.professionalDevelopment.programs.sscBoardTraining.name'),
+      description: t('faculty.professionalDevelopment.programs.sscBoardTraining.description'),
+      frequency: t('faculty.professionalDevelopment.programs.sscBoardTraining.frequency'),
     },
     {
-      program: 'ICT Integration Workshop',
-      description: 'Training on integrating Information and Communication Technology in classroom teaching',
-      frequency: 'Annual',
+      program: t('faculty.professionalDevelopment.programs.ictIntegration.name'),
+      description: t('faculty.professionalDevelopment.programs.ictIntegration.description'),
+      frequency: t('faculty.professionalDevelopment.programs.ictIntegration.frequency'),
     },
     {
-      program: 'Student Counseling Certification',
-      description: 'Professional development in student guidance and counseling techniques',
-      frequency: 'Annual',
+      program: t('faculty.professionalDevelopment.programs.studentCounseling.name'),
+      description: t('faculty.professionalDevelopment.programs.studentCounseling.description'),
+      frequency: t('faculty.professionalDevelopment.programs.studentCounseling.frequency'),
     },
     {
-      program: 'Subject Matter Expertise',
-      description: 'Advanced subject-specific workshops and seminars by domain experts',
-      frequency: 'Quarterly',
+      program: t('faculty.professionalDevelopment.programs.subjectExpertise.name'),
+      description: t('faculty.professionalDevelopment.programs.subjectExpertise.description'),
+      frequency: t('faculty.professionalDevelopment.programs.subjectExpertise.frequency'),
     },
   ];
 
-  const achievements = [
-    'Best Teacher Award - State Level (Dr. Priya Sharma, 2023)',
-    'Excellence in Science Teaching - District Level (Mr. Rahul Deshmukh, 2023)',
-    'Innovative Teaching Methods Recognition (Mrs. Shweta Patil, 2022)',
-    'Mathematics Olympiad Mentor Award (Mr. Suresh Kumar, 2022)',
-    'Research Publication in Education Journal (Dr. Rajesh Sharma, 2023)',
-  ];
+  const achievements = t('faculty.achievements.awards');
 
   const facultyStats = [
-    { label: 'Total Faculty', value: '45+', icon: Users },
-    { label: 'Ph.D. Holders', value: '8', icon: GraduationCap },
-    { label: 'Average Experience', value: '12 Years', icon: Clock },
-    { label: 'Master Trainers', value: '15', icon: Award },
+    { label: t('faculty.stats.totalFaculty'), value: '45+', icon: Users },
+    { label: t('faculty.stats.phdHolders'), value: '8', icon: GraduationCap },
+    { label: t('faculty.stats.averageExperience'), value: '12 Years', icon: Clock },
+    { label: t('faculty.stats.masterTrainers'), value: '15', icon: Award },
   ];
 
   return (
@@ -182,10 +241,10 @@ export default function Faculty() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="faculty-hero-title">
-              Our Distinguished Faculty
+              {t('faculty.heroTitle')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Experienced educators dedicated to nurturing young minds and fostering academic excellence through innovative teaching methods
+              {t('faculty.heroSubtitle')}
             </p>
           </div>
         </section>
@@ -282,25 +341,25 @@ export default function Faculty() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="departments-title">
-                Faculty by Departments
+                {t('faculty.departments.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Meet our expert educators organized by their areas of specialization
+                {t('faculty.departments.subtitle')}
               </p>
             </div>
 
             <Tabs defaultValue="science" className="max-w-6xl mx-auto">
               <TabsList className="grid w-full grid-cols-3 lg:grid-cols-6 mb-8">
-                <TabsTrigger value="science">Science</TabsTrigger>
-                <TabsTrigger value="mathematics">Math</TabsTrigger>
-                <TabsTrigger value="languages">Languages</TabsTrigger>
-                <TabsTrigger value="social">Social Sci.</TabsTrigger>
-                <TabsTrigger value="computer">Computer</TabsTrigger>
-                <TabsTrigger value="admin">Admin</TabsTrigger>
+                <TabsTrigger value="science">{t('faculty.departments.tabs.science')}</TabsTrigger>
+                <TabsTrigger value="mathematics">{t('faculty.departments.tabs.mathematics')}</TabsTrigger>
+                <TabsTrigger value="languages">{t('faculty.departments.tabs.languages')}</TabsTrigger>
+                <TabsTrigger value="social">{t('faculty.departments.tabs.social')}</TabsTrigger>
+                <TabsTrigger value="computer">{t('faculty.departments.tabs.computer')}</TabsTrigger>
+                <TabsTrigger value="admin">{t('faculty.departments.tabs.admin')}</TabsTrigger>
               </TabsList>
 
               {departments.map((dept, deptIndex) => (
-                <TabsContent key={deptIndex} value={dept.name.toLowerCase().split(' ')[0]} className="mt-8">
+                <TabsContent key={deptIndex} value={dept.tabValue} className="mt-8">
                   <div className="mb-6">
                     <h3 className="text-2xl font-semibold mb-2" data-testid={`dept-name-${deptIndex}`}>
                       {dept.name}
@@ -373,11 +432,10 @@ export default function Faculty() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="training-title">
-                  Professional Development
+                  {t('faculty.professionalDevelopment.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Our faculty members regularly participate in training programs and workshops to stay updated 
-                  with the latest educational methodologies and subject matter expertise.
+                  {t('faculty.professionalDevelopment.subtitle')}
                 </p>
                 <div className="space-y-6">
                   {trainingPrograms.map((program, index) => (
@@ -445,10 +503,10 @@ export default function Faculty() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="achievements-title">
-                Faculty Achievements
+                {t('faculty.achievements.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Recognition and awards received by our dedicated faculty members
+                {t('faculty.achievements.subtitle')}
               </p>
             </div>
 
@@ -457,7 +515,7 @@ export default function Faculty() {
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center space-x-2">
                     <Star className="w-5 h-5 text-primary" />
-                    <span>Recent Recognitions</span>
+                    <span>{t('faculty.achievements.recentRecognitions')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -522,11 +580,10 @@ export default function Faculty() {
               </div>
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="guidance-title">
-                  Student Guidance & Counseling
+                  {t('faculty.studentGuidance.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Our faculty members are trained in student counseling and provide comprehensive 
-                  guidance for academic, personal, and career development.
+                  {t('faculty.studentGuidance.subtitle')}
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
@@ -534,9 +591,9 @@ export default function Faculty() {
                       <BookOpen className="w-3 h-3 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Academic Counseling</h4>
+                      <h4 className="font-semibold mb-1">{t('faculty.studentGuidance.services.academicCounseling.title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        Personalized guidance for subject selection, study methods, and academic improvement
+                        {t('faculty.studentGuidance.services.academicCounseling.description')}
                       </p>
                     </div>
                   </div>
@@ -545,9 +602,9 @@ export default function Faculty() {
                       <Users className="w-3 h-3 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Personal Development</h4>
+                      <h4 className="font-semibold mb-1">{t('faculty.studentGuidance.services.personalDevelopment.title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        Support for emotional well-being, social skills, and character building
+                        {t('faculty.studentGuidance.services.personalDevelopment.description')}
                       </p>
                     </div>
                   </div>
@@ -556,9 +613,9 @@ export default function Faculty() {
                       <GraduationCap className="w-3 h-3 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Career Guidance</h4>
+                      <h4 className="font-semibold mb-1">{t('faculty.studentGuidance.services.careerGuidance.title')}</h4>
                       <p className="text-muted-foreground text-sm">
-                        Direction for higher education choices and career path planning
+                        {t('faculty.studentGuidance.services.careerGuidance.description')}
                       </p>
                     </div>
                   </div>
@@ -572,34 +629,34 @@ export default function Faculty() {
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8" data-testid="philosophy-title">
-              Our Teaching Philosophy
+              {t('faculty.teachingPhilosophy.title')}
             </h2>
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                   <BookOpen className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold">Student-Centered Learning</h3>
+                <h3 className="text-xl font-semibold">{t('faculty.teachingPhilosophy.principles.studentCentered.title')}</h3>
                 <p className="opacity-90">
-                  Adapting teaching methods to individual learning styles and needs
+                  {t('faculty.teachingPhilosophy.principles.studentCentered.description')}
                 </p>
               </div>
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                   <Users className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold">Collaborative Approach</h3>
+                <h3 className="text-xl font-semibold">{t('faculty.teachingPhilosophy.principles.collaborative.title')}</h3>
                 <p className="opacity-90">
-                  Encouraging teamwork, peer learning, and interactive classroom environments
+                  {t('faculty.teachingPhilosophy.principles.collaborative.description')}
                 </p>
               </div>
               <div className="space-y-4">
                 <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto">
                   <Award className="w-8 h-8" />
                 </div>
-                <h3 className="text-xl font-semibold">Excellence in Education</h3>
+                <h3 className="text-xl font-semibold">{t('faculty.teachingPhilosophy.principles.excellence.title')}</h3>
                 <p className="opacity-90">
-                  Maintaining high academic standards while fostering creativity and innovation
+                  {t('faculty.teachingPhilosophy.principles.excellence.description')}
                 </p>
               </div>
             </div>

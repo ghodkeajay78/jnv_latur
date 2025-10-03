@@ -72,14 +72,7 @@ export default function Academics() {
   ];
 
 
-  const assessmentMethods = [
-    'Formative Assessment (40%)',
-    'Summative Assessment (60%)',
-    'Practical Examinations',
-    'Project Work',
-    'Portfolio Assessment',
-    'Peer Evaluation',
-  ];
+  const assessmentMethods = t('academics.assessmentMethods');
 
   return (
     <>
@@ -122,10 +115,10 @@ export default function Academics() {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="academics-hero-title">
-              Academic Excellence
+              {t('academics.title')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive curriculum designed to nurture holistic development and prepare students for future challenges
+              {t('academics.subtitle')}
             </p>
           </div>
         </section>
@@ -169,10 +162,10 @@ export default function Academics() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="curriculum-title">
-                Curriculum Overview
+                {t('academics.curriculumOverview.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive SSC Board curriculum from Classes V to X
+                {t('academics.curriculumOverview.subtitle')}
               </p>
             </div>
 
@@ -189,7 +182,7 @@ export default function Academics() {
                         <p className="text-muted-foreground">{level.description}</p>
                       </div>
                       <div className="lg:col-span-2">
-                        <h4 className="font-semibold mb-3">Key Subjects:</h4>
+                        <h4 className="font-semibold mb-3">{t('academics.curriculumLevels.primaryToSecondary.keySubjects')}</h4>
                         <div className="flex flex-wrap gap-2">
                           {level.subjects.map((subject, subIndex) => (
                             <Badge key={subIndex} variant="secondary">
@@ -245,10 +238,10 @@ export default function Academics() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="features-title">
-                Key Academic Features
+                {t('academics.keyFeatures.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Modern teaching methodologies and innovative learning approaches
+                {t('academics.keyFeatures.subtitle')}
               </p>
             </div>
 
@@ -309,10 +302,10 @@ export default function Academics() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="subjects-title">
-                Subject Areas
+                {t('academics.subjectAreas.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Comprehensive academic disciplines for well-rounded education
+                {t('academics.subjectAreas.subtitle')}
               </p>
             </div>
 
@@ -375,11 +368,10 @@ export default function Academics() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="assessment-title">
-                  Assessment & Evaluation
+                  {t('academics.assessment.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Our comprehensive assessment system ensures holistic evaluation of student progress 
-                  and provides continuous feedback for improvement.
+                  {t('academics.assessment.subtitle')}
                 </p>
                 <div className="space-y-3">
                   {assessmentMethods.map((method, index) => (
@@ -392,7 +384,7 @@ export default function Academics() {
                 <div className="mt-8">
                   <Link href="/resources">
                     <Button size="lg" data-testid="academic-calendar-button">
-                      View Academic Calendar
+                      {t('academics.assessment.viewCalendar')}
                     </Button>
                   </Link>
                 </div>
@@ -414,20 +406,20 @@ export default function Academics() {
           <div className="w-4/5 mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold mb-2" data-testid="stat-subjects">25+</div>
-                <div className="text-lg opacity-90">Subjects Offered</div>
+                <div className="text-4xl font-bold mb-2" data-testid="stat-subjects">{t('academics.stats.subjectsCount')}</div>
+                <div className="text-lg opacity-90">{t('academics.stats.subjectsOffered')}</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2" data-testid="stat-labs">8</div>
-                <div className="text-lg opacity-90">Laboratories</div>
+                <div className="text-4xl font-bold mb-2" data-testid="stat-labs">{t('academics.stats.laboratoriesCount')}</div>
+                <div className="text-lg opacity-90">{t('academics.stats.laboratories')}</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2" data-testid="stat-classrooms">24</div>
-                <div className="text-lg opacity-90">Smart Classrooms</div>
+                <div className="text-4xl font-bold mb-2" data-testid="stat-classrooms">{t('academics.stats.classroomsCount')}</div>
+                <div className="text-lg opacity-90">{t('academics.stats.smartClassrooms')}</div>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2" data-testid="stat-pass-rate">98.5%</div>
-                <div className="text-lg opacity-90">Pass Rate</div>
+                <div className="text-4xl font-bold mb-2" data-testid="stat-pass-rate">{t('academics.stats.passRateValue')}</div>
+                <div className="text-lg opacity-90">{t('academics.stats.passRate')}</div>
               </div>
             </div>
           </div>

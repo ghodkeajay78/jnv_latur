@@ -16,12 +16,12 @@ export default function Footer() {
   ];
 
   const academicLinks = [
-    { href: '/academics', label: 'Curriculum' },
-    { href: '/achievements', label: 'Results' },
-    { href: '/resources', label: 'Academic Calendar' },
-    { href: '/resources', label: 'Examination' },
-    { href: '/resources', label: 'Resources' },
-    { href: '/resources', label: 'Downloads' },
+    { href: '/academics', label: t('footer.academicLinks.curriculum') },
+    { href: '/achievements', label: t('footer.academicLinks.results') },
+    { href: '/resources', label: t('footer.academicLinks.academicCalendar') },
+    { href: '/resources', label: t('footer.academicLinks.examination') },
+    { href: '/resources', label: t('footer.academicLinks.resources') },
+    { href: '/resources', label: t('footer.academicLinks.downloads') },
   ];
 
   const socialLinks = [
@@ -46,12 +46,12 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-sm">JNV Latur</h3>
-                <p className="text-xs text-muted-foreground">Excellence in Education</p>
+                <h3 className="font-semibold text-sm">{t('footer.schoolName')}</h3>
+                <p className="text-xs text-muted-foreground">{t('footer.tagline')}</p>
               </div>
             </div>
             <p className="text-xs text-muted-foreground mb-3">
-              Nurturing young minds since {schoolInfo.established}, {t('school.name')} is committed to providing quality education and holistic development.
+              {t('footer.descriptionText', { year: schoolInfo.established, schoolName: t('footer.schoolName') })}
             </p>
             <div className="flex space-x-2">
               {socialLinks.map((social, index) => (
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-3 text-sm">Quick Links</h3>
+            <h3 className="font-semibold mb-3 text-sm">{t('footer.quickLinksTitle')}</h3>
             <div className="space-y-1.5 text-xs">
               {quickLinks.map((link, index) => (
                 <Link
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Academic Links */}
           <div>
-            <h3 className="font-semibold mb-3 text-sm">Academics</h3>
+            <h3 className="font-semibold mb-3 text-sm">{t('footer.academics')}</h3>
             <div className="space-y-1.5 text-xs">
               {academicLinks.map((link, index) => (
                 <Link
@@ -104,22 +104,22 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-3 text-sm">Contact Info</h3>
+            <h3 className="font-semibold mb-3 text-sm">{t('footer.contactInfo')}</h3>
             <div className="space-y-2 text-xs">
               <div className="flex items-start space-x-2">
                 <MapPin className="text-primary mt-0.5 w-3 h-3" />
                 <span className="text-muted-foreground">
-                  {contactInfo.address.village}<br />
-                  {contactInfo.address.district}, {contactInfo.address.state}
+                  {t('footer.contactDetails.address.village')}<br />
+                  {t('footer.contactDetails.address.district')}
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="text-primary w-3 h-3" />
-                <span className="text-muted-foreground">{contactInfo.office}</span>
+                <span className="text-muted-foreground">{t('footer.contactDetails.phone')}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="text-primary w-3 h-3" />
-                <span className="text-muted-foreground">{contactInfo.email.principal}</span>
+                <span className="text-muted-foreground">{t('footer.contactDetails.email')}</span>
               </div>
             </div>
 
@@ -128,10 +128,10 @@ export default function Footer() {
               <div className="text-center">
                 <img 
                   src="/images/GoogleMapsQRCode.jpg" 
-                  alt="Google Maps QR Code for JNV Latur Location"
+                  alt={t('footer.qrCode.alt')}
                   className="w-16 h-16 rounded border border-border"
                 />
-                <p className="text-xs text-muted-foreground mt-1">Scan for directions</p>
+                <p className="text-xs text-muted-foreground mt-1">{t('footer.qrCode.scanText')}</p>
               </div>
             </div>
           </div>
@@ -145,13 +145,13 @@ export default function Footer() {
             <p>&copy; 2024 {t('school.name')} Latur. All rights reserved.</p>
             <div className="flex space-x-3 mt-1.5 md:mt-0">
               <Link href="/policies" className="hover:text-primary transition-colors">
-                Privacy Policy
+                {t('footer.legal.privacyPolicy')}
               </Link>
               <Link href="/policies" className="hover:text-primary transition-colors">
-                Terms of Service
+                {t('footer.legal.termsOfService')}
               </Link>
               <a href="#" className="hover:text-primary transition-colors">
-                Sitemap
+                {t('footer.legal.sitemap')}
               </a>
             </div>
           </div>

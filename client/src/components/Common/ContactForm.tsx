@@ -42,8 +42,8 @@ export default function ContactForm() {
       await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate API call
       
       toast({
-        title: 'Message Sent Successfully',
-        description: 'Thank you for your message. We will get back to you soon.',
+        title: t('contact.form.success.title'),
+        description: t('contact.form.success.description'),
       });
       
       // Reset form
@@ -56,8 +56,8 @@ export default function ContactForm() {
       });
     } catch (error) {
       toast({
-        title: 'Error',
-        description: 'Failed to send message. Please try again later.',
+        title: t('contact.form.error.title'),
+        description: t('contact.form.error.description'),
         variant: 'destructive',
       });
     } finally {
@@ -68,17 +68,17 @@ export default function ContactForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="text-2xl">Send us a Message</CardTitle>
+        <CardTitle className="text-2xl">{t('contact.form.title')}</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="name">Full Name</Label>
+              <Label htmlFor="name">{t('contact.form.fields.fullName')}</Label>
               <Input
                 id="name"
                 type="text"
-                placeholder="Enter your full name"
+                placeholder={t('contact.form.placeholders.fullName')}
                 value={formData.name}
                 onChange={(e) => handleInputChange('name', e.target.value)}
                 required
@@ -86,11 +86,11 @@ export default function ContactForm() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
+              <Label htmlFor="email">{t('contact.form.fields.email')}</Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder={t('contact.form.placeholders.email')}
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
                 required
@@ -100,11 +100,11 @@ export default function ContactForm() {
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
+              <Label htmlFor="phone">{t('contact.form.fields.phone')}</Label>
               <Input
                 id="phone"
                 type="tel"
-                placeholder="Enter your phone number"
+                placeholder={t('contact.form.placeholders.phone')}
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
                 required
@@ -112,26 +112,26 @@ export default function ContactForm() {
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="subject">Subject</Label>
+              <Label htmlFor="subject">{t('contact.form.fields.subject')}</Label>
               <Select value={formData.subject} onValueChange={(value) => handleInputChange('subject', value)}>
                 <SelectTrigger data-testid="contact-form-subject">
-                  <SelectValue placeholder="Select a subject" />
+                  <SelectValue placeholder={t('contact.form.placeholders.subject')} />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="admissions">Admissions</SelectItem>
-                  <SelectItem value="academic">Academic Information</SelectItem>
-                  <SelectItem value="hostel">Hostel Facilities</SelectItem>
-                  <SelectItem value="general">General Inquiry</SelectItem>
+                  <SelectItem value="admissions">{t('contact.form.subjects.admissions')}</SelectItem>
+                  <SelectItem value="academic">{t('contact.form.subjects.academic')}</SelectItem>
+                  <SelectItem value="hostel">{t('contact.form.subjects.hostel')}</SelectItem>
+                  <SelectItem value="general">{t('contact.form.subjects.general')}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">{t('contact.form.fields.message')}</Label>
             <Textarea
               id="message"
               rows={6}
-              placeholder="Enter your message"
+              placeholder={t('contact.form.placeholders.message')}
               value={formData.message}
               onChange={(e) => handleInputChange('message', e.target.value)}
               required
@@ -145,7 +145,7 @@ export default function ContactForm() {
             data-testid="contact-form-submit"
             className="w-full md:w-auto"
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
           </Button>
         </form>
       </CardContent>

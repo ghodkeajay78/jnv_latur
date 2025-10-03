@@ -104,13 +104,13 @@ export default function About() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-3xl lg:text-4xl font-bold mb-6 bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent" data-testid="about-hero-title">
-                About {t('school.name')}
+                {t('about.title', { schoolName: t('school.name') })}
               </h1>
               <p className="text-base lg:text-lg text-gray-700 mb-6 leading-relaxed">
-                Dedicated to nurturing young minds and building future leaders through quality education and holistic development.
+                {t('about.heroDescription')}
               </p>
               <Badge variant="secondary" className="text-sm px-3 py-1.5">
-                Established {schoolInfo.established} • {schoolInfo.affiliation} Affiliated
+                {t('about.establishedBadge', { year: schoolInfo.established, affiliation: t('school.affiliation') })}
               </Badge>
             </div>
           </div>
@@ -157,20 +157,20 @@ export default function About() {
               <div>
                 <img
                   src="/images/Gate.jpg"
-                  alt="JNV Latur main entrance gate and campus view"
+                  alt={t('imageAlt.gate')}
                   className="rounded-xl shadow-lg w-full h-auto"
                   data-testid="mission-image"
                 />
               </div>
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold mb-3" data-testid="mission-title">Our Mission</h2>
+                  <h2 className="text-2xl font-bold mb-3" data-testid="mission-title">{t('about.mission')}</h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     {t('school.mission')}
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold mb-3" data-testid="vision-title">Our Vision</h2>
+                  <h2 className="text-2xl font-bold mb-3" data-testid="vision-title">{t('about.vision')}</h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
                     {t('school.vision')}
                   </p>
@@ -218,9 +218,9 @@ export default function About() {
           
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="values-title">Our Core Values</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="values-title">{t('about.coreValues.title')}</h2>
               <p className="text-lg text-muted-foreground">
-                The principles that guide our educational philosophy and daily practices
+                {t('about.coreValues.description')}
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -248,9 +248,9 @@ export default function About() {
         <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50">
           <div className="w-4/5 mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="history-title">Our Journey</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="history-title">{t('about.journey.title')}</h2>
               <p className="text-lg text-muted-foreground">
-                Key milestones in our journey of educational excellence
+                {t('about.journey.description')}
               </p>
             </div>
             <div className="max-w-4xl mx-auto">
@@ -316,7 +316,7 @@ export default function About() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center">
               <h2 className="text-3xl lg:text-4xl font-bold mb-8" data-testid="recognition-title">
-                Recognition & Affiliations
+                {t('about.recognition.title')}
               </h2>
               <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                 <Card className="text-center">
@@ -324,9 +324,9 @@ export default function About() {
                     <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <BookOpen className="w-8 h-8 text-blue-600" />
                     </div>
-                    <h3 className="font-semibold mb-2">SSC Board Affiliation</h3>
+                    <h3 className="font-semibold mb-2">{t('about.recognition.sscAffiliation.title')}</h3>
                     <p className="text-muted-foreground text-sm">
-                      Affiliated with Maharashtra State Board of Secondary and Higher Secondary Education
+                      {t('about.recognition.sscAffiliation.description')}
                     </p>
                   </CardContent>
                 </Card>
@@ -335,9 +335,9 @@ export default function About() {
                     <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Award className="w-8 h-8 text-green-600" />
                     </div>
-                    <h3 className="font-semibold mb-2">Excellence Award</h3>
+                    <h3 className="font-semibold mb-2">{t('about.recognition.excellenceAward.title')}</h3>
                     <p className="text-muted-foreground text-sm">
-                      Best Navodaya Vidyalaya at State Level 2023
+                      {t('about.recognition.excellenceAward.description')}
                     </p>
                   </CardContent>
                 </Card>
@@ -346,9 +346,9 @@ export default function About() {
                     <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                       <Globe className="w-8 h-8 text-yellow-600" />
                     </div>
-                    <h3 className="font-semibold mb-2">ISO Certification</h3>
+                    <h3 className="font-semibold mb-2">{t('about.recognition.isoCertification.title')}</h3>
                     <p className="text-muted-foreground text-sm">
-                      Quality Management System Certified
+                      {t('about.recognition.isoCertification.description')}
                     </p>
                   </CardContent>
                 </Card>

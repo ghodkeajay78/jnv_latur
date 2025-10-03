@@ -11,10 +11,10 @@ export default function Management() {
 
   const managementCommittee = [
     {
-      name: 'Shri Prakash Kishanrao Raychukur',
+      name: t('management.names.prakashRaychukur'),
       position: t('management.positions.president'),
       qualification: t('management.qualifications.educationLeader'),
-      experience: '20+ years',
+      experience: t('management.experience.twentyPlus'),
       specialization: t('management.specializations.educationalLeadershipGovernance'),
       responsibilities: [
         t('management.responsibilities.overallGovernancePolicyDirection'),
@@ -24,14 +24,14 @@ export default function Management() {
       ],
       contact: {
         email: 'president@jnvlatur.edu.in',
-        phone: '+91-2382-123457'
+        phone: t('management.phoneNumbers.president')
       },
     },
     {
-      name: 'Dr. Rajesh Shivajirao Patil',
+      name: t('management.names.rajeshPatil'),
       position: t('management.positions.vicePresident'),
       qualification: t('management.qualifications.phdEducation'),
-      experience: '18+ years',
+      experience: t('management.experience.eighteenPlus'),
       specialization: t('management.specializations.academicExcellencePolicyDevelopment'),
       responsibilities: [
         t('management.responsibilities.academicPolicyFormulation'),
@@ -41,506 +41,506 @@ export default function Management() {
       ],
       contact: {
         email: 'vicepresident@jnvlatur.edu.in',
-        phone: '+91-2382-123458'
+        phone: t('management.phoneNumbers.vicePresident')
       },
     },
     {
-      name: 'Adv. Balkrishna Harirrao Deshpande',
+      name: t('management.names.balkrishnaDeshpande'),
       position: t('management.positions.secretary'),
       qualification: t('management.qualifications.llbEducationLawSpecialist'),
-      experience: '15+ years',
-      specialization: 'Legal Affairs & Administrative Compliance',
+      experience: t('management.experience.fifteenPlus'),
+      specialization: t('management.specializations.legalAffairsAdministrativeCompliance'),
       responsibilities: [
-        'Legal compliance and documentation',
-        'Administrative procedures and policies',
-        'Regulatory affairs management',
-        'Contract and agreement oversight'
+        t('management.responsibilities.legalComplianceDocumentation'),
+        t('management.responsibilities.administrativeProceduresPolicies'),
+        t('management.responsibilities.regulatoryAffairsManagement'),
+        t('management.responsibilities.contractAgreementOversight')
       ],
       contact: {
         email: 'secretary@jnvlatur.edu.in',
-        phone: '+91-2382-123459'
+        phone: t('management.phoneNumbers.secretary')
       },
     },
     {
-      name: 'Shri Arvind Renukadasrao Deshpande',
-      position: 'Member',
-      qualification: 'Education Management',
-      experience: '12+ years',
-      specialization: 'Operations & Resource Management',
+      name: t('management.names.arvindDeshpande'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationManagement'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.operationsResourceManagement'),
       responsibilities: [
-        'Operational efficiency and improvement',
-        'Resource allocation and management',
-        'Infrastructure development planning',
-        'Performance monitoring and evaluation'
+        t('management.responsibilities.operationalEfficiencyImprovement'),
+        t('management.responsibilities.resourceAllocationManagement'),
+        t('management.responsibilities.infrastructureDevelopmentPlanning'),
+        t('management.responsibilities.performanceMonitoringEvaluation')
       ],
       contact: {
         email: 'member1@jnvlatur.edu.in',
-        phone: '+91-2382-123460'
+        phone: t('management.phoneNumbers.member1')
       },
     },
     {
-      name: 'Shri Vasant Yewarkar Nayakvadi',
-      position: 'Member',
-      qualification: 'Community Development',
-      experience: '10+ years',
-      specialization: 'Community Engagement & Social Development',
+      name: t('management.names.vasantNayakvadi'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.communityDevelopment'),
+      experience: t('management.experience.tenPlus'),
+      specialization: t('management.specializations.communityEngagementSocialDevelopment'),
       responsibilities: [
-        'Community outreach and engagement',
-        'Social development initiatives',
-        'Local partnership development',
-        'Public relations and communication'
+        t('management.responsibilities.communityOutreachEngagement'),
+        t('management.responsibilities.socialDevelopmentInitiatives'),
+        t('management.responsibilities.localPartnershipDevelopment'),
+        t('management.responsibilities.publicRelationsCommunication')
       ],
       contact: {
         email: 'member2@jnvlatur.edu.in',
-        phone: '+91-2382-123461'
+        phone: t('management.phoneNumbers.member2')
       },
     },
     {
-      name: 'Principal Dr. Atmaram Vinayakrao Pachpute',
-      position: 'Member',
-      qualification: 'Ph.D. in Education Administration',
-      experience: '25+ years',
-      specialization: 'Educational Leadership & School Management',
+      name: t('management.names.atmaramPachpute'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.phdEducationAdministration'),
+      experience: t('management.experience.twentyFivePlus'),
+      specialization: t('management.specializations.educationalLeadershipSchoolManagement'),
       responsibilities: [
-        'School administration and management',
-        'Academic excellence and quality assurance',
-        'Staff development and training',
-        'Student welfare and development'
+        t('management.responsibilities.schoolAdministrationManagement'),
+        t('management.responsibilities.academicExcellenceQualityAssurance'),
+        t('management.responsibilities.staffDevelopmentTraining'),
+        t('management.responsibilities.studentWelfareDevelopment')
       ],
       contact: {
         email: 'principal@jnvlatur.edu.in',
-        phone: '+91-2382-123462'
+        phone: t('management.phoneNumbers.principal')
       },
     },
     {
-      name: 'Shri Rajesh Maheshwarappa Sugure',
-      position: 'Member',
-      qualification: 'Education & Administration',
-      experience: '14+ years',
-      specialization: 'Administrative Operations & Quality Management',
+      name: t('management.names.rajeshSugure'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationAdministration'),
+      experience: t('management.experience.fourteenPlus'),
+      specialization: t('management.specializations.administrativeOperationsQualityManagement'),
       responsibilities: [
-        'Administrative operations oversight',
-        'Quality management systems',
-        'Process improvement initiatives',
-        'Compliance and audit management'
+        t('management.responsibilities.administrativeOperationsOversight'),
+        t('management.responsibilities.qualityManagementSystems'),
+        t('management.responsibilities.processImprovementInitiatives'),
+        t('management.responsibilities.complianceAuditManagement')
       ],
       contact: {
         email: 'member3@jnvlatur.edu.in',
-        phone: '+91-2382-123463'
+        phone: t('management.phoneNumbers.member3')
       },
     },
     {
-      name: 'Shri Vivek Kishanrao Agachit',
-      position: 'Nominated Member',
-      qualification: 'Education & Development',
-      experience: '8+ years',
-      specialization: 'Special Projects & Innovation',
+      name: t('management.names.vivekAgachit'),
+      position: t('management.positions.nominatedMember'),
+      qualification: t('management.qualifications.educationDevelopment'),
+      experience: t('management.experience.eightPlus'),
+      specialization: t('management.specializations.specialProjectsInnovation'),
       responsibilities: [
-        'Special project management',
-        'Innovation and development initiatives',
-        'Technology integration projects',
-        'Research and development activities'
+        t('management.responsibilities.specialProjectManagement'),
+        t('management.responsibilities.innovationDevelopmentInitiatives'),
+        t('management.responsibilities.technologyIntegrationProjects'),
+        t('management.responsibilities.researchDevelopmentActivities')
       ],
       contact: {
         email: 'nominated@jnvlatur.edu.in',
-        phone: '+91-2382-123464'
+        phone: t('management.phoneNumbers.nominated')
       },
     },
     {
-      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
-      position: 'Co-opted Member (Male)',
-      qualification: 'Education & Community Service',
-      experience: '16+ years',
-      specialization: 'Community Development & Student Welfare',
+      name: t('management.names.dnyaneshwarSonatakke'),
+      position: t('management.positions.cooptedMemberMale'),
+      qualification: t('management.qualifications.educationCommunityService'),
+      experience: t('management.experience.sixteenPlus'),
+      specialization: t('management.specializations.communityDevelopmentStudentWelfare'),
       responsibilities: [
-        'Community development programs',
-        'Student welfare initiatives',
-        'Local engagement activities',
-        'Social responsibility projects'
+        t('management.responsibilities.communityDevelopmentPrograms'),
+        t('management.responsibilities.studentWelfareInitiatives'),
+        t('management.responsibilities.localEngagementActivities'),
+        t('management.responsibilities.socialResponsibilityProjects')
       ],
       contact: {
         email: 'coopted1@jnvlatur.edu.in',
-        phone: '+91-2382-123465'
+        phone: t('management.phoneNumbers.coopted1')
       },
     },
     {
-      name: 'Shri Ravindra Madhukarrao Purnapatre',
-      position: 'Co-opted Member (Female)',
-      qualification: 'Education & Women Empowerment',
-      experience: '12+ years',
-      specialization: 'Gender Equality & Inclusive Education',
+      name: t('management.names.ravindraPurnapatre'),
+      position: t('management.positions.cooptedMemberFemale'),
+      qualification: t('management.qualifications.educationWomenEmpowerment'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.genderEqualityInclusiveEducation'),
       responsibilities: [
-        'Gender equality initiatives',
-        'Inclusive education programs',
-        'Women empowerment activities',
-        'Diversity and inclusion management'
+        t('management.responsibilities.genderEqualityInitiatives'),
+        t('management.responsibilities.inclusiveEducationPrograms'),
+        t('management.responsibilities.womenEmpowermentActivities'),
+        t('management.responsibilities.diversityInclusionManagement')
       ],
       contact: {
         email: 'coopted2@jnvlatur.edu.in',
-        phone: '+91-2382-123466'
+        phone: t('management.phoneNumbers.coopted2')
       },
     },
   ];
 
   const schoolCommittee = [
     {
-      name: 'Principal Dr. Atmaram Vinayakrao Pachpute',
-      position: 'President',
-      qualification: 'Ph.D. in Education Administration',
-      experience: '25+ years',
-      specialization: 'Educational Leadership & School Management',
+      name: t('management.names.atmaramPachpute'),
+      position: t('management.positions.president'),
+      qualification: t('management.qualifications.educationAdministrationPhd'),
+      experience: t('management.experience.twentyFivePlus'),
+      specialization: t('management.specializations.educationalLeadershipSchoolManagement'),
       responsibilities: [
-        'Overall academic leadership',
-        'Curriculum development and implementation',
-        'Academic policy formulation',
-        'Quality assurance and improvement'
+        t('management.responsibilities.overallAcademicLeadership'),
+        t('management.responsibilities.curriculumDevelopmentImplementation'),
+        t('management.responsibilities.academicPolicyFormulation'),
+        t('management.responsibilities.qualityAssuranceImprovement')
       ],
       contact: {
-        email: 'principal@jnvlatur.edu.in',
-        phone: '+91-2382-123457'
+        email: t('management.phoneNumbers.principalEmail'),
+        phone: t('management.phoneNumbers.prabhakarJoshi')
       },
     },
     {
-      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
-      position: 'Secretary (Local)',
-      qualification: 'Education & Administration',
-      experience: '16+ years',
-      specialization: 'Academic Coordination & Local Administration',
+      name: t('management.names.dnyaneshwarSonatakke'),
+      position: t('management.positions.localSecretary'),
+      qualification: t('management.qualifications.educationAdministrationLocal'),
+      experience: t('management.experience.sixteenPlus'),
+      specialization: t('management.specializations.academicCoordinationLocalAdministration'),
       responsibilities: [
-        'Academic coordination and planning',
-        'Local administrative support',
-        'Community liaison activities',
-        'Student affairs management'
+        t('management.responsibilities.academicCoordinationPlanning'),
+        t('management.responsibilities.localAdministrativeSupport'),
+        t('management.responsibilities.communityLiaisonActivities'),
+        t('management.responsibilities.studentAffairsManagement')
       ],
       contact: {
-        email: 'secretary.local@jnvlatur.edu.in',
-        phone: '+91-2382-123458'
+        email: t('management.phoneNumbers.secretaryLocalEmail'),
+        phone: t('management.phoneNumbers.dilipHalbhange')
       },
     },
     {
-      name: 'Shri Prabhakar Manikrao Joshi',
-      position: 'Member',
-      qualification: 'Education & Development',
-      experience: '14+ years',
-      specialization: 'Educational Development & Community Engagement',
+      name: t('management.names.prabhakarJoshi'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationDevelopmentCommunity'),
+      experience: t('management.experience.fourteenPlus'),
+      specialization: t('management.specializations.educationalDevelopmentCommunityEngagement'),
       responsibilities: [
-        'Educational development initiatives',
-        'Community engagement programs',
-        'Academic support activities',
-        'Student development programs'
+        t('management.responsibilities.educationalDevelopmentInitiatives'),
+        t('management.responsibilities.communityEngagementPrograms'),
+        t('management.responsibilities.academicSupportActivities'),
+        t('management.responsibilities.studentDevelopmentPrograms')
       ],
       contact: {
-        email: 'member1@jnvlatur.edu.in',
-        phone: '+91-2382-123459'
+        email: t('management.phoneNumbers.member1Email'),
+        phone: t('management.phoneNumbers.prabhakarJoshi')
       },
     },
     {
-      name: 'Shri Dilip Rajaram Halbhange',
-      position: 'Member',
-      qualification: 'Education Management',
-      experience: '12+ years',
-      specialization: 'Academic Planning & Resource Management',
+      name: t('management.names.dilipHalbhange'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationManagement'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.academicPlanningResourceManagement'),
       responsibilities: [
-        'Academic planning and scheduling',
-        'Resource allocation and management',
-        'Performance monitoring',
-        'Quality improvement initiatives'
+        t('management.responsibilities.academicPlanningScheduling'),
+        t('management.responsibilities.resourceAllocationManagement'),
+        t('management.responsibilities.performanceMonitoring'),
+        t('management.responsibilities.qualityImprovementInitiatives')
       ],
       contact: {
-        email: 'member2@jnvlatur.edu.in',
-        phone: '+91-2382-123460'
+        email: t('management.phoneNumbers.member2Email'),
+        phone: t('management.phoneNumbers.dilipHalbhange')
       },
     },
     {
-      name: 'Shri Ajay Madhavrao Renpure',
-      position: 'Member',
-      qualification: 'Education & Technology',
-      experience: '10+ years',
-      specialization: 'Educational Technology & Innovation',
+      name: t('management.names.ajayRenpure'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationTechnology'),
+      experience: t('management.experience.tenPlus'),
+      specialization: t('management.specializations.educationalTechnologyInnovation'),
       responsibilities: [
-        'Technology integration in education',
-        'Digital learning initiatives',
-        'Innovation in teaching methods',
-        'Technical support and training'
+        t('management.responsibilities.technologyIntegrationEducation'),
+        t('management.responsibilities.digitalLearningInitiatives'),
+        t('management.responsibilities.innovationTeachingMethods'),
+        t('management.responsibilities.technicalSupportTraining')
       ],
       contact: {
-        email: 'member3@jnvlatur.edu.in',
-        phone: '+91-2382-123461'
+        email: t('management.phoneNumbers.member3Email'),
+        phone: t('management.phoneNumbers.ajayRenpure')
       },
     },
     {
-      name: 'Shri Mayas Jyotiram Karad',
-      position: 'Member',
-      qualification: 'Education & Research',
-      experience: '11+ years',
-      specialization: 'Research & Development in Education',
+      name: t('management.names.mayasKarad'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationResearch'),
+      experience: t('management.experience.elevenPlus'),
+      specialization: t('management.specializations.researchDevelopmentEducation'),
       responsibilities: [
-        'Educational research activities',
-        'Development of new methodologies',
-        'Data analysis and reporting',
-        'Evidence-based decision making'
+        t('management.responsibilities.educationalResearchActivities'),
+        t('management.responsibilities.developmentNewMethodologies'),
+        t('management.responsibilities.dataAnalysisReporting'),
+        t('management.responsibilities.evidenceBasedDecisionMaking')
       ],
       contact: {
-        email: 'member4@jnvlatur.edu.in',
-        phone: '+91-2382-123462'
+        email: t('management.phoneNumbers.member4Email'),
+        phone: t('management.phoneNumbers.mayasKarad')
       },
     },
     {
-      name: 'Dr. (Mrs.) Archanatayi Shailendra Apte',
-      position: 'Member',
-      qualification: 'Ph.D. in Education',
-      experience: '15+ years',
-      specialization: 'Academic Excellence & Student Development',
+      name: t('management.names.archanatayiApte'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationPhd'),
+      experience: t('management.experience.fifteenPlus'),
+      specialization: t('management.specializations.academicExcellenceStudentDevelopment'),
       responsibilities: [
-        'Academic excellence programs',
-        'Student development initiatives',
-        'Curriculum enhancement',
-        'Assessment and evaluation'
+        t('management.responsibilities.academicExcellencePrograms'),
+        t('management.responsibilities.studentDevelopmentInitiatives'),
+        t('management.responsibilities.curriculumEnhancement'),
+        t('management.responsibilities.assessmentEvaluation')
       ],
       contact: {
-        email: 'member5@jnvlatur.edu.in',
-        phone: '+91-2382-123463'
+        email: t('management.phoneNumbers.member5Email'),
+        phone: t('management.phoneNumbers.archanatayiApte')
       },
     },
     {
-      name: 'Shri Balbhim Kishanrao Jadhav',
-      position: 'Parents\' Representative',
-      qualification: 'Community Leadership',
-      experience: '8+ years',
-      specialization: 'Parent Engagement & Community Relations',
+      name: t('management.names.balbhimJadhav'),
+      position: t('management.positions.parentsRepresentative'),
+      qualification: t('management.qualifications.communityLeadership'),
+      experience: t('management.experience.eightPlus'),
+      specialization: t('management.specializations.parentEngagementCommunityRelations'),
       responsibilities: [
-        'Parent engagement activities',
-        'Community relations management',
-        'Student welfare advocacy',
-        'Feedback and communication'
+        t('management.responsibilities.parentEngagementActivities'),
+        t('management.responsibilities.communityRelationsManagement'),
+        t('management.responsibilities.studentWelfareAdvocacy'),
+        t('management.responsibilities.feedbackCommunication')
       ],
       contact: {
-        email: 'parents@jnvlatur.edu.in',
-        phone: '+91-2382-123464'
+        email: t('management.phoneNumbers.parentsEmail'),
+        phone: t('management.phoneNumbers.balbhimJadhav')
       },
     },
     {
-      name: 'Shri Manmath Kashinath Khichade',
-      position: 'Teachers\' Representative',
-      qualification: 'Education & Teaching',
-      experience: '18+ years',
-      specialization: 'Teaching Excellence & Faculty Development',
+      name: t('management.names.manmathKhichade'),
+      position: t('management.positions.teachersRepresentative'),
+      qualification: t('management.qualifications.educationTeaching'),
+      experience: t('management.experience.eighteenPlus'),
+      specialization: t('management.specializations.teachingExcellenceFacultyDevelopment'),
       responsibilities: [
-        'Teacher welfare and development',
-        'Teaching methodology improvement',
-        'Faculty coordination and support',
-        'Academic quality enhancement'
+        t('management.responsibilities.teacherWelfareDevelopment'),
+        t('management.responsibilities.teachingMethodologyImprovement'),
+        t('management.responsibilities.facultyCoordinationSupport'),
+        t('management.responsibilities.academicQualityEnhancement')
       ],
       contact: {
-        email: 'teachers@jnvlatur.edu.in',
-        phone: '+91-2382-123465'
+        email: t('management.phoneNumbers.teachersEmail'),
+        phone: t('management.phoneNumbers.manmathKhichade')
       },
     },
     {
-      name: 'Shri Sanjay Kantarao Joshi',
-      position: 'Non-teaching Staff Representative',
-      qualification: 'Administration & Support Services',
-      experience: '12+ years',
-      specialization: 'Support Services & Administrative Efficiency',
+      name: t('management.names.sanjayJoshi'),
+      position: t('management.positions.nonTeachingStaffRepresentative'),
+      qualification: t('management.qualifications.administrationSupportServices'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.supportServicesAdministrativeEfficiency'),
       responsibilities: [
-        'Support services management',
-        'Administrative efficiency improvement',
-        'Staff coordination and support',
-        'Operational excellence'
+        t('management.responsibilities.supportServicesManagement'),
+        t('management.responsibilities.administrativeEfficiencyImprovement'),
+        t('management.responsibilities.staffCoordinationSupport'),
+        t('management.responsibilities.operationalExcellence')
       ],
       contact: {
-        email: 'staff@jnvlatur.edu.in',
-        phone: '+91-2382-123466'
+        email: t('management.phoneNumbers.staffEmail'),
+        phone: t('management.phoneNumbers.sanjayJoshi')
       },
     },
     {
-      name: 'Shri Ravindra Madhukarrao Purnapatre',
-      position: 'Special Invitee Member',
-      qualification: 'Education & Development',
-      experience: '12+ years',
-      specialization: 'Special Projects & External Relations',
+      name: t('management.names.ravindraPurnapatre'),
+      position: t('management.positions.specialInviteeMember'),
+      qualification: t('management.qualifications.educationDevelopmentSpecial'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.specialProjectsExternalRelations'),
       responsibilities: [
-        'Special project coordination',
-        'External relations management',
-        'Partnership development',
-        'Strategic initiatives'
+        t('management.responsibilities.specialProjectCoordination'),
+        t('management.responsibilities.externalRelationsManagement'),
+        t('management.responsibilities.partnershipDevelopment'),
+        t('management.responsibilities.strategicInitiatives')
       ],
       contact: {
-        email: 'special@jnvlatur.edu.in',
-        phone: '+91-2382-123467'
+        email: t('management.phoneNumbers.specialEmail'),
+        phone: t('management.phoneNumbers.ravindraPurnapatre')
       },
     },
   ];
 
   const hostelCommittee = [
     {
-      name: 'Shri Rajesh Maheshwarappa Sugure',
-      position: 'President',
-      qualification: 'Education & Administration',
-      experience: '14+ years',
-      specialization: 'Hostel Management & Student Welfare',
+      name: t('management.names.rajeshSugureHostel'),
+      position: t('management.positions.president'),
+      qualification: t('management.qualifications.educationAdministration'),
+      experience: t('management.experience.fourteenPlus'),
+      specialization: t('management.specializations.hostelManagementStudentWelfare'),
       responsibilities: [
-        'Overall hostel governance',
-        'Student welfare and safety',
-        'Policy formulation and implementation',
-        'Quality assurance in hostel services'
+        t('management.responsibilities.overallHostelGovernance'),
+        t('management.responsibilities.studentWelfareSafety'),
+        t('management.responsibilities.policyFormulationImplementation'),
+        t('management.responsibilities.qualityAssuranceHostelServices')
       ],
       contact: {
         email: 'hostel.president@jnvlatur.edu.in',
-        phone: '+91-2382-123457'
+        phone: t('management.phoneNumbers.rajeshSugureHostel')
       },
     },
     {
-      name: 'Shri Ravindra Madhukarrao Purnapatre',
-      position: 'Secretary (Hostel)',
-      qualification: 'Education & Development',
-      experience: '12+ years',
-      specialization: 'Hostel Administration & Student Services',
+      name: t('management.names.ravindraPurnapatre'),
+      position: t('management.positions.hostelSecretary'),
+      qualification: t('management.qualifications.educationDevelopment'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.hostelAdministrationStudentServices'),
       responsibilities: [
-        'Hostel administration and operations',
-        'Student services coordination',
-        'Daily operations management',
-        'Staff coordination and supervision'
+        t('management.responsibilities.hostelAdministrationOperations'),
+        t('management.responsibilities.studentServicesCoordination'),
+        t('management.responsibilities.dailyOperationsManagement'),
+        t('management.responsibilities.staffCoordinationSupervision')
       ],
       contact: {
         email: 'hostel.secretary@jnvlatur.edu.in',
-        phone: '+91-2382-123458'
+        phone: t('management.phoneNumbers.ravindraPurnapatre')
       },
     },
     {
-      name: 'Adv. Vishwanath Uddhavrao Jadhav',
-      position: 'Member',
-      qualification: 'LL.B., Legal Affairs',
-      experience: '10+ years',
-      specialization: 'Legal Compliance & Student Rights',
+      name: t('management.names.vishwanathJadhav'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.llbLegalAffairs'),
+      experience: t('management.experience.tenPlus'),
+      specialization: t('management.specializations.legalComplianceStudentRights'),
       responsibilities: [
-        'Legal compliance in hostel operations',
-        'Student rights protection',
-        'Disciplinary procedures oversight',
-        'Legal documentation and procedures'
+        t('management.responsibilities.legalComplianceHostelOperations'),
+        t('management.responsibilities.studentRightsProtection'),
+        t('management.responsibilities.disciplinaryProceduresOversight'),
+        t('management.responsibilities.legalDocumentationProcedures')
       ],
       contact: {
         email: 'hostel.member1@jnvlatur.edu.in',
-        phone: '+91-2382-123459'
+        phone: t('management.phoneNumbers.vishwanathJadhav')
       },
     },
     {
-      name: 'Shri Valmik Nivruttirao Kale',
-      position: 'Member',
-      qualification: 'Education & Community Service',
-      experience: '13+ years',
-      specialization: 'Community Relations & Student Development',
+      name: t('management.names.valmikKale'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationCommunityService'),
+      experience: t('management.experience.thirteenPlus'),
+      specialization: t('management.specializations.communityRelationsStudentDevelopment'),
       responsibilities: [
-        'Community relations management',
-        'Student development programs',
-        'Local engagement activities',
-        'Cultural and social programs'
+        t('management.responsibilities.communityRelationsManagement'),
+        t('management.responsibilities.studentDevelopmentPrograms'),
+        t('management.responsibilities.localEngagementActivities'),
+        t('management.responsibilities.culturalSocialPrograms')
       ],
       contact: {
         email: 'hostel.member2@jnvlatur.edu.in',
-        phone: '+91-2382-123460'
+        phone: t('management.phoneNumbers.valmikKale')
       },
     },
     {
-      name: 'Dr. (Mrs.) Aruna Srinivas Sadake',
-      position: 'Member',
-      qualification: 'Ph.D. in Education',
-      experience: '15+ years',
-      specialization: 'Student Counseling & Welfare',
+      name: t('management.names.arunaSadake'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.phdEducation'),
+      experience: t('management.experience.fifteenPlus'),
+      specialization: t('management.specializations.studentCounselingWelfare'),
       responsibilities: [
-        'Student counseling services',
-        'Mental health and wellness programs',
-        'Student welfare initiatives',
-        'Personal development support'
+        t('management.responsibilities.studentCounselingServices'),
+        t('management.responsibilities.mentalHealthWellnessPrograms'),
+        t('management.responsibilities.studentWelfareInitiatives'),
+        t('management.responsibilities.personalDevelopmentSupport')
       ],
       contact: {
         email: 'hostel.member3@jnvlatur.edu.in',
-        phone: '+91-2382-123461'
+        phone: t('management.phoneNumbers.arunaSadake')
       },
     },
     {
-      name: 'Shri Shailesh Shatrughna Kulkarni',
-      position: 'Member',
-      qualification: 'Education & Administration',
-      experience: '11+ years',
-      specialization: 'Administrative Operations & Quality Management',
+      name: t('management.names.shaileshKulkarni'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationAdministration'),
+      experience: t('management.experience.elevenPlus'),
+      specialization: t('management.specializations.administrativeOperationsQualityManagement'),
       responsibilities: [
-        'Administrative operations oversight',
-        'Quality management in hostel services',
-        'Process improvement initiatives',
-        'Performance monitoring and evaluation'
+        t('management.responsibilities.administrativeOperationsOversight'),
+        t('management.responsibilities.qualityManagementHostelServices'),
+        t('management.responsibilities.processImprovementInitiatives'),
+        t('management.responsibilities.performanceMonitoringEvaluation')
       ],
       contact: {
         email: 'hostel.member4@jnvlatur.edu.in',
-        phone: '+91-2382-123462'
+        phone: t('management.phoneNumbers.shaileshKulkarni')
       },
     },
     {
-      name: 'Shri Manoj Manikrao Kulkarni (Devangikar)',
-      position: 'Member',
-      qualification: 'Education & Development',
-      experience: '9+ years',
-      specialization: 'Student Activities & Cultural Programs',
+      name: t('management.names.manojKulkarni'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.educationDevelopment'),
+      experience: t('management.experience.ninePlus'),
+      specialization: t('management.specializations.studentActivitiesCulturalPrograms'),
       responsibilities: [
-        'Student activity coordination',
-        'Cultural program management',
-        'Recreational activities planning',
-        'Student engagement initiatives'
+        t('management.responsibilities.studentActivityCoordination'),
+        t('management.responsibilities.culturalProgramManagement'),
+        t('management.responsibilities.recreationalActivitiesPlanning'),
+        t('management.responsibilities.studentEngagementInitiatives')
       ],
       contact: {
         email: 'hostel.member5@jnvlatur.edu.in',
-        phone: '+91-2382-123463'
+        phone: t('management.phoneNumbers.manojKulkarni')
       },
     },
     {
-      name: 'Shri Dattu Keshavrao Mane',
-      position: 'Member',
-      qualification: 'Community Leadership',
-      experience: '12+ years',
-      specialization: 'Community Development & Local Relations',
+      name: t('management.names.dattuMane'),
+      position: t('management.positions.member'),
+      qualification: t('management.qualifications.communityLeadership'),
+      experience: t('management.experience.twelvePlus'),
+      specialization: t('management.specializations.communityDevelopmentLocalRelations'),
       responsibilities: [
-        'Community development initiatives',
-        'Local relations management',
-        'Public engagement activities',
-        'Social responsibility programs'
+        t('management.responsibilities.communityDevelopmentInitiatives'),
+        t('management.responsibilities.localRelationsManagement'),
+        t('management.responsibilities.publicEngagementActivities'),
+        t('management.responsibilities.socialResponsibilityPrograms')
       ],
       contact: {
         email: 'hostel.member6@jnvlatur.edu.in',
-        phone: '+91-2382-123464'
+        phone: t('management.phoneNumbers.dattuMane')
       },
     },
     {
-      name: 'Shri Bahubali Nagnath Bhambe',
-      position: 'Staff Representative',
-      qualification: 'Education & Support Services',
-      experience: '16+ years',
-      specialization: 'Staff Welfare & Support Services',
+      name: t('management.names.bahubaliBhambe'),
+      position: t('management.positions.staffRepresentative'),
+      qualification: t('management.qualifications.educationSupportServices'),
+      experience: t('management.experience.sixteenPlus'),
+      specialization: t('management.specializations.staffWelfareSupportServices'),
       responsibilities: [
-        'Staff welfare and development',
-        'Support services coordination',
-        'Staff training and development',
-        'Operational efficiency improvement'
+        t('management.responsibilities.staffWelfareDevelopment'),
+        t('management.responsibilities.supportServicesCoordination'),
+        t('management.responsibilities.staffTrainingDevelopment'),
+        t('management.responsibilities.operationalEfficiencyImprovement')
       ],
       contact: {
         email: 'hostel.staff@jnvlatur.edu.in',
-        phone: '+91-2382-123465'
+        phone: t('management.phoneNumbers.bahubaliBhambe')
       },
     },
     {
-      name: 'Shri Dnyaneshwar Rajaram Sonatakke',
-      position: 'Co-opted Member',
-      qualification: 'Education & Community Service',
-      experience: '16+ years',
-      specialization: 'Special Projects & Community Engagement',
+      name: t('management.names.dnyaneshwarSonatakke'),
+      position: t('management.positions.cooptedMember'),
+      qualification: t('management.qualifications.educationCommunityService'),
+      experience: t('management.experience.sixteenPlus'),
+      specialization: t('management.specializations.specialProjectsCommunityEngagement'),
       responsibilities: [
-        'Special project coordination',
-        'Community engagement activities',
-        'Partnership development',
-        'Strategic initiatives'
+        t('management.responsibilities.specialProjectCoordination'),
+        t('management.responsibilities.communityEngagementActivities'),
+        t('management.responsibilities.partnershipDevelopment'),
+        t('management.responsibilities.strategicInitiatives')
       ],
       contact: {
         email: 'hostel.coopted@jnvlatur.edu.in',
-        phone: '+91-2382-123466'
+        phone: t('management.phoneNumbers.dnyaneshwarSonatakke')
       },
     },
   ];
@@ -644,41 +644,41 @@ export default function Management() {
 
   const achievements = [
     {
-      year: '2023',
-      achievement: 'Best Navodaya Vidyalaya Award',
-      level: 'State Level',
-      description: 'Recognized for overall excellence in academic performance and infrastructure development.',
+      year: t('management.achievements.bestNavodayaVidyalaya.year'),
+      achievement: t('management.achievements.bestNavodayaVidyalaya.title'),
+      level: t('management.achievements.bestNavodayaVidyalaya.level'),
+      description: t('management.achievements.bestNavodayaVidyalaya.description'),
     },
     {
-      year: '2022',
-      achievement: 'Excellence in Digital Education',
-      level: 'Regional Level',
-      description: 'Awarded for innovative use of technology in education and digital literacy programs.',
+      year: t('management.achievements.digitalEducation.year'),
+      achievement: t('management.achievements.digitalEducation.title'),
+      level: t('management.achievements.digitalEducation.level'),
+      description: t('management.achievements.digitalEducation.description'),
     },
     {
-      year: '2021',
-      achievement: 'Green School Certification',
-      level: 'National Level',
-      description: 'Certified for environmental conservation initiatives and sustainable practices.',
+      year: t('management.achievements.greenSchool.year'),
+      achievement: t('management.achievements.greenSchool.title'),
+      level: t('management.achievements.greenSchool.level'),
+      description: t('management.achievements.greenSchool.description'),
     },
     {
-      year: '2020',
-      achievement: 'Outstanding Community Service',
-      level: 'District Level',
-      description: 'Recognized for significant contribution to community development and social service.',
+      year: t('management.achievements.communityService.year'),
+      achievement: t('management.achievements.communityService.title'),
+      level: t('management.achievements.communityService.level'),
+      description: t('management.achievements.communityService.description'),
     },
   ];
 
   const visionMission = {
-    vision: 'To be a center of excellence in education, fostering holistic development of students from rural backgrounds and preparing them to be responsible global citizens.',
-    mission: 'To provide quality education with modern facilities while preserving cultural values, developing critical thinking, and nurturing leadership qualities in students.',
+    vision: t('management.visionMission.visionText'),
+    mission: t('management.visionMission.missionText'),
     values: [
-      'Excellence in Education',
-      'Integrity and Ethics',
-      'Inclusive Growth',
-      'Innovation and Creativity',
-      'Social Responsibility',
-      'Cultural Preservation'
+      t('management.visionMission.values.0'),
+      t('management.visionMission.values.1'),
+      t('management.visionMission.values.2'),
+      t('management.visionMission.values.3'),
+      t('management.visionMission.values.4'),
+      t('management.visionMission.values.5')
     ],
   };
 
@@ -723,10 +723,10 @@ export default function Management() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="management-hero-title">
-              Management & Leadership
+              {t('management.title')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Meet our experienced leadership team committed to educational excellence and holistic student development
+              {t('management.subtitle')}
             </p>
           </div>
         </section>
@@ -769,7 +769,7 @@ export default function Management() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="vision-mission-title">
-                Our Vision, Mission & Values
+                {t('management.visionMission.title')}
               </h2>
             </div>
 
@@ -778,7 +778,7 @@ export default function Management() {
                 <CardHeader>
                   <CardTitle className="flex items-center justify-center space-x-2">
                     <Target className="w-6 h-6 text-primary" />
-                    <span>Vision</span>
+                    <span>{t('management.visionMission.vision')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -790,7 +790,7 @@ export default function Management() {
                 <CardHeader>
                   <CardTitle className="flex items-center justify-center space-x-2">
                     <BookOpen className="w-6 h-6 text-primary" />
-                    <span>Mission</span>
+                    <span>{t('management.visionMission.mission')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -802,7 +802,7 @@ export default function Management() {
                 <CardHeader>
                   <CardTitle className="flex items-center justify-center space-x-2">
                     <Star className="w-6 h-6 text-primary" />
-                    <span>Core Values</span>
+                    <span>{t('management.visionMission.coreValues')}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -858,12 +858,12 @@ export default function Management() {
             <Tabs defaultValue="management" className="max-w-6xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="management-team-title">
-                  Management Team
+                  {t('management.team.title')}
                 </h2>
                 <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3">
-                  <TabsTrigger value="management">Management Committee</TabsTrigger>
-                  <TabsTrigger value="school">School Committee</TabsTrigger>
-                  <TabsTrigger value="hostel">Hostel Committee</TabsTrigger>
+                  <TabsTrigger value="management">{t('management.team.managementCommittee')}</TabsTrigger>
+                  <TabsTrigger value="school">{t('management.team.schoolCommittee')}</TabsTrigger>
+                  <TabsTrigger value="hostel">{t('management.team.hostelCommittee')}</TabsTrigger>
                 </TabsList>
               </div>
 
@@ -889,15 +889,15 @@ export default function Management() {
                           <div className="lg:col-span-3">
                             <div className="grid md:grid-cols-2 gap-6">
                               <div>
-                                <h4 className="font-semibold mb-2">Qualifications & Experience</h4>
+                                <h4 className="font-semibold mb-2">{t('management.qualifications.title')}</h4>
                                 <div className="space-y-1 text-sm text-muted-foreground">
-                                  <div><strong>Education:</strong> {member.qualification}</div>
-                                  <div><strong>Experience:</strong> {member.experience}</div>
-                                  <div><strong>Specialization:</strong> {member.specialization}</div>
+                                  <div><strong>{t('management.qualifications.education')}:</strong> {member.qualification}</div>
+                                  <div><strong>{t('management.qualifications.experience')}:</strong> {member.experience}</div>
+                                  <div><strong>{t('management.qualifications.specialization')}:</strong> {member.specialization}</div>
                                 </div>
                               </div>
                               <div>
-                                <h4 className="font-semibold mb-2">Key Responsibilities</h4>
+                                <h4 className="font-semibold mb-2">{t('management.responsibilities.title')}</h4>
                                 <div className="space-y-1">
                                   {member.responsibilities.map((responsibility, respIndex) => (
                                     <div key={respIndex} className="flex items-start space-x-2 text-sm">
@@ -931,17 +931,17 @@ export default function Management() {
                             </h3>
                             <Badge variant="default" className="mb-2">{member.position}</Badge>
                             <div className="text-sm text-muted-foreground space-y-1">
-                              <p><span className="font-medium">Experience:</span> {member.experience}</p>
-                              <p><span className="font-medium">Qualification:</span> {member.qualification}</p>
+                              <p><span className="font-medium">{t('management.qualifications.experience')}:</span> {member.experience}</p>
+                              <p><span className="font-medium">{t('management.qualifications.education')}:</span> {member.qualification}</p>
                             </div>
                           </div>
                           <div className="lg:col-span-3">
                             <div className="mb-4">
-                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Specialization</h4>
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">{t('management.qualifications.specialization')}</h4>
                               <p className="text-muted-foreground">{member.specialization}</p>
                             </div>
                             <div className="mb-4">
-                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Key Responsibilities</h4>
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">{t('management.responsibilities.title')}</h4>
                               <ul className="space-y-1">
                                 {member.responsibilities.map((responsibility, idx) => (
                                   <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -984,17 +984,17 @@ export default function Management() {
                             </h3>
                             <Badge variant="default" className="mb-2">{member.position}</Badge>
                             <div className="text-sm text-muted-foreground space-y-1">
-                              <p><span className="font-medium">Experience:</span> {member.experience}</p>
-                              <p><span className="font-medium">Qualification:</span> {member.qualification}</p>
+                              <p><span className="font-medium">{t('management.qualifications.experience')}:</span> {member.experience}</p>
+                              <p><span className="font-medium">{t('management.qualifications.education')}:</span> {member.qualification}</p>
                             </div>
                           </div>
                           <div className="lg:col-span-3">
                             <div className="mb-4">
-                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Specialization</h4>
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">{t('management.qualifications.specialization')}</h4>
                               <p className="text-muted-foreground">{member.specialization}</p>
                             </div>
                             <div className="mb-4">
-                              <h4 className="font-semibold text-lg mb-2 text-orange-600">Key Responsibilities</h4>
+                              <h4 className="font-semibold text-lg mb-2 text-orange-600">{t('management.responsibilities.title')}</h4>
                               <ul className="space-y-1">
                                 {member.responsibilities.map((responsibility, idx) => (
                                   <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -1064,10 +1064,10 @@ export default function Management() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="management-achievements-title">
-                Management Achievements
+                {t('management.achievements.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Recognition and awards received under current leadership
+                {t('management.achievements.subtitle')}
               </p>
             </div>
 
@@ -1101,17 +1101,17 @@ export default function Management() {
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="contact-management-title">
-              Contact Management
+              {t('management.managementContact.title')}
             </h2>
             <p className="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
-              For any queries related to school administration, policies, or management, please reach out to our leadership team.
+              {t('management.managementContact.subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" data-testid="contact-principal-button">
-                Contact Principal
+                {t('management.managementContact.contactPrincipal')}
               </button>
               <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors" data-testid="schedule-meeting-button">
-                Schedule Meeting
+                {t('management.managementContact.scheduleMeeting')}
               </button>
             </div>
           </div>

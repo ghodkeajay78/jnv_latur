@@ -18,21 +18,21 @@ export default function Header() {
     {
       label: t('nav.about'),
       items: [
-        { href: '/about', label: 'History & Mission' },
+        { href: '/about', label: t('nav.historyMission') },
         { href: '/management', label: t('nav.management') },
       ],
     },
     {
       label: t('nav.academics'),
       items: [
-        { href: '/academics', label: 'Curriculum' },
+        { href: '/academics', label: t('nav.curriculum') },
         { href: '/faculty', label: t('nav.faculty') },
       ],
     },
     {
       label: t('nav.campus'),
       items: [
-        { href: '/campus', label: 'Infrastructure' },
+        { href: '/campus', label: t('nav.infrastructure') },
         { href: '/hostel', label: t('nav.hostel') },
       ],
     },
@@ -56,8 +56,8 @@ export default function Header() {
               />
             </div>
             <div>
-              <h1 className="text-lg font-bold text-foreground">{t('school.name')}</h1>
-              <p className="text-sm text-muted-foreground">{t('school.location')}</p>
+              <h1 className="text-xl font-bold text-foreground">{t('school.name')}</h1>
+              <p className="text-base text-muted-foreground">{t('school.location')}</p>
             </div>
           </Link>
 

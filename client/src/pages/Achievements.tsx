@@ -59,64 +59,64 @@ export default function Achievements() {
       medal: t('achievements.sportsAchievements.medals.bronze'),
     },
     {
-      sport: 'Football',
-      level: 'District',
-      achievement: 'Winners',
+      sport: t('achievements.sportsAchievements.sports.football'),
+      level: t('achievements.sportsAchievements.levels.district'),
+      achievement: t('achievements.sportsAchievements.achievements.winners'),
       year: '2023',
-      participants: 'School Team',
-      medal: 'Gold',
+      participants: t('achievements.sportsAchievements.participants.schoolTeam'),
+      medal: t('achievements.sportsAchievements.medals.gold'),
     },
     {
-      sport: 'Volleyball',
-      level: 'District',
-      achievement: 'Runners-up',
+      sport: t('achievements.sportsAchievements.sports.volleyball'),
+      level: t('achievements.sportsAchievements.levels.district'),
+      achievement: t('achievements.sportsAchievements.achievements.runnersUp'),
       year: '2023',
-      participants: 'School Team',
-      medal: 'Silver',
+      participants: t('achievements.sportsAchievements.participants.schoolTeam'),
+      medal: t('achievements.sportsAchievements.medals.silver'),
     },
     {
-      sport: 'Basketball',
-      level: 'Regional',
-      achievement: 'Third Place',
+      sport: t('achievements.sportsAchievements.sports.basketball'),
+      level: t('achievements.sportsAchievements.levels.regional'),
+      achievement: t('achievements.sportsAchievements.achievements.thirdPlace'),
       year: '2023',
-      participants: 'School Team',
-      medal: 'Bronze',
+      participants: t('achievements.sportsAchievements.participants.schoolTeam'),
+      medal: t('achievements.sportsAchievements.medals.bronze'),
     },
   ];
 
   const culturalAchievements = [
     {
-      activity: 'Classical Dance',
-      competition: 'State Level Competition',
-      position: 'First Prize',
+      activity: t('achievements.culturalAchievements.activities.classicalDance'),
+      competition: t('achievements.culturalAchievements.competitions.stateLevelCompetition'),
+      position: t('achievements.culturalAchievements.achievements.firstPrize'),
       participant: 'Sneha Jadhav',
       year: '2023',
     },
     {
-      activity: 'Debate Competition',
-      competition: 'Inter-School Championship',
-      position: 'Champions',
+      activity: t('achievements.culturalAchievements.activities.debateCompetition'),
+      competition: t('achievements.culturalAchievements.competitions.interSchoolChampionship'),
+      position: t('achievements.culturalAchievements.achievements.champions'),
       participant: 'Debate Team',
       year: '2023',
     },
     {
-      activity: 'Science Exhibition',
-      competition: 'Regional Science Fair',
-      position: 'Best Innovation Award',
+      activity: t('achievements.culturalAchievements.activities.scienceExhibition'),
+      competition: t('achievements.culturalAchievements.competitions.regionalScienceFair'),
+      position: t('achievements.culturalAchievements.achievements.bestInnovationAward'),
       participant: 'Science Club',
       year: '2023',
     },
     {
-      activity: 'Music Competition',
-      competition: 'District Music Festival',
-      position: 'Second Prize',
+      activity: t('achievements.culturalAchievements.activities.musicCompetition'),
+      competition: t('achievements.culturalAchievements.competitions.districtMusicFestival'),
+      position: t('achievements.culturalAchievements.achievements.secondPrize'),
       participant: 'School Choir',
       year: '2023',
     },
     {
-      activity: 'Art & Craft',
-      competition: 'State Art Competition',
-      position: 'Excellence Award',
+      activity: t('achievements.culturalAchievements.activities.artCraft'),
+      competition: t('achievements.culturalAchievements.competitions.stateArtCompetition'),
+      position: t('achievements.culturalAchievements.achievements.excellenceAward'),
       participant: 'Aditi Kale',
       year: '2023',
     },
@@ -124,73 +124,36 @@ export default function Achievements() {
 
   const schoolRecognitions = [
     {
-      award: 'Best Navodaya Vidyalaya',
-      level: 'State Level',
+      award: t('achievements.recognitionAchievements.awards.bestSchool'),
+      level: t('achievements.recognitionAchievements.levels.state') + ' Level',
       year: '2023',
       authority: 'Navodaya Vidyalaya Samiti',
       description: 'Recognition for overall excellence in academics and co-curricular activities',
     },
     {
-      award: 'Excellence in Education',
-      level: 'District Level',
+      award: t('achievements.recognitionAchievements.awards.excellenceInEducation'),
+      level: t('achievements.recognitionAchievements.levels.district') + ' Level',
       year: '2023',
-      authority: 'District Collector',
+      authority: t('achievements.recognitionAchievements.authorities.districtCollector'),
       description: 'Outstanding performance in board examinations and student development',
     },
     {
-      award: 'Green School Award',
-      level: 'State Level',
+      award: t('achievements.recognitionAchievements.awards.greenSchool') + ' Award',
+      level: t('achievements.recognitionAchievements.levels.state') + ' Level',
       year: '2022',
-      authority: 'Environment Department',
+      authority: t('achievements.recognitionAchievements.authorities.environmentDepartment'),
       description: 'Recognition for environmental conservation and sustainability initiatives',
     },
     {
-      award: 'Digital Education Pioneer',
-      level: 'Regional Level',
+      award: t('achievements.recognitionAchievements.awards.digitalEducation') + ' Pioneer',
+      level: t('achievements.recognitionAchievements.levels.regional') + ' Level',
       year: '2022',
-      authority: 'Education Technology Board',
+      authority: t('achievements.recognitionAchievements.authorities.educationTechnologyBoard'),
       description: 'Leading implementation of digital learning technologies',
     },
   ];
 
-  const yearwiseStats = [
-    { year: '2023-24', students: 580, passRate: '95.2%', toppers: 5, distinctions: 156 },
-    { year: '2022-23', students: 575, passRate: '97.8%', toppers: 4, distinctions: 142 },
-    { year: '2021-22', students: 570, passRate: '98.4%', toppers: 3, distinctions: 138 },
-    { year: '2020-21', students: 565, passRate: '96.7%', toppers: 4, distinctions: 134 },
-    { year: '2019-20', students: 560, passRate: '99.1%', toppers: 6, distinctions: 148 },
-    { year: '2018-19', students: 555, passRate: '94.3%', toppers: 3, distinctions: 132 },
-    { year: '2017-18', students: 550, passRate: '98.9%', toppers: 5, distinctions: 145 },
-    { year: '2016-17', students: 545, passRate: '100%', toppers: 7, distinctions: 152 },
-    { year: '2015-16', students: 540, passRate: '97%', toppers: 4, distinctions: 138 },
-    { year: '2014-15', students: 535, passRate: '100%', toppers: 6, distinctions: 148 },
-    { year: '2013-14', students: 530, passRate: '100%', toppers: 8, distinctions: 156 },
-    { year: '2012-13', students: 525, passRate: '100%', toppers: 5, distinctions: 142 },
-    { year: '2011-12', students: 520, passRate: '93.75%', toppers: 3, distinctions: 128 },
-    { year: '2010-11', students: 515, passRate: '97.46%', toppers: 4, distinctions: 135 },
-    { year: '2009-10', students: 510, passRate: '98.55%', toppers: 6, distinctions: 148 },
-    { year: '2008-09', students: 505, passRate: '100%', toppers: 7, distinctions: 152 },
-    { year: '2007-08', students: 500, passRate: '91.66%', toppers: 2, distinctions: 118 },
-    { year: '2006-07', students: 495, passRate: '100%', toppers: 8, distinctions: 156 },
-    { year: '2005-06', students: 490, passRate: '88.57%', toppers: 1, distinctions: 105 },
-    { year: '2004-05', students: 485, passRate: '96.49%', toppers: 3, distinctions: 128 },
-    { year: '2003-04', students: 480, passRate: '97.14%', toppers: 4, distinctions: 132 },
-    { year: '2002-03', students: 475, passRate: '97.93%', toppers: 5, distinctions: 138 },
-    { year: '2001-02', students: 470, passRate: '88.57%', toppers: 2, distinctions: 112 },
-    { year: '2000-01', students: 465, passRate: '93.93%', toppers: 3, distinctions: 125 },
-    { year: '1999-2000', students: 460, passRate: '71.42%', toppers: 1, distinctions: 85 },
-    { year: '1998-99', students: 455, passRate: '56.41%', toppers: 0, distinctions: 65 },
-    { year: '1997-98', students: 450, passRate: '71.05%', toppers: 1, distinctions: 82 },
-    { year: '1996-97', students: 445, passRate: '55.26%', toppers: 0, distinctions: 58 },
-    { year: '1995-96', students: 440, passRate: '26%', toppers: 0, distinctions: 32 },
-  ];
 
-  const olympiadResults = [
-    { subject: 'Mathematics', level: 'National', medals: { gold: 2, silver: 5, bronze: 8 } },
-    { subject: 'Science', level: 'National', medals: { gold: 1, silver: 4, bronze: 12 } },
-    { subject: 'English', level: 'State', medals: { gold: 3, silver: 7, bronze: 15 } },
-    { subject: 'Computer Science', level: 'Regional', medals: { gold: 4, silver: 8, bronze: 18 } },
-  ];
 
   return (
     <>
@@ -233,10 +196,10 @@ export default function Achievements() {
           </div>
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bold mb-6" data-testid="achievements-hero-title">
-              Our Achievements
+              {t('achievements.heroTitle')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Celebrating excellence in academics, sports, and cultural activities that showcase the talent and dedication of our students and faculty
+              {t('achievements.heroSubtitle')}
             </p>
           </div>
         </section>
@@ -284,7 +247,7 @@ export default function Achievements() {
                     <BookOpen className="w-8 h-8 text-blue-600" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2" data-testid="academic-pass-rate">98.5%</div>
-                  <div className="text-muted-foreground">Class X Pass Rate 2024</div>
+                  <div className="text-muted-foreground">{t('achievements.stats.classXPassRate')}</div>
                 </CardContent>
               </Card>
 
@@ -294,7 +257,7 @@ export default function Achievements() {
                     <Trophy className="w-8 h-8 text-green-600" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2" data-testid="sports-medals">15+</div>
-                  <div className="text-muted-foreground">Sports Medals 2023</div>
+                  <div className="text-muted-foreground">{t('achievements.stats.sportsMedals')}</div>
                 </CardContent>
               </Card>
 
@@ -304,7 +267,7 @@ export default function Achievements() {
                     <Palette className="w-8 h-8 text-purple-600" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2" data-testid="cultural-awards">25+</div>
-                  <div className="text-muted-foreground">Cultural Awards</div>
+                  <div className="text-muted-foreground">{t('achievements.stats.culturalAwards')}</div>
                 </CardContent>
               </Card>
 
@@ -314,7 +277,7 @@ export default function Achievements() {
                     <Star className="w-8 h-8 text-yellow-600" />
                   </div>
                   <div className="text-3xl font-bold text-primary mb-2" data-testid="school-awards">8</div>
-                  <div className="text-muted-foreground">School Recognitions</div>
+                  <div className="text-muted-foreground">{t('achievements.stats.schoolRecognitions')}</div>
                 </CardContent>
               </Card>
             </div>
@@ -359,20 +322,20 @@ export default function Achievements() {
           <div className="w-4/5 mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="categories-title">
-                Achievement Categories
+                {t('achievements.categories.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
-                Excellence across all dimensions of education and development
+                {t('achievements.categories.subtitle')}
               </p>
             </div>
 
             <Tabs defaultValue="academic" className="max-w-6xl mx-auto">
               <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
-                <TabsTrigger value="academic">Academic</TabsTrigger>
-                <TabsTrigger value="sports">Sports</TabsTrigger>
-                <TabsTrigger value="cultural">Cultural</TabsTrigger>
-                <TabsTrigger value="recognition">Recognition</TabsTrigger>
-                <TabsTrigger value="historical">Historical Results</TabsTrigger>
+                <TabsTrigger value="academic">{t('achievements.categories.academic')}</TabsTrigger>
+                <TabsTrigger value="sports">{t('achievements.categories.sports')}</TabsTrigger>
+                <TabsTrigger value="cultural">{t('achievements.categories.cultural')}</TabsTrigger>
+                <TabsTrigger value="recognition">{t('achievements.categories.recognition')}</TabsTrigger>
+                <TabsTrigger value="historical">{t('achievements.historicalResults.title')}</TabsTrigger>
               </TabsList>
 
               <TabsContent value="academic" className="space-y-6">
@@ -382,24 +345,24 @@ export default function Achievements() {
                       <CardHeader>
                         <CardTitle className="flex items-center justify-between">
                           <span data-testid={`academic-title-${index}`}>
-                            {result.class} Results - {result.year}
+                            {result.class} {t('achievements.academicResults.passRate')} - {result.year}
                           </span>
-                          <Badge variant="default">{result.passRate} Pass Rate</Badge>
+                          <Badge variant="default">{result.passRate} {t('achievements.academicResults.passRate')}</Badge>
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="grid md:grid-cols-3 gap-6">
                           <div>
-                            <h4 className="font-semibold mb-2">School Topper</h4>
+                            <h4 className="font-semibold mb-2">{t('achievements.academicResults.schoolTopper')}</h4>
                             <p className="text-lg font-medium text-primary">{result.topper}</p>
                             <p className="text-muted-foreground">{result.topperMarks} - {result.stream}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold mb-2">Pass Rate</h4>
+                            <h4 className="font-semibold mb-2">{t('achievements.academicResults.passRate')}</h4>
                             <p className="text-2xl font-bold text-green-600">{result.passRate}</p>
                           </div>
                           <div>
-                            <h4 className="font-semibold mb-2">Distinction Rate</h4>
+                            <h4 className="font-semibold mb-2">{t('achievements.academicResults.distinctionRate')}</h4>
                             <p className="text-2xl font-bold text-blue-600">{result.distinction}</p>
                           </div>
                         </div>
@@ -408,37 +371,6 @@ export default function Achievements() {
                   ))}
                 </div>
 
-                {/* Olympiad Results */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Olympiad & Competition Results</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid md:grid-cols-2 gap-6">
-                      {olympiadResults.map((olympiad, index) => (
-                        <div key={index} className="p-4 border border-border rounded-lg">
-                          <h4 className="font-semibold mb-2" data-testid={`olympiad-subject-${index}`}>
-                            {olympiad.subject} Olympiad ({olympiad.level})
-                          </h4>
-                          <div className="flex space-x-4 text-sm">
-                            <span className="flex items-center space-x-1">
-                              <Medal className="w-4 h-4 text-yellow-500" />
-                              <span>{olympiad.medals.gold} Gold</span>
-                            </span>
-                            <span className="flex items-center space-x-1">
-                              <Medal className="w-4 h-4 text-gray-400" />
-                              <span>{olympiad.medals.silver} Silver</span>
-                            </span>
-                            <span className="flex items-center space-x-1">
-                              <Medal className="w-4 h-4 text-amber-600" />
-                              <span>{olympiad.medals.bronze} Bronze</span>
-                            </span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
               </TabsContent>
 
               <TabsContent value="sports" className="space-y-6">
@@ -545,9 +477,9 @@ export default function Achievements() {
 
               <TabsContent value="historical" className="space-y-6">
                 <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold mb-4">Year-wise Result Percentage (%)</h3>
+                  <h3 className="text-2xl font-bold mb-4">{t('achievements.historicalResults.yearWiseTitle')}</h3>
                   <p className="text-muted-foreground">
-                    Historical performance data showing the school's journey from establishment to excellence
+                    {t('achievements.historicalResults.subtitle')}
                   </p>
                 </div>
                 
@@ -562,12 +494,12 @@ export default function Achievements() {
                             </div>
                             <div>
                               <h4 className="font-semibold text-lg">{result.year}</h4>
-                              <p className="text-sm text-muted-foreground">Academic Year</p>
+                              <p className="text-sm text-muted-foreground">{t('achievements.historicalResults.academicYear')}</p>
                             </div>
                           </div>
                           <div className="text-right">
                             <div className="text-2xl font-bold text-primary">{result.percentage}%</div>
-                            <div className="text-sm text-muted-foreground">Pass Rate</div>
+                            <div className="text-sm text-muted-foreground">{t('achievements.historicalResults.passRate')}</div>
                           </div>
                         </div>
                         <div className="mt-3">
@@ -587,20 +519,20 @@ export default function Achievements() {
                   <CardContent className="p-6">
                     <h4 className="font-bold text-lg mb-4 flex items-center">
                       <Star className="w-5 h-5 text-yellow-500 mr-2" />
-                      Key Insights
+                      {t('achievements.historicalResults.keyInsights')}
                     </h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex items-start space-x-2">
                         <div className="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                        <p>Most Recent Years (2012-2024): Consistently near 100%, with excellent performance maintained.</p>
+                        <p>{t('achievements.historicalResults.insights.recentYears')}</p>
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                        <p>Improvement Trend: The school's performance has shown a steep improvement after 2000, stabilizing at ~95–100% since 2001.</p>
+                        <p>{t('achievements.historicalResults.insights.improvementTrend')}</p>
                       </div>
                       <div className="flex items-start space-x-2">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
-                        <p>Peak Consistency: Out of the last 15 years, 8 years achieved a 100% result.</p>
+                        <p>{t('achievements.historicalResults.insights.peakConsistency')}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -610,110 +542,25 @@ export default function Achievements() {
           </div>
         </section>
 
-        {/* Year-wise Performance */}
-        <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-orange-50 relative overflow-hidden">
-          {/* Education Doodles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            {/* Book Doodle */}
-            <div className="absolute top-20 left-20 text-orange-200/30 text-6xl transform rotate-12">
-              <svg width="60" height="60" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-              </svg>
-            </div>
-            {/* Pencil Doodle */}
-            <div className="absolute top-40 right-32 text-orange-200/30 text-5xl transform -rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
-              </svg>
-            </div>
-            {/* Graduation Cap Doodle */}
-            <div className="absolute bottom-32 left-16 text-orange-200/30 text-7xl transform rotate-6">
-              <svg width="70" height="70" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18M12,3L1,9L12,15L21,10.09V17H23V9L12,3Z"/>
-              </svg>
-            </div>
-            {/* Lightbulb Doodle */}
-            <div className="absolute top-60 right-20 text-orange-200/30 text-4xl transform -rotate-6">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M9,21C9,22.1 9.9,23 11,23H13C14.1,23 15,22.1 15,21V20H9V21M12,2C8.14,2 5,5.14 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9C19,5.14 15.86,2 12,2Z"/>
-              </svg>
-            </div>
-            {/* Star Doodle */}
-            <div className="absolute bottom-20 right-24 text-orange-200/30 text-5xl transform rotate-12">
-              <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
-              </svg>
-            </div>
-          </div>
-          <div className="w-4/5 mx-auto px-4 relative z-10">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4" data-testid="yearwise-title">
-                Year-wise Performance
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                Consistent excellence and continuous improvement over the years
-              </p>
-            </div>
-
-            <div className="max-w-4xl mx-auto">
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center space-x-2">
-                    <TrendingUp className="w-5 h-5 text-primary" />
-                    <span>Academic Performance Trends</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="overflow-x-auto">
-                    <table className="w-full text-sm">
-                      <thead>
-                        <tr className="border-b border-border">
-                          <th className="text-left py-3">Academic Year</th>
-                          <th className="text-left py-3">Total Students</th>
-                          <th className="text-left py-3">Pass Rate</th>
-                          <th className="text-left py-3">Board Toppers</th>
-                          <th className="text-left py-3">Distinctions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {yearwiseStats.map((stat, index) => (
-                          <tr key={index} className="border-b border-border">
-                            <td className="py-3 font-medium" data-testid={`year-${index}`}>{stat.year}</td>
-                            <td className="py-3">{stat.students}</td>
-                            <td className="py-3">
-                              <Badge variant="outline">{stat.passRate}</Badge>
-                            </td>
-                            <td className="py-3">{stat.toppers}</td>
-                            <td className="py-3">{stat.distinctions}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
 
         {/* Call to Action */}
         <section className="py-16 bg-primary text-primary-foreground">
           <div className="w-4/5 mx-auto px-4 text-center relative z-10">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6" data-testid="cta-title">
-              Be Part of Our Success Story
+              {t('achievements.callToAction.title')}
             </h2>
             <p className="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
-              Join JNV Latur and contribute to our legacy of excellence in academics, sports, and cultural activities
+              {t('achievements.callToAction.subtitle')}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link href="/admissions">
                 <button className="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors" data-testid="apply-button">
-                  Apply for Admission
+                  {t('achievements.callToAction.applyForAdmission')}
                 </button>
               </Link>
               <Link href="/gallery">
                 <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors" data-testid="view-gallery-button">
-                  View Gallery
+                  {t('achievements.callToAction.viewGallery')}
                 </button>
               </Link>
             </div>
